@@ -1,0 +1,153 @@
+# Standard metric -> ordered list of ways to read it from us-gaap XBRL.
+#
+# For each company and fiscal year the FIRST option that has data wins, and
+# the option used is logged next to the value (data/processed/metrics_long.csv).
+#
+# An option is either
+#   - a tag name:                    Revenues
+#   - a signed sum of components:    {add: [A, B], subtract: [C]}
+#     every component is required; "@metric" refers to another metric here.
+#     Sums are only used where the filer does not report the line itself
+#     (e.g. Eaton has no gross profit or operating income line).
+#
+# kind:  duration (flows over the ~12-month fiscal year) or instant (balance at year end)
+# unit:  the XBRL unit to read (USD, USD/shares, shares)
+
+metrics:
+  revenue:
+    kind: duration
+    unit: USD
+    options:
+      - Revenues
+      - RevenueFromContractWithCustomerExcludingAssessedTax
+      - SalesRevenueNet
+      - SalesRevenueGoodsNet
+      - RevenueFromContractWithCustomerIncludingAssessedTax
+
+  cost_of_revenue:          # supporting metric, only used to derive gross profit
+    kind: duration
+    unit: USD
+    options:
+      - CostOfRevenue
+      - CostOfGoodsAndServicesSold
+      - CostOfGoodsSold
+
+  gross_profit:
+    kind: duration
+    unit: USD
+    options:
+      - GrossProfit
+      - {add: ["@revenue"], subtract: ["@cost_of_revenue"]}
+      # TT tags cost of sales only by product/service (dimensional facts are
+      # not in companyfacts). Its income statement has just one line between
+      # gross profit and operating income, so GP = EBIT + S&A (checked against
+      # the FY2025 10-K: 3,967.4 + 3,742.8 = 7,710.2).
+      - {add: [OperatingIncomeLoss, SellingGeneralAndAdministrativeExpense]}
+
+  operating_income:         # EBIT
+    kind: duration
+    unit: USD
+    options:
+      - OperatingIncomeLoss
+      # JCI has no operating-income line and its "net financing charges" has
+      # no standard tag, so rebuild EBIT from the lines above it. Ties to
+      # pre-tax income + net financing charges in the FY2025 10-K:
+      # 8,592 - 5,764 - 546 + 6 = 2,288 = 1,969 + 319.
+      - {add: [GrossProfit, IncomeLossFromEquityMethodInvestments], subtract: [SellingGeneralAndAdministrativeExpense, RestructuringCharges]}
+      # Eaton: pre-tax income + interest expense (tagged differently by year)
+      - {add: ["@pretax_income", InterestExpenseNonoperating]}
+      - {add: ["@pretax_income", InterestExpense]}
+      - {add: ["@pretax_income"], subtract: [InterestIncomeExpenseNet]}
+
+  pretax_income:            # supporting metric (tax rate for ROIC, EBIT fallback)
+    kind: duration
+    unit: USD
+    options:
+      - IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest
+      - IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+
+  income_tax:               # supporting metric
+    kind: duration
+    unit: USD
+    options:
+      - IncomeTaxExpenseBenefit
+
+  net_income:               # attributable to the parent's shareholders
+    kind: duration
+    unit: USD
+    options:
+      - NetIncomeLoss
+      - ProfitLoss
+
+  d_and_a:
+    kind: duration
+    unit: USD
+    options:
+      - DepreciationDepletionAndAmortization
+      - DepreciationAmortizationAndAccretionNet
+      - DepreciationAndAmortization
+      - {add: [Depreciation, AmortizationOfIntangibleAssets]}
+
+  eps_diluted:
+    kind: duration
+    unit: USD/shares
+    options:
+      - EarningsPerShareDiluted
+      - IncomeLossFromContinuingOperationsPerDilutedShare
+
+  shares_diluted:           # weighted average diluted shares
+    kind: duration
+    unit: shares
+    options:
+      - WeightedAverageNumberOfDilutedSharesOutstanding
+
+  total_assets:
+    kind: instant
+    unit: USD
+    options:
+      - Assets
+
+  total_equity:             # parent shareholders' equity where reported
+    kind: instant
+    unit: USD
+    options:
+      - StockholdersEquity
+      - StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+
+  cash:
+    kind: instant
+    unit: USD
+    options:
+      - CashAndCashEquivalentsAtCarryingValue
+      - CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+
+  total_debt:               # balance-sheet borrowings incl. finance leases, excl. operating leases
+    kind: instant
+    unit: USD
+    options:
+      - DebtLongtermAndShorttermCombinedAmount                               # SMCI
+      - {add: [LongTermDebtNoncurrent, DebtCurrent]}                         # HUBB, TT, NVT
+      - {add: [LongTermDebtNoncurrent, LongTermDebtCurrent]}                 # VRT
+      - {add: [LongTermDebtAndCapitalLeaseObligations, LongTermDebtAndCapitalLeaseObligationsCurrent, ShortTermBorrowings]}  # ETN, MOD, JCI
+      - {add: [LongTermDebtAndCapitalLeaseObligations, LongTermDebtAndCapitalLeaseObligationsCurrent]}
+      - LongTermDebt
+      - ShortTermBorrowings                                                  # GEV: no long-term borrowings
+
+  operating_cash_flow:
+    kind: duration
+    unit: USD
+    options:
+      - NetCashProvidedByUsedInOperatingActivities
+      - NetCashProvidedByUsedInOperatingActivitiesContinuingOperations
+
+  capex:                    # cash paid, reported as a positive number
+    kind: duration
+    unit: USD
+    options:
+      - PaymentsToAcquirePropertyPlantAndEquipment
+      - PaymentsToAcquireProductiveAssets
+
+# Explicit zeros, each with the reason. Used only when no option has data.
+assume_zero:
+  POWL:
+    total_debt: "Powell reports no borrowings on its balance sheet; its debt tags were last filed at 0 in FY2022."

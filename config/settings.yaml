@@ -1,0 +1,12 @@
+# Fixed so every run (and every test) sees the same prices.
+valuation_date: 2026-10-16
+# Statutory US rate used for NOPAT when a year's effective tax rate is not
+# meaningful (pre-tax loss, or an effective rate outside 0-50%).
+fallback_tax_rate: 0.21
+# Stock splits since 2020 (source: Yahoo Finance split history, checked 2026-10-19).
+# XBRL per-share facts filed BEFORE a split date are divided by the ratio when
+# used for valuation (P/E). Reported values are kept as filed.
+splits:
+  TT:   [{date: 2020-03-02, ratio: 1.289}]   # Carrier/Otis spin-off adjustment
+  SMCI: [{date: 2024-10-01, ratio: 10}]
+  POWL: [{date: 2026-04-06, ratio: 3}]
