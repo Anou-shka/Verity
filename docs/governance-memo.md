@@ -3,7 +3,7 @@
 **To:** AI Risk Committee / Model Risk Management (second line)
 **From:** Anoushka (use-case owner, Verity)
 **Date:** 19 October 2026
-**Status:** Pre-deployment review, version 0.1. Written at the end of milestone M1 (data layer). The fact-checker figures in Section 3 are filled in when the M5 evaluation is complete. Until then, every cell marked `[M5]` stays open, and so does the launch decision.
+**Status:** Pre-deployment review, version 0.2 (updated after the M5 evaluation). The fact-checker figures in Section 3 are measured with the deterministic writer and checker. The LLM-mode figures are still open because the evaluation environment had no model API key, so the launch decision stays open too.
 
 ---
 
@@ -45,17 +45,28 @@ These failure modes are mapped to the MindForge / ABS "top risks" for generative
 - **R3.** **70** company-year-concept combinations at **5 of 10** companies were recast in a later filing (mainly discontinued operations, e.g. nVent's FY2023 revenue moved from 3,263.6m to 2,668.9m). All are logged in `restatements.csv`. One stock split (Powell, 3:1, April 2026) would have tripled its P/E if left unadjusted.
 - **Missing data stays missing.** Two values (GE Vernova FY2022 balance sheet, before the spin-off) are reported as *not reported*, never as zero. The one explicit zero (Powell's debt) is documented in config together with its reason.
 
-**To be measured (M4–M5 evaluation harness, `docs/results.md`):**
+**Measured in M5 (`docs/results.md`, all reproducible with `make eval`):**
 
-| Metric | Method | Result | Launch threshold (proposed) |
-|---|---|---|---|
-| Extraction accuracy (R1, R2) | ~360 company × metric × year facts vs XBRL ground truth | `[M5]` | ≥ 99% |
-| No-tool baseline accuracy (R1) | Same questions, single LLM call, no tools | `[M5]` | Reference only |
-| Fact-checker **recall** (R4) | Inject known errors (wrong number, wrong year, unit swap, changed %, invented figure) into correct drafts | `[M5]` | ≥ 95% overall, 100% on invented figures |
-| Fact-checker **false-alarm rate** (R4) | Share of correct claims flagged | `[M5]` | ≤ 5% |
-| **Residual errors** after revision (R1, R4) | Errors still in the final note | `[M5]` | 0 on the test set |
-| Unverifiable share (R5) | Claims the checker cannot source | `[M5]` | Reported on every note |
-| Cost, latency, LLM calls per note | Run traces | `[M5]` | Monitored |
+The error-injection test planted 900 known errors of 7 types into correct notes for all 10 companies, then ran the fact-checker and the revision loop. The writer and checker were the deterministic ("rules") versions, with no LLM.
+
+| Metric | Method | Result | Launch threshold (proposed) | Met? |
+|---|---|---|---|---|
+| Fact-checker **recall** (R4) | 900 planted errors: wrong number, wrong year, unit swap, changed %, invented figure (with and without a citation), true figure misdescribed | **98.2%** (884/900); 100% on invented figures without a citation, 99.1% with a fake citation | ≥ 95% overall, 100% on invented figures | Partly. Overall yes; the "100% on invented figures" bar is missed by one fake-cited figure. |
+| Fact-checker **false-alarm rate** (R4) | Correct claims flagged, in clean and in injected notes | **0.0%** (0 of 7,117) | ≤ 5% | Yes (rules mode) |
+| **Residual errors** after revision (R1, R4) | Planted errors still in the final note | **2.7%** (24/900), almost all "true number, wrong description" | 0 on the test set | **No** |
+| Weakest error type (R1) | True, correctly cited figure described as something else | **87.7%** caught | — | Gap identified (see control 12) |
+| Data layer vs filings (R2) | Values read by hand from five 10-Ks | 25/25 match | 100% | Yes |
+| Comps table vs metrics table (R2) | Every cell compared | 110/110 identical | 100% | Yes |
+| Quote checks (R5) | Quoted 10-K text found in the cited filing section | 40/40 across 10 notes | 100% | Yes |
+| Cost, latency per note | Run traces | Rules mode: $0, ~2.3s, 23 tool calls | Monitored | — |
+| Extraction accuracy (R1, R2) | 360 company × metric × year questions vs XBRL ground truth | **Pending:** needs a model API key; harness built and tested | ≥ 99% | Open |
+| No-tool baseline accuracy (R1) | Same questions, one LLM call, no tools | **Pending** | Reference only | Open |
+| LLM-mode recall and false alarms (R4) | The same injection test on LLM-written notes | **Pending** | Same as above | Open |
+
+**What the evidence says.**
+- **Value errors are reliably caught.** The check against the filings catches errors in a number's *value*, unit and year, because the checker re-fetches each cited figure with its own tools.
+- **Meaning is the gap.** A true number that is cited correctly but described as the wrong thing ("data-centre revenue" quoting total revenue) gets through 12% of the time. When such a claim is caught only on its year, revision corrects the year and the misdescription survives.
+- **These are upper bounds.** Template prose is regular, so these rates are an upper bound for LLM prose.
 
 The thresholds are my proposal for the committee to set. They are not results.
 
@@ -67,15 +78,17 @@ The thresholds are my proposal for the committee to set. They are not results.
 2. **Independent checker.** The fact-checker is a separate agent with its own prompts. It re-fetches values and does not trust the Writer's citations. Configurable tolerances: 0.5% for reported figures, 0.1pp for ratios.
 3. **Deterministic data layer with explicit mapping.** `concept_map.yaml` is version-controlled and logs the tag used for every value. Restatements and splits are logged, not silently absorbed.
 4. **Full traceability.** Each run writes a JSONL trace of every agent step, tool call, token count, cost and timing. Replay mode re-runs any note bit-for-bit from cached responses.
-5. **Filing text treated as data.** Retrieved text is delimited, and instructions in it are not followed (R7). Tests will include planted instructions.
+5. **Filing text treated as data.** Retrieved text is delimited, and instructions in it are not followed (R7). Tests with planted instructions are still to be added.
+6. **Fabrications are deleted, not patched.** Found in testing: the first revision loop "corrected" an invented figure with a borrowed citation into the cited true value, which laundered a fabrication into a true-looking claim. Now, if the sentence around a wrong number does not name the cited metric, the sentence is deleted.
 
 **To add before a bank launch:**
 
-6. **Mandatory analyst sign-off** in the app, with *unverifiable* claims shown in amber and blocked from publication until a human confirms or deletes them (R5). Track how often analysts override the checker, as an automation-bias signal.
-7. **Golden-set regression gate.** Re-run the M5 suite on every prompt, model or concept-map change. A drop below threshold blocks deployment (MindForge C15, change management).
-8. **Model and vendor pinning.** Pin model versions, re-evaluate on any provider change, and keep a fallback provider. Record the model in the AI inventory (R6; MAS third-party AI expectations).
-9. **Post-deployment monitoring.** Weekly sample audit of published notes, plus KRIs: checker recall on fresh injected errors, false-alarm rate, override rate and cost per note (MindForge C14).
-10. **AI inventory entry** with owner, materiality rating, models, data sources, limitations and review date. Periodic re-review should be at least annual and triggered by material change.
+7. **Mandatory analyst sign-off** in the app, with *unverifiable* claims shown in amber and blocked from publication until a human confirms or deletes them (R5). Track how often analysts override the checker, as an automation-bias signal.
+8. **Golden-set regression gate.** Re-run the M5 suite on every prompt, model or concept-map change. A drop below threshold blocks deployment (MindForge C15, change management).
+9. **Model and vendor pinning.** Pin model versions, re-evaluate on any provider change, and keep a fallback provider. Record the model in the AI inventory (R6; MAS third-party AI expectations).
+10. **Post-deployment monitoring.** Weekly sample audit of published notes, plus KRIs: checker recall on fresh injected errors, false-alarm rate, override rate and cost per note (MindForge C14).
+11. **AI inventory entry** with owner, materiality rating, models, data sources, limitations and review date. Periodic re-review should be at least annual and triggered by material change.
+12. **Semantic check for misdescribed numbers.** This closes the measured gap (R1). Before publication, a second model or a human confirms that each sentence describes its cited metric. Until then, every "corrected" claim is shown to the analyst for confirmation.
 
 ## 5. Mapping to MAS FEAT
 
@@ -89,7 +102,14 @@ The thresholds are my proposal for the committee to set. They are not results.
 
 ## 6. Recommendation
 
-**Not ready for launch yet; proceed to build.** The data layer controls for R2 and R3 are working and tested. Whether launch is approved depends on the M5 results meeting the thresholds in Section 3, especially fact-checker recall and zero residual errors. It also depends on controls 6–10 being in place. The proposed deployment is a pilot with analysts on the ten-company universe, with a human signing off every note and a 3-month post-deployment review. This follows the phased-rollout practice in the MindForge Handbook (C13).
+**Not ready for launch yet.** The data-layer controls (R2, R3) work and are tested. In the deterministic evaluation, the fact-checker meets the false-alarm and overall recall thresholds. It **fails the zero-residual-error threshold** (2.7% left after revision), and the failure has one identifiable cause: true numbers described as the wrong thing.
+
+Before launch:
+1. Build control 12 and re-run the test.
+2. Run the LLM-mode evaluation (extraction accuracy, the no-tools baseline, and the injection test on LLM-written notes).
+3. Put controls 7–11 in place.
+
+The proposed deployment after that is a pilot with analysts on the ten-company universe, with a human signing off every note and a 3-month post-deployment review. This follows the phased-rollout practice in the MindForge Handbook (C13).
 
 ---
 

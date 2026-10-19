@@ -80,3 +80,125 @@ All 10 companies file 10-Ks with XBRL, so the universe stays at 10.
 - [ ] Hand-check the 12 values in [`docs/m1-review-sample.md`](m1-review-sample.md) against the 10-Ks.
 - [ ] Decide on GEV cash (it includes restricted cash; see the note in the review sheet).
 - [ ] Read the governance memo draft: [`docs/governance-memo.md`](governance-memo.md).
+
+---
+
+## M2: Tools and comps (19 Oct 2026)
+
+**What was built.** `tools.py` is the agents' entire view of the world, through seven tools:
+- `list_fiscal_years`
+- `get_metric`: reported XBRL metrics plus the derived ratios
+- `get_metric_history`
+- `compute`: arithmetic restricted to + − × ÷ ** on named inputs, checked against an AST whitelist, with no `eval`
+- `get_price`
+- `get_filing_section`
+- `build_comps`
+
+Every result goes into a **ledger** and gets a source id (`S7`) carrying its provenance: concept, period and accession, or formula and input ids, or price date. Each tool has a JSON schema for model tool use. `get_filing_section` parses Items 1, 1A and 7 out of the 10-K text for all 10 companies. Eaton's MD&A is incorporated by reference to an exhibit, which is genuine.
+
+**Done when:** the comps table matches the metrics table exactly. `tests/test_tools.py` compares all 110 cells (10 companies × 11 metrics); all identical.
+
+**Three design choices**
+1. **One ledger, one id per fact.** The same fact always gets the same id, so a citation means one thing, and the fact-checker can look up exactly what a number claims to be.
+2. **Section parsing anchored to line starts.** The first version matched "see Item 1A. Risk Factors" cross-references and returned the wrong text. Headings are now matched only at the start of a line, and the longest span wins, which also skips the table of contents.
+3. **Peer medians are computed by code, not by the model.** A median is a calculation, so it goes through the ledger like any other number.
+
+**Interview questions**
+1. "Why not let the model call `eval` on a formula? What exactly does your `compute` allow?"
+2. "Why do the multiples use the latest fiscal year rather than LTM, and which companies does that distort?"
+3. "How would you know if a tool silently returned the wrong section of a 10-K?"
+
+## M3: Agents (19 Oct 2026)
+
+**What was built.**
+- **`llm.py`.** An adapter for Anthropic (official SDK, manual tool loop, server-side refusal fallbacks on Opus 5.5), OpenAI and Ollama. It has a **replay cache** keyed by a hash of the request (provider, model, effort, prompt, tools) and per-call token and cost tracking.
+- **Researcher.** It runs a fixed tool plan (rules mode) or a model tool-use loop (LLM mode); the comps table is always built by code.
+- **Writer.** It uses a deterministic template or the strong model. Either way, every number is a display string copied from the pack and followed by `[S#]`.
+
+`verity run VRT` produces `outputs/VRT/note.md` with references.
+
+**The no-key constraint.** This environment had no model API key, and I did not use the coding assistant's own credentials to run the pipeline. So:
+- **Rules mode.** It runs and is measured, with no model.
+- **LLM mode.** It is built and tested end to end with a scripted fake model (`tests/test_llm_mode.py`), but has not yet run against a real model.
+
+**Three design choices**
+1. **Two paths through the same pipeline (rules and LLM).** The rules path gives a deterministic reference and lets everything run with no key. The LLM path is measured against it.
+2. **Copy display strings, never numbers.** The Writer gets "$10,229.9m", not 10229900000. Rounding and unit choices happen once, in `fmt.py`, and the checker parses the same format back.
+3. **Fast model for research, strong model for writing.** Tool-calling to fetch facts is routine; writing ~600 words of clear prose under strict citation rules is harder.
+
+**Interview questions**
+1. "How does your replay cache stay valid when you change a prompt?"
+2. "Why keep the raw provider content blocks in the message history?"
+3. "What stops the Writer from citing `[S1]` next to a number that isn't S1?"
+
+## M4: Fact-checker loop (19 Oct 2026)
+
+**What was built.** `fact_checker.py`:
+- **Parser extraction.** It finds money, %, multiples and per-share values. Citations, FY labels, dates, form names and quoted text are masked out first.
+- **Independent re-fetch.** It uses its own ToolBox and ledger.
+- **Checks.** Tolerance (0.5% / 0.1pp, in `settings.yaml`), fiscal year, a keyword check that the words name the cited metric, and quote matching against the filing.
+- **Comps table.** Every cell is re-fetched.
+
+**Orchestrator.** It is a state machine (research → write → check → revise → check, at most 2 rounds) that writes a JSONL trace per run. The fact-check log shows every claim with status and source (`outputs/<T>/factcheck.md`). `verity run VRT --inject 4` plants known errors to show the loop working (`outputs/VRT-demo/`).
+
+**Three design choices**
+1. **Extraction by parser, not by model.** A model can skip a number; a regex cannot. In LLM mode the model is used only to flag *qualitative* statements that need a source.
+2. **The checker never trusts the Writer's ledger values.** It uses the citation only to learn what the number claims to be (company, metric, year), then fetches the truth itself.
+3. **Delete fabrications, don't patch them.** Found by the demo: an invented "organic orders" figure that borrowed a real citation was "corrected" to the cited value, which laundered it. Now a wrong number whose sentence doesn't name the cited metric is deleted.
+
+**Interview questions**
+1. "Your checker passed a fabricated sentence after 'fixing' it. How did you find that, and what did you change?"
+2. "Why is the tolerance absolute for ratios but relative for reported figures?"
+3. "What does your keyword check get wrong?"
+
+## M5: Evaluation (19 Oct 2026)
+
+**What was built.**
+- **`eval/catch_rate.py` (experiment 3).** 10 companies × 30 trials × 3 planted errors = 900, across 7 types, scored for recall, false alarms and residual errors after revision.
+- **`eval/extraction.py` (experiments 1–2).** 360 questions (10 × 12 metrics × 3 years), the tool-using agent against a no-tools baseline, with failure typing (wrong year, unit, concept, made-up, no answer).
+- **`eval/run_all.py`.** It writes `docs/results.md` and the charts.
+
+**Results.**
+- **Recall: 98.2%.** Value errors are caught 100% of the time; misdescribed true numbers 87.7%.
+- **False alarms: 0%.**
+- **Left after revision: 2.7%.**
+- **Experiments 1–2: pending an API key.**
+
+**Three design choices**
+1. **Make sure a planted error is an error.** The first run counted "misses" that were no-ops (0 perturbed is still 0; 0.4x rounds back to 0.4x). The injector now rejects them.
+2. **Score fixed as well as caught.** The residual measure counts an inserted sentence that survives revision even with a changed number. That exposed the laundering bug and the year-only fixes.
+3. **Report the weak type.** The headline number is less interesting than the type at 87.7%.
+
+**Interview questions**
+1. "Isn't 98% inflated because your writer is a template?"
+2. "What error type would you add next, and how would you generate it?"
+3. "How would you avoid overfitting the checker to your own injector?"
+
+## M6: App (19 Oct 2026)
+
+**What was built.** `app/streamlit_app.py`:
+- **Note tab.** The note on the left with every number underlined by status (✓ verified, ↺ corrected, ? unverifiable; icon and colour, never colour alone; hover for the source). The fact-check log, quote checks and revision rounds are on the right.
+- **Comps tab.** The peer table.
+- **Run trace tab.** Every event in the run.
+
+It reads the committed `outputs/`, so it runs from a fresh clone with no key. `tests/test_app.py` renders it headlessly.
+
+**Interview questions**
+1. "What would an analyst do differently because of the right-hand panel?"
+2. "Why show 'corrected' separately from 'verified'?"
+3. "How would this UI change for a compliance reviewer?"
+
+## M7: Polish (19 Oct 2026)
+
+**What was built.**
+- **README** with the headline results, an architecture diagram, how to run it and limitations.
+- **`docs/case-study.md`.**
+- **`docs/defence.md`** with 37 questions in 7 groups; the answers are yours.
+- **Governance memo** updated with the measured results and a fail on the zero-residual threshold.
+- **`make all`** reproduces metrics, experiments, demo and tests offline with no key. Verified on a fresh clone.
+
+**What's left for you**
+- [ ] Hand-check the 12 values in [`m1-review-sample.md`](m1-review-sample.md).
+- [ ] Decide on GE Vernova's cash (it includes restricted cash).
+- [ ] Add an API key and run `VERITY_PROVIDER=anthropic make eval notes`. This fills experiments 1–2 and LLM-mode notes, and the cache then makes it replayable for anyone.
+- [ ] Write your answers in `docs/defence.md`.
