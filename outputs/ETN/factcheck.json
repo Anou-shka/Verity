@@ -1,0 +1,737 @@
+{
+ "run_id": "ETN-rules-20261019T113110",
+ "ticker": "ETN",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 2.49
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "10.3%",
+   "kind": "pct",
+   "value": 0.10300000000000001,
+   "start": 333,
+   "end": 338,
+   "ref": "S2",
+   "ref_span": [
+    338,
+    343
+   ],
+   "sentence": "FY2025 revenue grew 10.3% [S2] to $27,448.0m [S1], from $24,878.0m [S16] in FY2024.",
+   "sentence_start": 313,
+   "year": 2025,
+   "year_span": [
+    313,
+    319
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.10330412412573353,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: ETN FY2025 revenue growth = 10.3% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$27,448.0m",
+   "kind": "money",
+   "value": 27448000000.0,
+   "start": 347,
+   "end": 357,
+   "ref": "S1",
+   "ref_span": [
+    357,
+    362
+   ],
+   "sentence": "FY2025 revenue grew 10.3% [S2] to $27,448.0m [S1], from $24,878.0m [S16] in FY2024.",
+   "sentence_start": 313,
+   "year": 2025,
+   "year_span": [
+    313,
+    319
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 27448000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: ETN FY2025 revenue = $27,448.0m (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$24,878.0m",
+   "kind": "money",
+   "value": 24878000000.0,
+   "start": 369,
+   "end": 379,
+   "ref": "S16",
+   "ref_span": [
+    379,
+    385
+   ],
+   "sentence": "FY2025 revenue grew 10.3% [S2] to $27,448.0m [S1], from $24,878.0m [S16] in FY2024.",
+   "sentence_start": 313,
+   "year": 2024,
+   "year_span": [
+    389,
+    395
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 24878000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: ETN FY2024 revenue = $24,878.0m (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$4,087.0m",
+   "kind": "money",
+   "value": 4087000000.0,
+   "start": 419,
+   "end": 428,
+   "ref": "S6",
+   "ref_span": [
+    428,
+    433
+   ],
+   "sentence": "FY2025 net income was $4,087.0m [S6], or diluted EPS of $10.45 [S7].",
+   "sentence_start": 397,
+   "year": 2025,
+   "year_span": [
+    397,
+    403
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4087000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: ETN FY2025 net income = $4,087.0m (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$10.45",
+   "kind": "per_share",
+   "value": 10.45,
+   "start": 453,
+   "end": 459,
+   "ref": "S7",
+   "ref_span": [
+    459,
+    464
+   ],
+   "sentence": "FY2025 net income was $4,087.0m [S6], or diluted EPS of $10.45 [S7].",
+   "sentence_start": 397,
+   "year": 2025,
+   "year_span": [
+    397,
+    403
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 10.45,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: ETN FY2025 diluted EPS = $10.45 (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$6,179.0m",
+   "kind": "money",
+   "value": 6179000000.0,
+   "start": 484,
+   "end": 493,
+   "ref": "S8",
+   "ref_span": [
+    493,
+    498
+   ],
+   "sentence": "FY2025 EBITDA was $6,179.0m [S8].",
+   "sentence_start": 466,
+   "year": 2025,
+   "year_span": [
+    466,
+    472
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 6179000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: ETN FY2025 EBITDA = $6,179.0m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "37.6%",
+   "kind": "pct",
+   "value": 0.376,
+   "start": 548,
+   "end": 553,
+   "ref": "S3",
+   "ref_span": [
+    553,
+    558
+   ],
+   "sentence": "FY2025 gross margin was 37.6% [S3], down from 38.2% [S17] in FY2024.",
+   "sentence_start": 524,
+   "year": 2025,
+   "year_span": [
+    524,
+    530
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.3758743806470417,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: ETN FY2025 gross margin = 37.6% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "38.2%",
+   "kind": "pct",
+   "value": 0.382,
+   "start": 570,
+   "end": 575,
+   "ref": "S17",
+   "ref_span": [
+    575,
+    581
+   ],
+   "sentence": "FY2025 gross margin was 37.6% [S3], down from 38.2% [S17] in FY2024.",
+   "sentence_start": 524,
+   "year": 2024,
+   "year_span": [
+    585,
+    591
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.38198408232173003,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: ETN FY2024 gross margin = 38.2% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "18.8%",
+   "kind": "pct",
+   "value": 0.188,
+   "start": 616,
+   "end": 621,
+   "ref": "S5",
+   "ref_span": [
+    621,
+    626
+   ],
+   "sentence": "FY2025 EBIT margin was 18.8% [S5], in line with 18.9% [S18] in FY2024.",
+   "sentence_start": 593,
+   "year": 2025,
+   "year_span": [
+    593,
+    599
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.18846546196444186,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: ETN FY2025 EBIT margin = 18.8% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "18.9%",
+   "kind": "pct",
+   "value": 0.18899999999999997,
+   "start": 641,
+   "end": 646,
+   "ref": "S18",
+   "ref_span": [
+    646,
+    652
+   ],
+   "sentence": "FY2025 EBIT margin was 18.8% [S5], in line with 18.9% [S18] in FY2024.",
+   "sentence_start": 593,
+   "year": 2024,
+   "year_span": [
+    656,
+    662
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.18876115443363614,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: ETN FY2024 EBIT margin = 18.9% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "15.4%",
+   "kind": "pct",
+   "value": 0.154,
+   "start": 680,
+   "end": 685,
+   "ref": "S9",
+   "ref_span": [
+    685,
+    690
+   ],
+   "sentence": "FY2025 ROIC was 15.4% [S9].",
+   "sentence_start": 664,
+   "year": 2025,
+   "year_span": [
+    664,
+    670
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1538427444465715,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: ETN FY2025 ROIC = 15.4% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$622.0m",
+   "kind": "money",
+   "value": 622000000.0,
+   "start": 770,
+   "end": 777,
+   "ref": "S11",
+   "ref_span": [
+    777,
+    783
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $622.0m [S11] against total debt of $9,895.0m [S12], giving net debt of $9,273.0m [S13].",
+   "sentence_start": 724,
+   "year": 2025,
+   "year_span": [
+    738,
+    744
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 622000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: ETN FY2025 cash = $622.0m (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$9,895.0m",
+   "kind": "money",
+   "value": 9895000000.0,
+   "start": 806,
+   "end": 815,
+   "ref": "S12",
+   "ref_span": [
+    815,
+    821
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $622.0m [S11] against total debt of $9,895.0m [S12], giving net debt of $9,273.0m [S13].",
+   "sentence_start": 724,
+   "year": 2025,
+   "year_span": [
+    738,
+    744
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 9895000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: ETN FY2025 total debt = $9,895.0m (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "$9,273.0m",
+   "kind": "money",
+   "value": 9273000000.0,
+   "start": 842,
+   "end": 851,
+   "ref": "S13",
+   "ref_span": [
+    851,
+    857
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $622.0m [S11] against total debt of $9,895.0m [S12], giving net debt of $9,273.0m [S13].",
+   "sentence_start": 724,
+   "year": 2025,
+   "year_span": [
+    738,
+    744
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 9273000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: ETN FY2025 net debt = $9,273.0m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$4,472.0m",
+   "kind": "money",
+   "value": 4472000000.0,
+   "start": 890,
+   "end": 899,
+   "ref": "S14",
+   "ref_span": [
+    899,
+    905
+   ],
+   "sentence": "FY2025 operating cash flow was $4,472.0m [S14] and capex was $919.0m [S15].",
+   "sentence_start": 859,
+   "year": 2025,
+   "year_span": [
+    859,
+    865
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4472000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: ETN FY2025 operating cash flow = $4,472.0m (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$919.0m",
+   "kind": "money",
+   "value": 919000000.0,
+   "start": 920,
+   "end": 927,
+   "ref": "S15",
+   "ref_span": [
+    927,
+    933
+   ],
+   "sentence": "FY2025 operating cash flow was $4,472.0m [S14] and capex was $919.0m [S15].",
+   "sentence_start": 859,
+   "year": 2025,
+   "year_span": [
+    859,
+    865
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 919000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: ETN FY2025 capex = $919.0m (xbrl; 0001551182-26-000007)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$391.25",
+   "kind": "per_share",
+   "value": 391.25,
+   "start": 983,
+   "end": 990,
+   "ref": "S19",
+   "ref_span": [
+    990,
+    996
+   ],
+   "sentence": "The shares closed at $391.25 [S19] on 2026-10-16.",
+   "sentence_start": 962,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 391.25,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: ETN share price = $391.25 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "26.1x",
+   "kind": "multiple",
+   "value": 26.1,
+   "start": 1073,
+   "end": 1078,
+   "ref": "S36",
+   "ref_span": [
+    1078,
+    1084
+   ],
+   "sentence": "On 2026-10-16 prices, Eaton trades at an FY2025 EV/EBITDA of 26.1x [S36], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 1012,
+   "year": 2025,
+   "year_span": [
+    1053,
+    1059
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 26.093947240653826,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S36: ETN FY2025 EV/EBITDA = 26.1x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "24.7x",
+   "kind": "multiple",
+   "value": 24.7,
+   "start": 1118,
+   "end": 1123,
+   "ref": "S126",
+   "ref_span": [
+    1123,
+    1130
+   ],
+   "sentence": "On 2026-10-16 prices, Eaton trades at an FY2025 EV/EBITDA of 26.1x [S36], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 1012,
+   "year": 2025,
+   "year_span": [
+    1053,
+    1059
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 24.72286338238756,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 24.7x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "5.9x",
+   "kind": "multiple",
+   "value": 5.9,
+   "start": 1155,
+   "end": 1159,
+   "ref": "S35",
+   "ref_span": [
+    1159,
+    1165
+   ],
+   "sentence": "Its FY2025 EV/Sales is 5.9x [S35] against a peer median of 4.9x [S127].",
+   "sentence_start": 1132,
+   "year": 2025,
+   "year_span": [
+    1136,
+    1142
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.874180268143398,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S35: ETN FY2025 EV/Sales = 5.9x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "4.9x",
+   "kind": "multiple",
+   "value": 4.9,
+   "start": 1191,
+   "end": 1195,
+   "ref": "S127",
+   "ref_span": [
+    1195,
+    1202
+   ],
+   "sentence": "Its FY2025 EV/Sales is 5.9x [S35] against a peer median of 4.9x [S127].",
+   "sentence_start": 1132,
+   "year": 2025,
+   "year_span": [
+    1136,
+    1142
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.869089325694708,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 4.9x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "37.4x",
+   "kind": "multiple",
+   "value": 37.4,
+   "start": 1222,
+   "end": 1227,
+   "ref": "S37",
+   "ref_span": [
+    1227,
+    1233
+   ],
+   "sentence": "Its FY2025 P/E is 37.4x [S37] against a peer median of 33.3x [S128].",
+   "sentence_start": 1204,
+   "year": 2025,
+   "year_span": [
+    1208,
+    1214
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 37.440191387559814,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S37: ETN FY2025 P/E = 37.4x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "33.3x",
+   "kind": "multiple",
+   "value": 33.3,
+   "start": 1259,
+   "end": 1264,
+   "ref": "S128",
+   "ref_span": [
+    1264,
+    1271
+   ],
+   "sentence": "Its FY2025 P/E is 37.4x [S37] against a peer median of 33.3x [S128].",
+   "sentence_start": 1204,
+   "year": 2025,
+   "year_span": [
+    1208,
+    1214
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 33.33916554508748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 33.3x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "18.8%",
+   "kind": "pct",
+   "value": 0.188,
+   "start": 1312,
+   "end": 1317,
+   "ref": "S5",
+   "ref_span": [
+    1317,
+    1322
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 18.8% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1273,
+   "year": 2025,
+   "year_span": [
+    1290,
+    1296
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.18846546196444186,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: ETN FY2025 EBIT margin = 18.8% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "15.8%",
+   "kind": "pct",
+   "value": 0.158,
+   "start": 1351,
+   "end": 1356,
+   "ref": "S129",
+   "ref_span": [
+    1356,
+    1363
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 18.8% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1273,
+   "year": 2025,
+   "year_span": [
+    1290,
+    1296
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.15843415273175618,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 15.8% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "Eaton Corporation plc (Eaton or the Company) is an intelligent power management company dedicated to protecting the environment and improving the quality of life for people everywhere.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001551182-26-000007"
+  },
+  {
+   "quote": "We are subject to risks relating to acquisitions, joint ventures and investments, and risks relating to the integration of acquired companies.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001551182-26-000007"
+  },
+  {
+   "quote": "Our operations depend on production facilities throughout the world, which subjects them to varying degrees of risk of disrupted production.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001551182-26-000007"
+  },
+  {
+   "quote": "Significant inflation or shortages of raw materials, energy, components, and/or labor, or similar challenges for our customers, could continue to adversely impact our results of operations.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001551182-26-000007"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

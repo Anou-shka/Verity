@@ -1,0 +1,3070 @@
+{
+ "ticker": "HUBB",
+ "company": "Hubbell",
+ "fiscal_year": 2025,
+ "mode": "rules",
+ "qualitative": [
+  {
+   "kind": "business",
+   "text": "We provide utility and electrical solutions that enable our customers to operate critical infrastructure reliably and efficiently, and we empower and energize communities through innovative solutions supporting energy infrastructure In Front of the Meter, on The Edge, and Behind the Meter.",
+   "source_id": "S20"
+  },
+  {
+   "kind": "risk",
+   "text": "Inflation and other unfavorable economic conditions may adversely affect our business results of operations and financial condition.",
+   "source_id": "S21"
+  },
+  {
+   "kind": "risk",
+   "text": "We operate in markets that are subject to competitive pressures that could affect selling prices or demand for our products.",
+   "source_id": "S21"
+  },
+  {
+   "kind": "risk",
+   "text": "Volatility in currency exchange rates may adversely affect our financial condition, results of operations and cash flows.",
+   "source_id": "S21"
+  }
+ ],
+ "comps": {
+  "as_of": "2026-10-16",
+  "metrics": [
+   "revenue",
+   "revenue_growth",
+   "gross_margin",
+   "ebit_margin",
+   "roic",
+   "net_debt",
+   "market_cap",
+   "ev",
+   "ev_sales",
+   "ev_ebitda",
+   "pe"
+  ],
+  "rows": [
+   {
+    "ticker": "VRT",
+    "company": "Vertiv",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 10229900000.0,
+      "display": "$10,229.9m",
+      "source_id": "S22"
+     },
+     "revenue_growth": {
+      "value": 0.2768541401432887,
+      "display": "27.7%",
+      "source_id": "S23"
+     },
+     "gross_margin": {
+      "value": 0.363170705480992,
+      "display": "36.3%",
+      "source_id": "S24"
+     },
+     "ebit_margin": {
+      "value": 0.1788580533534052,
+      "display": "17.9%",
+      "source_id": "S25"
+     },
+     "roic": {
+      "value": 0.3023452455006177,
+      "display": "30.2%",
+      "source_id": "S26"
+     },
+     "net_debt": {
+      "value": 1184600000.0,
+      "display": "$1,184.6m",
+      "source_id": "S27"
+     },
+     "market_cap": {
+      "value": 79469258670.65999,
+      "display": "$79,469.3m",
+      "source_id": "S28"
+     },
+     "ev": {
+      "value": 80653858670.65999,
+      "display": "$80,653.9m",
+      "source_id": "S29"
+     },
+     "ev_sales": {
+      "value": 7.884129724695255,
+      "display": "7.9x",
+      "source_id": "S30"
+     },
+     "ev_ebitda": {
+      "value": 37.71868244430622,
+      "display": "37.7x",
+      "source_id": "S31"
+     },
+     "pe": {
+      "value": 60.533724340175944,
+      "display": "60.5x",
+      "source_id": "S32"
+     }
+    }
+   },
+   {
+    "ticker": "ETN",
+    "company": "Eaton",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 27448000000.0,
+      "display": "$27,448.0m",
+      "source_id": "S33"
+     },
+     "revenue_growth": {
+      "value": 0.10330412412573353,
+      "display": "10.3%",
+      "source_id": "S34"
+     },
+     "gross_margin": {
+      "value": 0.3758743806470417,
+      "display": "37.6%",
+      "source_id": "S35"
+     },
+     "ebit_margin": {
+      "value": 0.18846546196444186,
+      "display": "18.8%",
+      "source_id": "S36"
+     },
+     "roic": {
+      "value": 0.1538427444465715,
+      "display": "15.4%",
+      "source_id": "S37"
+     },
+     "net_debt": {
+      "value": 9273000000.0,
+      "display": "$9,273.0m",
+      "source_id": "S38"
+     },
+     "market_cap": {
+      "value": 151961500000.0,
+      "display": "$151,961.5m",
+      "source_id": "S39"
+     },
+     "ev": {
+      "value": 161234500000.0,
+      "display": "$161,234.5m",
+      "source_id": "S40"
+     },
+     "ev_sales": {
+      "value": 5.874180268143398,
+      "display": "5.9x",
+      "source_id": "S41"
+     },
+     "ev_ebitda": {
+      "value": 26.093947240653826,
+      "display": "26.1x",
+      "source_id": "S42"
+     },
+     "pe": {
+      "value": 37.440191387559814,
+      "display": "37.4x",
+      "source_id": "S43"
+     }
+    }
+   },
+   {
+    "ticker": "NVT",
+    "company": "nVent",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 3893100000.0,
+      "display": "$3,893.1m",
+      "source_id": "S44"
+     },
+     "revenue_growth": {
+      "value": 0.2950666977146468,
+      "display": "29.5%",
+      "source_id": "S45"
+     },
+     "gross_margin": {
+      "value": 0.37735994451722277,
+      "display": "37.7%",
+      "source_id": "S46"
+     },
+     "ebit_margin": {
+      "value": 0.15843415273175618,
+      "display": "15.8%",
+      "source_id": "S47"
+     },
+     "roic": {
+      "value": 0.09318362069193471,
+      "display": "9.3%",
+      "source_id": "S48"
+     },
+     "net_debt": {
+      "value": 1322300000.0,
+      "display": "$1,322.3m",
+      "source_id": "S49"
+     },
+     "market_cap": {
+      "value": 22988683076.170002,
+      "display": "$22,988.7m",
+      "source_id": "S50"
+     },
+     "ev": {
+      "value": 24310983076.170002,
+      "display": "$24,311.0m",
+      "source_id": "S51"
+     },
+     "ev_sales": {
+      "value": 6.244633602057487,
+      "display": "6.2x",
+      "source_id": "S52"
+     },
+     "ev_ebitda": {
+      "value": 29.482152651188457,
+      "display": "29.5x",
+      "source_id": "S53"
+     },
+     "pe": {
+      "value": 32.95359628770302,
+      "display": "33.0x",
+      "source_id": "S54"
+     }
+    }
+   },
+   {
+    "ticker": "MOD",
+    "company": "Modine",
+    "fiscal_year": 2026,
+    "cells": {
+     "revenue": {
+      "value": 3181100000.0,
+      "display": "$3,181.1m",
+      "source_id": "S55"
+     },
+     "revenue_growth": {
+      "value": 0.2313141087671764,
+      "display": "23.1%",
+      "source_id": "S56"
+     },
+     "gross_margin": {
+      "value": 0.22982616076200058,
+      "display": "23.0%",
+      "source_id": "S57"
+     },
+     "ebit_margin": {
+      "value": 0.10763572349187388,
+      "display": "10.8%",
+      "source_id": "S58"
+     },
+     "roic": {
+      "value": 0.1648301920383915,
+      "display": "16.5%",
+      "source_id": "S59"
+     },
+     "net_debt": {
+      "value": 362800000.0,
+      "display": "$362.8m",
+      "source_id": "S60"
+     },
+     "market_cap": {
+      "value": 7906357712.880001,
+      "display": "$7,906.4m",
+      "source_id": "S61"
+     },
+     "ev": {
+      "value": 8269157712.880001,
+      "display": "$8,269.2m",
+      "source_id": "S62"
+     },
+     "ev_sales": {
+      "value": 2.599464874691145,
+      "display": "2.6x",
+      "source_id": "S63"
+     },
+     "ev_ebitda": {
+      "value": 19.590518154181478,
+      "display": "19.6x",
+      "source_id": "S64"
+     },
+     "pe": {
+      "value": 65.86725663716815,
+      "display": "65.9x",
+      "source_id": "S65"
+     }
+    }
+   },
+   {
+    "ticker": "HUBB",
+    "company": "Hubbell",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 5844600000.0,
+      "display": "$5,844.6m",
+      "source_id": "S1"
+     },
+     "revenue_growth": {
+      "value": 0.03839388824731271,
+      "display": "3.8%",
+      "source_id": "S2"
+     },
+     "gross_margin": {
+      "value": 0.35316360401053964,
+      "display": "35.3%",
+      "source_id": "S3"
+     },
+     "ebit_margin": {
+      "value": 0.20682339253327858,
+      "display": "20.7%",
+      "source_id": "S5"
+     },
+     "roic": {
+      "value": 0.18659482481331108,
+      "display": "18.7%",
+      "source_id": "S9"
+     },
+     "net_debt": {
+      "value": 1842900000.0,
+      "display": "$1,842.9m",
+      "source_id": "S13"
+     },
+     "market_cap": {
+      "value": 24365343374.7,
+      "display": "$24,365.3m",
+      "source_id": "S66"
+     },
+     "ev": {
+      "value": 26208243374.7,
+      "display": "$26,208.2m",
+      "source_id": "S67"
+     },
+     "ev_sales": {
+      "value": 4.484180846371009,
+      "display": "4.5x",
+      "source_id": "S68"
+     },
+     "ev_ebitda": {
+      "value": 18.523035815039933,
+      "display": "18.5x",
+      "source_id": "S69"
+     },
+     "pe": {
+      "value": 27.877871825876664,
+      "display": "27.9x",
+      "source_id": "S70"
+     }
+    }
+   },
+   {
+    "ticker": "GEV",
+    "company": "GE Vernova",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 38068000000.0,
+      "display": "$38,068.0m",
+      "source_id": "S71"
+     },
+     "revenue_growth": {
+      "value": 0.08968083583798481,
+      "display": "9.0%",
+      "source_id": "S72"
+     },
+     "gross_margin": {
+      "value": 0.19793527372071032,
+      "display": "19.8%",
+      "source_id": "S73"
+     },
+     "ebit_margin": {
+      "value": 0.03646106966481034,
+      "display": "3.6%",
+      "source_id": "S74"
+     },
+     "roic": {
+      "value": 0.5780284659989458,
+      "display": "57.8%",
+      "source_id": "S75"
+     },
+     "net_debt": {
+      "value": -8785000000.0,
+      "display": "-$8,785.0m",
+      "source_id": "S76"
+     },
+     "market_cap": {
+      "value": 245346494817.2,
+      "display": "$245,346.5m",
+      "source_id": "S77"
+     },
+     "ev": {
+      "value": 236561494817.2,
+      "display": "$236,561.5m",
+      "source_id": "S78"
+     },
+     "ev_sales": {
+      "value": 6.214182379352738,
+      "display": "6.2x",
+      "source_id": "S79"
+     },
+     "ev_ebitda": {
+      "value": 105.56068488049978,
+      "display": "105.6x",
+      "source_id": "S80"
+     },
+     "pe": {
+      "value": 52.07461842849067,
+      "display": "52.1x",
+      "source_id": "S81"
+     }
+    }
+   },
+   {
+    "ticker": "JCI",
+    "company": "Johnson Controls",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 23596000000.0,
+      "display": "$23,596.0m",
+      "source_id": "S82"
+     },
+     "revenue_growth": {
+      "value": 0.028058556988497685,
+      "display": "2.8%",
+      "source_id": "S83"
+     },
+     "gross_margin": {
+      "value": 0.3641295134768605,
+      "display": "36.4%",
+      "source_id": "S84"
+     },
+     "ebit_margin": {
+      "value": 0.09696558738769283,
+      "display": "9.7%",
+      "source_id": "S85"
+     },
+     "roic": {
+      "value": 0.08450455624279553,
+      "display": "8.5%",
+      "source_id": "S86"
+     },
+     "net_debt": {
+      "value": 9501000000.0,
+      "display": "$9,501.0m",
+      "source_id": "S87"
+     },
+     "market_cap": {
+      "value": 88753516768.41,
+      "display": "$88,753.5m",
+      "source_id": "S88"
+     },
+     "ev": {
+      "value": 98254516768.41,
+      "display": "$98,254.5m",
+      "source_id": "S89"
+     },
+     "ev_sales": {
+      "value": 4.164032749974996,
+      "display": "4.2x",
+      "source_id": "S90"
+     },
+     "ev_ebitda": {
+      "value": 31.162231769238822,
+      "display": "31.2x",
+      "source_id": "S91"
+     },
+     "pe": {
+      "value": 28.92047713717694,
+      "display": "28.9x",
+      "source_id": "S92"
+     }
+    }
+   },
+   {
+    "ticker": "TT",
+    "company": "Trane Technologies",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 21321900000.0,
+      "display": "$21,321.9m",
+      "source_id": "S93"
+     },
+     "revenue_growth": {
+      "value": 0.07479005151677076,
+      "display": "7.5%",
+      "source_id": "S94"
+     },
+     "gross_margin": {
+      "value": 0.3616094250512384,
+      "display": "36.2%",
+      "source_id": "S95"
+     },
+     "ebit_margin": {
+      "value": 0.18607159774691748,
+      "display": "18.6%",
+      "source_id": "S96"
+     },
+     "roic": {
+      "value": 0.2905559131417226,
+      "display": "29.1%",
+      "source_id": "S97"
+     },
+     "net_debt": {
+      "value": 2851800000.0,
+      "display": "$2,851.8m",
+      "source_id": "S98"
+     },
+     "market_cap": {
+      "value": 100966435693.53,
+      "display": "$100,966.4m",
+      "source_id": "S99"
+     },
+     "ev": {
+      "value": 103818235693.53,
+      "display": "$103,818.2m",
+      "source_id": "S100"
+     },
+     "ev_sales": {
+      "value": 4.869089325694708,
+      "display": "4.9x",
+      "source_id": "S101"
+     },
+     "ev_ebitda": {
+      "value": 23.90087614096968,
+      "display": "23.9x",
+      "source_id": "S102"
+     },
+     "pe": {
+      "value": 35.35362095531587,
+      "display": "35.4x",
+      "source_id": "S103"
+     }
+    }
+   },
+   {
+    "ticker": "SMCI",
+    "company": "Super Micro Computer",
+    "fiscal_year": 2026,
+    "cells": {
+     "revenue": {
+      "value": 39063072000.0,
+      "display": "$39,063.1m",
+      "source_id": "S104"
+     },
+     "revenue_growth": {
+      "value": 0.7778535103837869,
+      "display": "77.8%",
+      "source_id": "S105"
+     },
+     "gross_margin": {
+      "value": 0.10821604097086886,
+      "display": "10.8%",
+      "source_id": "S106"
+     },
+     "ebit_margin": {
+      "value": 0.07092340305442439,
+      "display": "7.1%",
+      "source_id": "S107"
+     },
+     "roic": {
+      "value": 0.3618588750914011,
+      "display": "36.2%",
+      "source_id": "S108"
+     },
+     "net_debt": {
+      "value": -3465326000.0,
+      "display": "-$3,465.3m",
+      "source_id": "S109"
+     },
+     "market_cap": {
+      "value": 20779815095.92,
+      "display": "$20,779.8m",
+      "source_id": "S110"
+     },
+     "ev": {
+      "value": 17314489095.92,
+      "display": "$17,314.5m",
+      "source_id": "S111"
+     },
+     "ev_sales": {
+      "value": 0.44324443033870964,
+      "display": "0.4x",
+      "source_id": "S112"
+     },
+     "ev_ebitda": {
+      "value": 6.132309172391858,
+      "display": "6.1x",
+      "source_id": "S113"
+     },
+     "pe": {
+      "value": 9.702453987730062,
+      "display": "9.7x",
+      "source_id": "S114"
+     }
+    }
+   },
+   {
+    "ticker": "POWL",
+    "company": "Powell Industries",
+    "fiscal_year": 2025,
+    "cells": {
+     "revenue": {
+      "value": 1104318000.0,
+      "display": "$1,104.3m",
+      "source_id": "S115"
+     },
+     "revenue_growth": {
+      "value": 0.09083958607446396,
+      "display": "9.1%",
+      "source_id": "S116"
+     },
+     "gross_margin": {
+      "value": 0.293738760031078,
+      "display": "29.4%",
+      "source_id": "S117"
+     },
+     "ebit_margin": {
+      "value": 0.19728013126653735,
+      "display": "19.7%",
+      "source_id": "S118"
+     },
+     "roic": {
+      "value": 0.9425212670371333,
+      "display": "94.3%",
+      "source_id": "S119"
+     },
+     "net_debt": {
+      "value": -450739000.0,
+      "display": "-$450.7m",
+      "source_id": "S120"
+     },
+     "market_cap": {
+      "value": 6016473618.959999,
+      "display": "$6,016.5m",
+      "source_id": "S121"
+     },
+     "ev": {
+      "value": 5565734618.959999,
+      "display": "$5,565.7m",
+      "source_id": "S122"
+     },
+     "ev_sales": {
+      "value": 5.039974553489121,
+      "display": "5.0x",
+      "source_id": "S123"
+     },
+     "ev_ebitda": {
+      "value": 24.72286338238756,
+      "display": "24.7x",
+      "source_id": "S124"
+     },
+     "pe": {
+      "value": 33.33916554508748,
+      "display": "33.3x",
+      "source_id": "S125"
+     }
+    }
+   }
+  ]
+ },
+ "peer_medians": {
+  "ev_ebitda": "S126",
+  "ev_sales": "S127",
+  "pe": "S128",
+  "ebit_margin": "S129",
+  "revenue_growth": "S130"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 5844600000.0,
+   "unit": "USD",
+   "display": "$5,844.6m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S2",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.03839388824731271,
+   "unit": "ratio",
+   "display": "3.8%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 5844600000.0,
+     "revenue_prior_year": 5628500000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S3",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.35316360401053964,
+   "unit": "ratio",
+   "display": "35.3%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 2064100000.0,
+     "revenue": 5844600000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S4",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "operating_income",
+   "fiscal_year": 2025,
+   "value": 1208800000.0,
+   "unit": "USD",
+   "display": "$1,208.8m",
+   "label": "operating income (EBIT)",
+   "detail": {
+    "concept": "OperatingIncomeLoss",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S5",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.20682339253327858,
+   "unit": "ratio",
+   "display": "20.7%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 1208800000.0,
+     "revenue": 5844600000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S6",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "net_income",
+   "fiscal_year": 2025,
+   "value": 887100000.0,
+   "unit": "USD",
+   "display": "$887.1m",
+   "label": "net income",
+   "detail": {
+    "concept": "NetIncomeLoss",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S7",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "eps_diluted",
+   "fiscal_year": 2025,
+   "value": 16.54,
+   "unit": "USD/shares",
+   "display": "$16.54",
+   "label": "diluted EPS",
+   "detail": {
+    "concept": "EarningsPerShareDiluted",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S8",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "ebitda",
+   "fiscal_year": 2025,
+   "value": 1414900000.0,
+   "unit": "USD",
+   "display": "$1,414.9m",
+   "label": "EBITDA",
+   "detail": {
+    "formula": "operating_income + d_and_a",
+    "inputs": {
+     "operating_income": 1208800000.0,
+     "d_and_a": 206100000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S9",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.18659482481331108,
+   "unit": "ratio",
+   "display": "18.7%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 1208800000.0,
+     "tax_rate": 0.2030202841569118,
+     "invested_capital": 5690800000.0,
+     "invested_capital_prior_year": 4635200000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S10",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "roe",
+   "fiscal_year": 2025,
+   "value": 0.24491655278088376,
+   "unit": "ratio",
+   "display": "24.5%",
+   "label": "ROE",
+   "detail": {
+    "formula": "net_income / average(total_equity, total_equity_prior_year)",
+    "inputs": {
+     "net_income": 887100000.0,
+     "total_equity": 3847900000.0,
+     "total_equity_prior_year": 3396200000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S11",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "cash",
+   "fiscal_year": 2025,
+   "value": 482500000.0,
+   "unit": "USD",
+   "display": "$482.5m",
+   "label": "cash",
+   "detail": {
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period": "2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S12",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "total_debt",
+   "fiscal_year": 2025,
+   "value": 2325400000.0,
+   "unit": "USD",
+   "display": "$2,325.4m",
+   "label": "total debt",
+   "detail": {
+    "concept": "LongTermDebtNoncurrent + DebtCurrent",
+    "period": "2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S13",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": 1842900000.0,
+   "unit": "USD",
+   "display": "$1,842.9m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 2325400000.0,
+     "cash": 482500000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S14",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "operating_cash_flow",
+   "fiscal_year": 2025,
+   "value": 1029800000.0,
+   "unit": "USD",
+   "display": "$1,029.8m",
+   "label": "operating cash flow",
+   "detail": {
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S15",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "capex",
+   "fiscal_year": 2025,
+   "value": 155100000.0,
+   "unit": "USD",
+   "display": "$155.1m",
+   "label": "capex",
+   "detail": {
+    "concept": "PaymentsToAcquireProductiveAssets",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S16",
+   "kind": "xbrl",
+   "ticker": "HUBB",
+   "metric": "revenue",
+   "fiscal_year": 2024,
+   "value": 5628500000.0,
+   "unit": "USD",
+   "display": "$5,628.5m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2024-01-01..2024-12-31",
+    "accession": "0001628280-26-007500",
+    "filed": "2026-02-12",
+    "note": ""
+   }
+  },
+  {
+   "id": "S17",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "gross_margin",
+   "fiscal_year": 2024,
+   "value": 0.33856267211512836,
+   "unit": "ratio",
+   "display": "33.9%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 1905600000.0,
+     "revenue": 5628500000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S18",
+   "kind": "derived",
+   "ticker": "HUBB",
+   "metric": "ebit_margin",
+   "fiscal_year": 2024,
+   "value": 0.19420804832548635,
+   "unit": "ratio",
+   "display": "19.4%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 1093100000.0,
+     "revenue": 5628500000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S19",
+   "kind": "price",
+   "ticker": "HUBB",
+   "metric": "price",
+   "fiscal_year": null,
+   "value": 461.1,
+   "unit": "USD/shares",
+   "display": "$461.10",
+   "label": "share price",
+   "detail": {
+    "as_of": "2026-10-16",
+    "source": "Yahoo Finance via yfinance (Close, auto_adjust=False)"
+   }
+  },
+  {
+   "id": "S20",
+   "kind": "filing",
+   "ticker": "HUBB",
+   "metric": null,
+   "fiscal_year": null,
+   "value": null,
+   "unit": null,
+   "display": "",
+   "label": "10-K business",
+   "detail": {
+    "section": "business",
+    "accession": "0001628280-26-007500",
+    "url": "https://www.sec.gov/Archives/edgar/data/48898/000162828026007500/hubb-20251231.htm",
+    "report_date": "2025-12-31"
+   }
+  },
+  {
+   "id": "S21",
+   "kind": "filing",
+   "ticker": "HUBB",
+   "metric": null,
+   "fiscal_year": null,
+   "value": null,
+   "unit": null,
+   "display": "",
+   "label": "10-K risk_factors",
+   "detail": {
+    "section": "risk_factors",
+    "accession": "0001628280-26-007500",
+    "url": "https://www.sec.gov/Archives/edgar/data/48898/000162828026007500/hubb-20251231.htm",
+    "report_date": "2025-12-31"
+   }
+  },
+  {
+   "id": "S22",
+   "kind": "xbrl",
+   "ticker": "VRT",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 10229900000.0,
+   "unit": "USD",
+   "display": "$10,229.9m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001674101-26-000008",
+    "filed": "2026-02-13",
+    "note": ""
+   }
+  },
+  {
+   "id": "S23",
+   "kind": "derived",
+   "ticker": "VRT",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.2768541401432887,
+   "unit": "ratio",
+   "display": "27.7%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 10229900000.0,
+     "revenue_prior_year": 8011800000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S24",
+   "kind": "derived",
+   "ticker": "VRT",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.363170705480992,
+   "unit": "ratio",
+   "display": "36.3%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 3715200000.0,
+     "revenue": 10229900000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S25",
+   "kind": "derived",
+   "ticker": "VRT",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.1788580533534052,
+   "unit": "ratio",
+   "display": "17.9%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 1829700000.0,
+     "revenue": 10229900000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S26",
+   "kind": "derived",
+   "ticker": "VRT",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.3023452455006177,
+   "unit": "ratio",
+   "display": "30.2%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 1829700000.0,
+     "tax_rate": 0.234858487858086,
+     "invested_capital": 5125900000.0,
+     "invested_capital_prior_year": 4134900000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S27",
+   "kind": "derived",
+   "ticker": "VRT",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": 1184600000.0,
+   "unit": "USD",
+   "display": "$1,184.6m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 2913000000.0,
+     "cash": 1728400000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S28",
+   "kind": "valuation",
+   "ticker": "VRT",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 79469258670.65999,
+   "unit": "USD",
+   "display": "$79,469.3m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001628280-26-050609",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S29",
+   "kind": "valuation",
+   "ticker": "VRT",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 80653858670.65999,
+   "unit": "USD",
+   "display": "$80,653.9m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S30",
+   "kind": "valuation",
+   "ticker": "VRT",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 7.884129724695255,
+   "unit": "x",
+   "display": "7.9x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S31",
+   "kind": "valuation",
+   "ticker": "VRT",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 37.71868244430622,
+   "unit": "x",
+   "display": "37.7x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S32",
+   "kind": "valuation",
+   "ticker": "VRT",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 60.533724340175944,
+   "unit": "x",
+   "display": "60.5x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S33",
+   "kind": "xbrl",
+   "ticker": "ETN",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 27448000000.0,
+   "unit": "USD",
+   "display": "$27,448.0m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001551182-26-000007",
+    "filed": "2026-02-26",
+    "note": ""
+   }
+  },
+  {
+   "id": "S34",
+   "kind": "derived",
+   "ticker": "ETN",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.10330412412573353,
+   "unit": "ratio",
+   "display": "10.3%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 27448000000.0,
+     "revenue_prior_year": 24878000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S35",
+   "kind": "derived",
+   "ticker": "ETN",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.3758743806470417,
+   "unit": "ratio",
+   "display": "37.6%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 10317000000.0,
+     "revenue": 27448000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S36",
+   "kind": "derived",
+   "ticker": "ETN",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.18846546196444186,
+   "unit": "ratio",
+   "display": "18.8%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 5173000000.0,
+     "revenue": 27448000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S37",
+   "kind": "derived",
+   "ticker": "ETN",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.1538427444465715,
+   "unit": "ratio",
+   "display": "15.4%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 5173000000.0,
+     "tax_rate": 0.1705190592051906,
+     "invested_capital": 28698000000.0,
+     "invested_capital_prior_year": 27085000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S38",
+   "kind": "derived",
+   "ticker": "ETN",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": 9273000000.0,
+   "unit": "USD",
+   "display": "$9,273.0m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 9895000000.0,
+     "cash": 622000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S39",
+   "kind": "valuation",
+   "ticker": "ETN",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 151961500000.0,
+   "unit": "USD",
+   "display": "$151,961.5m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001551182-26-000030",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S40",
+   "kind": "valuation",
+   "ticker": "ETN",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 161234500000.0,
+   "unit": "USD",
+   "display": "$161,234.5m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S41",
+   "kind": "valuation",
+   "ticker": "ETN",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 5.874180268143398,
+   "unit": "x",
+   "display": "5.9x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S42",
+   "kind": "valuation",
+   "ticker": "ETN",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 26.093947240653826,
+   "unit": "x",
+   "display": "26.1x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S43",
+   "kind": "valuation",
+   "ticker": "ETN",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 37.440191387559814,
+   "unit": "x",
+   "display": "37.4x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S44",
+   "kind": "xbrl",
+   "ticker": "NVT",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 3893100000.0,
+   "unit": "USD",
+   "display": "$3,893.1m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-008608",
+    "filed": "2026-02-17",
+    "note": ""
+   }
+  },
+  {
+   "id": "S45",
+   "kind": "derived",
+   "ticker": "NVT",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.2950666977146468,
+   "unit": "ratio",
+   "display": "29.5%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 3893100000.0,
+     "revenue_prior_year": 3006100000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S46",
+   "kind": "derived",
+   "ticker": "NVT",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.37735994451722277,
+   "unit": "ratio",
+   "display": "37.7%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 1469100000.0,
+     "revenue": 3893100000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S47",
+   "kind": "derived",
+   "ticker": "NVT",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.15843415273175618,
+   "unit": "ratio",
+   "display": "15.8%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 616800000.0,
+     "revenue": 3893100000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S48",
+   "kind": "derived",
+   "ticker": "NVT",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.09318362069193471,
+   "unit": "ratio",
+   "display": "9.3%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 616800000.0,
+     "tax_rate": 0.22090909090909092,
+     "invested_capital": 5052500000.0,
+     "invested_capital_prior_year": 5261400000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S49",
+   "kind": "derived",
+   "ticker": "NVT",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": 1322300000.0,
+   "unit": "USD",
+   "display": "$1,322.3m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 1559800000.0,
+     "cash": 237500000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S50",
+   "kind": "valuation",
+   "ticker": "NVT",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 22988683076.170002,
+   "unit": "USD",
+   "display": "$22,988.7m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001628280-26-051428",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S51",
+   "kind": "valuation",
+   "ticker": "NVT",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 24310983076.170002,
+   "unit": "USD",
+   "display": "$24,311.0m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S52",
+   "kind": "valuation",
+   "ticker": "NVT",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 6.244633602057487,
+   "unit": "x",
+   "display": "6.2x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S53",
+   "kind": "valuation",
+   "ticker": "NVT",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 29.482152651188457,
+   "unit": "x",
+   "display": "29.5x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S54",
+   "kind": "valuation",
+   "ticker": "NVT",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 32.95359628770302,
+   "unit": "x",
+   "display": "33.0x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S55",
+   "kind": "xbrl",
+   "ticker": "MOD",
+   "metric": "revenue",
+   "fiscal_year": 2026,
+   "value": 3181100000.0,
+   "unit": "USD",
+   "display": "$3,181.1m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-04-01..2026-03-31",
+    "accession": "0001104659-26-066795",
+    "filed": "2026-05-27",
+    "note": ""
+   }
+  },
+  {
+   "id": "S56",
+   "kind": "derived",
+   "ticker": "MOD",
+   "metric": "revenue_growth",
+   "fiscal_year": 2026,
+   "value": 0.2313141087671764,
+   "unit": "ratio",
+   "display": "23.1%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 3181100000.0,
+     "revenue_prior_year": 2583500000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S57",
+   "kind": "derived",
+   "ticker": "MOD",
+   "metric": "gross_margin",
+   "fiscal_year": 2026,
+   "value": 0.22982616076200058,
+   "unit": "ratio",
+   "display": "23.0%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 731100000.0,
+     "revenue": 3181100000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S58",
+   "kind": "derived",
+   "ticker": "MOD",
+   "metric": "ebit_margin",
+   "fiscal_year": 2026,
+   "value": 0.10763572349187388,
+   "unit": "ratio",
+   "display": "10.8%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 342400000.0,
+     "revenue": 3181100000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S59",
+   "kind": "derived",
+   "ticker": "MOD",
+   "metric": "roic",
+   "fiscal_year": 2026,
+   "value": 0.1648301920383915,
+   "unit": "ratio",
+   "display": "16.5%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 342400000.0,
+     "tax_rate": 0.3388739946380697,
+     "invested_capital": 1557300000.0,
+     "invested_capital_prior_year": 1189400000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S60",
+   "kind": "derived",
+   "ticker": "MOD",
+   "metric": "net_debt",
+   "fiscal_year": 2026,
+   "value": 362800000.0,
+   "unit": "USD",
+   "display": "$362.8m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 436300000.0,
+     "cash": 73500000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S61",
+   "kind": "valuation",
+   "ticker": "MOD",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 7906357712.880001,
+   "unit": "USD",
+   "display": "$7,906.4m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001104659-26-088569",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S62",
+   "kind": "valuation",
+   "ticker": "MOD",
+   "metric": "ev",
+   "fiscal_year": 2026,
+   "value": 8269157712.880001,
+   "unit": "USD",
+   "display": "$8,269.2m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S63",
+   "kind": "valuation",
+   "ticker": "MOD",
+   "metric": "ev_sales",
+   "fiscal_year": 2026,
+   "value": 2.599464874691145,
+   "unit": "x",
+   "display": "2.6x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S64",
+   "kind": "valuation",
+   "ticker": "MOD",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2026,
+   "value": 19.590518154181478,
+   "unit": "x",
+   "display": "19.6x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S65",
+   "kind": "valuation",
+   "ticker": "MOD",
+   "metric": "pe",
+   "fiscal_year": 2026,
+   "value": 65.86725663716815,
+   "unit": "x",
+   "display": "65.9x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S66",
+   "kind": "valuation",
+   "ticker": "HUBB",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 24365343374.7,
+   "unit": "USD",
+   "display": "$24,365.3m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001628280-26-029110",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S67",
+   "kind": "valuation",
+   "ticker": "HUBB",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 26208243374.7,
+   "unit": "USD",
+   "display": "$26,208.2m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S68",
+   "kind": "valuation",
+   "ticker": "HUBB",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 4.484180846371009,
+   "unit": "x",
+   "display": "4.5x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S69",
+   "kind": "valuation",
+   "ticker": "HUBB",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 18.523035815039933,
+   "unit": "x",
+   "display": "18.5x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S70",
+   "kind": "valuation",
+   "ticker": "HUBB",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 27.877871825876664,
+   "unit": "x",
+   "display": "27.9x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S71",
+   "kind": "xbrl",
+   "ticker": "GEV",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 38068000000.0,
+   "unit": "USD",
+   "display": "$38,068.0m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001996810-26-000015",
+    "filed": "2026-01-29",
+    "note": ""
+   }
+  },
+  {
+   "id": "S72",
+   "kind": "derived",
+   "ticker": "GEV",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.08968083583798481,
+   "unit": "ratio",
+   "display": "9.0%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 38068000000.0,
+     "revenue_prior_year": 34935000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S73",
+   "kind": "derived",
+   "ticker": "GEV",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.19793527372071032,
+   "unit": "ratio",
+   "display": "19.8%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 7535000000.0,
+     "revenue": 38068000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S74",
+   "kind": "derived",
+   "ticker": "GEV",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.03646106966481034,
+   "unit": "ratio",
+   "display": "3.6%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 1388000000.0,
+     "revenue": 38068000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S75",
+   "kind": "derived",
+   "ticker": "GEV",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.5780284659989458,
+   "unit": "ratio",
+   "display": "57.8%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 1388000000.0,
+     "tax_rate": 0.21,
+     "invested_capital": 2393000000.0,
+     "invested_capital_prior_year": 1401000000.0
+    },
+    "note": "statutory tax rate used (effective rate not meaningful)"
+   }
+  },
+  {
+   "id": "S76",
+   "kind": "derived",
+   "ticker": "GEV",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": -8785000000.0,
+   "unit": "USD",
+   "display": "-$8,785.0m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 63000000.0,
+     "cash": 8848000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S77",
+   "kind": "valuation",
+   "ticker": "GEV",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 245346494817.2,
+   "unit": "USD",
+   "display": "$245,346.5m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001996810-26-000148",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S78",
+   "kind": "valuation",
+   "ticker": "GEV",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 236561494817.2,
+   "unit": "USD",
+   "display": "$236,561.5m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S79",
+   "kind": "valuation",
+   "ticker": "GEV",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 6.214182379352738,
+   "unit": "x",
+   "display": "6.2x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S80",
+   "kind": "valuation",
+   "ticker": "GEV",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 105.56068488049978,
+   "unit": "x",
+   "display": "105.6x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S81",
+   "kind": "valuation",
+   "ticker": "GEV",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 52.07461842849067,
+   "unit": "x",
+   "display": "52.1x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S82",
+   "kind": "xbrl",
+   "ticker": "JCI",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 23596000000.0,
+   "unit": "USD",
+   "display": "$23,596.0m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2024-10-01..2025-09-30",
+    "accession": "0000833444-25-000097",
+    "filed": "2025-11-14",
+    "note": ""
+   }
+  },
+  {
+   "id": "S83",
+   "kind": "derived",
+   "ticker": "JCI",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.028058556988497685,
+   "unit": "ratio",
+   "display": "2.8%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 23596000000.0,
+     "revenue_prior_year": 22952000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S84",
+   "kind": "derived",
+   "ticker": "JCI",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.3641295134768605,
+   "unit": "ratio",
+   "display": "36.4%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 8592000000.0,
+     "revenue": 23596000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S85",
+   "kind": "derived",
+   "ticker": "JCI",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.09696558738769283,
+   "unit": "ratio",
+   "display": "9.7%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 2288000000.0,
+     "revenue": 23596000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S86",
+   "kind": "derived",
+   "ticker": "JCI",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.08450455624279553,
+   "unit": "ratio",
+   "display": "8.5%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 2288000000.0,
+     "tax_rate": 0.1244286439817166,
+     "invested_capital": 22428000000.0,
+     "invested_capital_prior_year": 24985000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S87",
+   "kind": "derived",
+   "ticker": "JCI",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": 9501000000.0,
+   "unit": "USD",
+   "display": "$9,501.0m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 9880000000.0,
+     "cash": 379000000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S88",
+   "kind": "valuation",
+   "ticker": "JCI",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 88753516768.41,
+   "unit": "USD",
+   "display": "$88,753.5m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0000833444-26-000050",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S89",
+   "kind": "valuation",
+   "ticker": "JCI",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 98254516768.41,
+   "unit": "USD",
+   "display": "$98,254.5m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S90",
+   "kind": "valuation",
+   "ticker": "JCI",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 4.164032749974996,
+   "unit": "x",
+   "display": "4.2x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S91",
+   "kind": "valuation",
+   "ticker": "JCI",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 31.162231769238822,
+   "unit": "x",
+   "display": "31.2x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S92",
+   "kind": "valuation",
+   "ticker": "JCI",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 28.92047713717694,
+   "unit": "x",
+   "display": "28.9x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S93",
+   "kind": "xbrl",
+   "ticker": "TT",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 21321900000.0,
+   "unit": "USD",
+   "display": "$21,321.9m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-01-01..2025-12-31",
+    "accession": "0001628280-26-005731",
+    "filed": "2026-02-05",
+    "note": ""
+   }
+  },
+  {
+   "id": "S94",
+   "kind": "derived",
+   "ticker": "TT",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.07479005151677076,
+   "unit": "ratio",
+   "display": "7.5%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 21321900000.0,
+     "revenue_prior_year": 19838200000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S95",
+   "kind": "derived",
+   "ticker": "TT",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.3616094250512384,
+   "unit": "ratio",
+   "display": "36.2%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 7710200000.0,
+     "revenue": 21321900000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S96",
+   "kind": "derived",
+   "ticker": "TT",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.18607159774691748,
+   "unit": "ratio",
+   "display": "18.6%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 3967400000.0,
+     "revenue": 21321900000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S97",
+   "kind": "derived",
+   "ticker": "TT",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.2905559131417226,
+   "unit": "ratio",
+   "display": "29.1%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 3967400000.0,
+     "tax_rate": 0.1918936551949111,
+     "invested_capital": 11431000000.0,
+     "invested_capital_prior_year": 10637600000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S98",
+   "kind": "derived",
+   "ticker": "TT",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": 2851800000.0,
+   "unit": "USD",
+   "display": "$2,851.8m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 4615100000.0,
+     "cash": 1763300000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S99",
+   "kind": "valuation",
+   "ticker": "TT",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 100966435693.53,
+   "unit": "USD",
+   "display": "$100,966.4m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001628280-26-051117",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S100",
+   "kind": "valuation",
+   "ticker": "TT",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 103818235693.53,
+   "unit": "USD",
+   "display": "$103,818.2m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S101",
+   "kind": "valuation",
+   "ticker": "TT",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 4.869089325694708,
+   "unit": "x",
+   "display": "4.9x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S102",
+   "kind": "valuation",
+   "ticker": "TT",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 23.90087614096968,
+   "unit": "x",
+   "display": "23.9x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S103",
+   "kind": "valuation",
+   "ticker": "TT",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 35.35362095531587,
+   "unit": "x",
+   "display": "35.4x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S104",
+   "kind": "xbrl",
+   "ticker": "SMCI",
+   "metric": "revenue",
+   "fiscal_year": 2026,
+   "value": 39063072000.0,
+   "unit": "USD",
+   "display": "$39,063.1m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2025-07-01..2026-06-30",
+    "accession": "0001375365-26-000022",
+    "filed": "2026-08-31",
+    "note": ""
+   }
+  },
+  {
+   "id": "S105",
+   "kind": "derived",
+   "ticker": "SMCI",
+   "metric": "revenue_growth",
+   "fiscal_year": 2026,
+   "value": 0.7778535103837869,
+   "unit": "ratio",
+   "display": "77.8%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 39063072000.0,
+     "revenue_prior_year": 21972042000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S106",
+   "kind": "derived",
+   "ticker": "SMCI",
+   "metric": "gross_margin",
+   "fiscal_year": 2026,
+   "value": 0.10821604097086886,
+   "unit": "ratio",
+   "display": "10.8%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 4227251000.0,
+     "revenue": 39063072000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S107",
+   "kind": "derived",
+   "ticker": "SMCI",
+   "metric": "ebit_margin",
+   "fiscal_year": 2026,
+   "value": 0.07092340305442439,
+   "unit": "ratio",
+   "display": "7.1%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 2770486000.0,
+     "revenue": 39063072000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S108",
+   "kind": "derived",
+   "ticker": "SMCI",
+   "metric": "roic",
+   "fiscal_year": 2026,
+   "value": 0.3618588750914011,
+   "unit": "ratio",
+   "display": "36.2%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 2770486000.0,
+     "tax_rate": 0.19945369100952795,
+     "invested_capital": 11014126000.0,
+     "invested_capital_prior_year": 1244257000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S109",
+   "kind": "derived",
+   "ticker": "SMCI",
+   "metric": "net_debt",
+   "fiscal_year": 2026,
+   "value": -3465326000.0,
+   "unit": "USD",
+   "display": "-$3,465.3m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 4056148000.0,
+     "cash": 7521474000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S110",
+   "kind": "valuation",
+   "ticker": "SMCI",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 20779815095.92,
+   "unit": "USD",
+   "display": "$20,779.8m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0001375365-26-000022",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S111",
+   "kind": "valuation",
+   "ticker": "SMCI",
+   "metric": "ev",
+   "fiscal_year": 2026,
+   "value": 17314489095.92,
+   "unit": "USD",
+   "display": "$17,314.5m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S112",
+   "kind": "valuation",
+   "ticker": "SMCI",
+   "metric": "ev_sales",
+   "fiscal_year": 2026,
+   "value": 0.44324443033870964,
+   "unit": "x",
+   "display": "0.4x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S113",
+   "kind": "valuation",
+   "ticker": "SMCI",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2026,
+   "value": 6.132309172391858,
+   "unit": "x",
+   "display": "6.1x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S114",
+   "kind": "valuation",
+   "ticker": "SMCI",
+   "metric": "pe",
+   "fiscal_year": 2026,
+   "value": 9.702453987730062,
+   "unit": "x",
+   "display": "9.7x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": ""
+   }
+  },
+  {
+   "id": "S115",
+   "kind": "xbrl",
+   "ticker": "POWL",
+   "metric": "revenue",
+   "fiscal_year": 2025,
+   "value": 1104318000.0,
+   "unit": "USD",
+   "display": "$1,104.3m",
+   "label": "revenue",
+   "detail": {
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period": "2024-10-01..2025-09-30",
+    "accession": "0000080420-25-000152",
+    "filed": "2025-11-19",
+    "note": ""
+   }
+  },
+  {
+   "id": "S116",
+   "kind": "derived",
+   "ticker": "POWL",
+   "metric": "revenue_growth",
+   "fiscal_year": 2025,
+   "value": 0.09083958607446396,
+   "unit": "ratio",
+   "display": "9.1%",
+   "label": "revenue growth",
+   "detail": {
+    "formula": "revenue / revenue_prior_year - 1",
+    "inputs": {
+     "revenue": 1104318000.0,
+     "revenue_prior_year": 1012356000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S117",
+   "kind": "derived",
+   "ticker": "POWL",
+   "metric": "gross_margin",
+   "fiscal_year": 2025,
+   "value": 0.293738760031078,
+   "unit": "ratio",
+   "display": "29.4%",
+   "label": "gross margin",
+   "detail": {
+    "formula": "gross_profit / revenue",
+    "inputs": {
+     "gross_profit": 324381000.0,
+     "revenue": 1104318000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S118",
+   "kind": "derived",
+   "ticker": "POWL",
+   "metric": "ebit_margin",
+   "fiscal_year": 2025,
+   "value": 0.19728013126653735,
+   "unit": "ratio",
+   "display": "19.7%",
+   "label": "EBIT margin",
+   "detail": {
+    "formula": "operating_income / revenue",
+    "inputs": {
+     "operating_income": 217860000.0,
+     "revenue": 1104318000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S119",
+   "kind": "derived",
+   "ticker": "POWL",
+   "metric": "roic",
+   "fiscal_year": 2025,
+   "value": 0.9425212670371333,
+   "unit": "ratio",
+   "display": "94.3%",
+   "label": "ROIC",
+   "detail": {
+    "formula": "operating_income * (1 - tax_rate) / average(equity + debt - cash)",
+    "inputs": {
+     "operating_income": 217860000.0,
+     "tax_rate": 0.22608863198458573,
+     "invested_capital": 190031000.0,
+     "invested_capital_prior_year": 167742000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S120",
+   "kind": "derived",
+   "ticker": "POWL",
+   "metric": "net_debt",
+   "fiscal_year": 2025,
+   "value": -450739000.0,
+   "unit": "USD",
+   "display": "-$450.7m",
+   "label": "net debt",
+   "detail": {
+    "formula": "total_debt - cash",
+    "inputs": {
+     "total_debt": 0.0,
+     "cash": 450739000.0
+    },
+    "note": ""
+   }
+  },
+  {
+   "id": "S121",
+   "kind": "valuation",
+   "ticker": "POWL",
+   "metric": "market_cap",
+   "fiscal_year": null,
+   "value": 6016473618.959999,
+   "unit": "USD",
+   "display": "$6,016.5m",
+   "label": "market cap",
+   "detail": {
+    "formula": "price * shares_outstanding",
+    "as_of": "2026-10-16",
+    "accession": "0000080420-26-000107",
+    "notes": "FY2025 diluted EPS 14.86 divided by 3 for a later stock split"
+   }
+  },
+  {
+   "id": "S122",
+   "kind": "valuation",
+   "ticker": "POWL",
+   "metric": "ev",
+   "fiscal_year": 2025,
+   "value": 5565734618.959999,
+   "unit": "USD",
+   "display": "$5,565.7m",
+   "label": "enterprise value",
+   "detail": {
+    "formula": "market_cap + net_debt (LFY balance sheet; minorities and leases ignored)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": "FY2025 diluted EPS 14.86 divided by 3 for a later stock split"
+   }
+  },
+  {
+   "id": "S123",
+   "kind": "valuation",
+   "ticker": "POWL",
+   "metric": "ev_sales",
+   "fiscal_year": 2025,
+   "value": 5.039974553489121,
+   "unit": "x",
+   "display": "5.0x",
+   "label": "EV/Sales",
+   "detail": {
+    "formula": "ev / revenue (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": "FY2025 diluted EPS 14.86 divided by 3 for a later stock split"
+   }
+  },
+  {
+   "id": "S124",
+   "kind": "valuation",
+   "ticker": "POWL",
+   "metric": "ev_ebitda",
+   "fiscal_year": 2025,
+   "value": 24.72286338238756,
+   "unit": "x",
+   "display": "24.7x",
+   "label": "EV/EBITDA",
+   "detail": {
+    "formula": "ev / ebitda (LFY)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": "FY2025 diluted EPS 14.86 divided by 3 for a later stock split"
+   }
+  },
+  {
+   "id": "S125",
+   "kind": "valuation",
+   "ticker": "POWL",
+   "metric": "pe",
+   "fiscal_year": 2025,
+   "value": 33.33916554508748,
+   "unit": "x",
+   "display": "33.3x",
+   "label": "P/E",
+   "detail": {
+    "formula": "price / eps_diluted (LFY, split-adjusted)",
+    "as_of": "2026-10-16",
+    "accession": "",
+    "notes": "FY2025 diluted EPS 14.86 divided by 3 for a later stock split"
+   }
+  },
+  {
+   "id": "S126",
+   "kind": "computed",
+   "ticker": null,
+   "metric": "ev_ebitda",
+   "fiscal_year": null,
+   "value": 26.093947240653826,
+   "unit": "x",
+   "display": "26.1x",
+   "label": "peer median EV/EBITDA",
+   "detail": {
+    "formula": "median(ev_ebitda) over 9 peers",
+    "inputs": {
+     "VRT": "S31",
+     "ETN": "S42",
+     "NVT": "S53",
+     "MOD": "S64",
+     "GEV": "S80",
+     "JCI": "S91",
+     "TT": "S102",
+     "SMCI": "S113",
+     "POWL": "S124"
+    }
+   }
+  },
+  {
+   "id": "S127",
+   "kind": "computed",
+   "ticker": null,
+   "metric": "ev_sales",
+   "fiscal_year": null,
+   "value": 5.039974553489121,
+   "unit": "x",
+   "display": "5.0x",
+   "label": "peer median EV/Sales",
+   "detail": {
+    "formula": "median(ev_sales) over 9 peers",
+    "inputs": {
+     "VRT": "S30",
+     "ETN": "S41",
+     "NVT": "S52",
+     "MOD": "S63",
+     "GEV": "S79",
+     "JCI": "S90",
+     "TT": "S101",
+     "SMCI": "S112",
+     "POWL": "S123"
+    }
+   }
+  },
+  {
+   "id": "S128",
+   "kind": "computed",
+   "ticker": null,
+   "metric": "pe",
+   "fiscal_year": null,
+   "value": 35.35362095531587,
+   "unit": "x",
+   "display": "35.4x",
+   "label": "peer median P/E",
+   "detail": {
+    "formula": "median(pe) over 9 peers",
+    "inputs": {
+     "VRT": "S32",
+     "ETN": "S43",
+     "NVT": "S54",
+     "MOD": "S65",
+     "GEV": "S81",
+     "JCI": "S92",
+     "TT": "S103",
+     "SMCI": "S114",
+     "POWL": "S125"
+    }
+   }
+  },
+  {
+   "id": "S129",
+   "kind": "computed",
+   "ticker": null,
+   "metric": "ebit_margin",
+   "fiscal_year": null,
+   "value": 0.15843415273175618,
+   "unit": "ratio",
+   "display": "15.8%",
+   "label": "peer median EBIT margin",
+   "detail": {
+    "formula": "median(ebit_margin) over 9 peers",
+    "inputs": {
+     "VRT": "S25",
+     "ETN": "S36",
+     "NVT": "S47",
+     "MOD": "S58",
+     "GEV": "S74",
+     "JCI": "S85",
+     "TT": "S96",
+     "SMCI": "S107",
+     "POWL": "S118"
+    }
+   }
+  },
+  {
+   "id": "S130",
+   "kind": "computed",
+   "ticker": null,
+   "metric": "revenue_growth",
+   "fiscal_year": null,
+   "value": 0.10330412412573353,
+   "unit": "ratio",
+   "display": "10.3%",
+   "label": "peer median revenue growth",
+   "detail": {
+    "formula": "median(revenue_growth) over 9 peers",
+    "inputs": {
+     "VRT": "S23",
+     "ETN": "S34",
+     "NVT": "S45",
+     "MOD": "S56",
+     "GEV": "S72",
+     "JCI": "S83",
+     "TT": "S94",
+     "SMCI": "S105",
+     "POWL": "S116"
+    }
+   }
+  }
+ ]
+}

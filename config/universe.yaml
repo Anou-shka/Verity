@@ -1,2 +1,13 @@
 # Data-centre power and cooling: Delta Electronics' US-listed peers.
 tickers: [VRT, ETN, NVT, MOD, HUBB, GEV, JCI, TT, SMCI, POWL]
+names:
+  VRT: Vertiv
+  ETN: Eaton
+  NVT: nVent
+  MOD: Modine
+  HUBB: Hubbell
+  GEV: GE Vernova
+  JCI: Johnson Controls
+  TT: Trane Technologies
+  SMCI: Super Micro Computer
+  POWL: Powell Industries

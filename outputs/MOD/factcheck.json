@@ -1,0 +1,737 @@
+{
+ "run_id": "MOD-rules-20261019T113114",
+ "ticker": "MOD",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 2.12
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "23.1%",
+   "kind": "pct",
+   "value": 0.231,
+   "start": 233,
+   "end": 238,
+   "ref": "S2",
+   "ref_span": [
+    238,
+    243
+   ],
+   "sentence": "FY2026 revenue grew 23.1% [S2] to $3,181.1m [S1], from $2,583.5m [S16] in FY2025.",
+   "sentence_start": 213,
+   "year": 2026,
+   "year_span": [
+    213,
+    219
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.2313141087671764,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: MOD FY2026 revenue growth = 23.1% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$3,181.1m",
+   "kind": "money",
+   "value": 3181100000.0,
+   "start": 247,
+   "end": 256,
+   "ref": "S1",
+   "ref_span": [
+    256,
+    261
+   ],
+   "sentence": "FY2026 revenue grew 23.1% [S2] to $3,181.1m [S1], from $2,583.5m [S16] in FY2025.",
+   "sentence_start": 213,
+   "year": 2026,
+   "year_span": [
+    213,
+    219
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3181100000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: MOD FY2026 revenue = $3,181.1m (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$2,583.5m",
+   "kind": "money",
+   "value": 2583500000.0,
+   "start": 268,
+   "end": 277,
+   "ref": "S16",
+   "ref_span": [
+    277,
+    283
+   ],
+   "sentence": "FY2026 revenue grew 23.1% [S2] to $3,181.1m [S1], from $2,583.5m [S16] in FY2025.",
+   "sentence_start": 213,
+   "year": 2025,
+   "year_span": [
+    287,
+    293
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2583500000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: MOD FY2025 revenue = $2,583.5m (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$121.5m",
+   "kind": "money",
+   "value": 121500000.0,
+   "start": 317,
+   "end": 324,
+   "ref": "S6",
+   "ref_span": [
+    324,
+    329
+   ],
+   "sentence": "FY2026 net income was $121.5m [S6], or diluted EPS of $2.26 [S7].",
+   "sentence_start": 295,
+   "year": 2026,
+   "year_span": [
+    295,
+    301
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 121500000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: MOD FY2026 net income = $121.5m (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$2.26",
+   "kind": "per_share",
+   "value": 2.26,
+   "start": 349,
+   "end": 354,
+   "ref": "S7",
+   "ref_span": [
+    354,
+    359
+   ],
+   "sentence": "FY2026 net income was $121.5m [S6], or diluted EPS of $2.26 [S7].",
+   "sentence_start": 295,
+   "year": 2026,
+   "year_span": [
+    295,
+    301
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2.26,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: MOD FY2026 diluted EPS = $2.26 (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$422.1m",
+   "kind": "money",
+   "value": 422100000.0,
+   "start": 379,
+   "end": 386,
+   "ref": "S8",
+   "ref_span": [
+    386,
+    391
+   ],
+   "sentence": "FY2026 EBITDA was $422.1m [S8].",
+   "sentence_start": 361,
+   "year": 2026,
+   "year_span": [
+    361,
+    367
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 422100000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: MOD FY2026 EBITDA = $422.1m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "23.0%",
+   "kind": "pct",
+   "value": 0.23,
+   "start": 441,
+   "end": 446,
+   "ref": "S3",
+   "ref_span": [
+    446,
+    451
+   ],
+   "sentence": "FY2026 gross margin was 23.0% [S3], down from 24.9% [S17] in FY2025.",
+   "sentence_start": 417,
+   "year": 2026,
+   "year_span": [
+    417,
+    423
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.22982616076200058,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: MOD FY2026 gross margin = 23.0% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "24.9%",
+   "kind": "pct",
+   "value": 0.249,
+   "start": 463,
+   "end": 468,
+   "ref": "S17",
+   "ref_span": [
+    468,
+    474
+   ],
+   "sentence": "FY2026 gross margin was 23.0% [S3], down from 24.9% [S17] in FY2025.",
+   "sentence_start": 417,
+   "year": 2025,
+   "year_span": [
+    478,
+    484
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.2491968260112251,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: MOD FY2025 gross margin = 24.9% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "10.8%",
+   "kind": "pct",
+   "value": 0.10800000000000001,
+   "start": 509,
+   "end": 514,
+   "ref": "S5",
+   "ref_span": [
+    514,
+    519
+   ],
+   "sentence": "FY2026 EBIT margin was 10.8% [S5], down from 11.0% [S18] in FY2025.",
+   "sentence_start": 486,
+   "year": 2026,
+   "year_span": [
+    486,
+    492
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.10763572349187388,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: MOD FY2026 EBIT margin = 10.8% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "11.0%",
+   "kind": "pct",
+   "value": 0.11,
+   "start": 531,
+   "end": 536,
+   "ref": "S18",
+   "ref_span": [
+    536,
+    542
+   ],
+   "sentence": "FY2026 EBIT margin was 10.8% [S5], down from 11.0% [S18] in FY2025.",
+   "sentence_start": 486,
+   "year": 2025,
+   "year_span": [
+    546,
+    552
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.10973485581575382,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: MOD FY2025 EBIT margin = 11.0% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "16.5%",
+   "kind": "pct",
+   "value": 0.165,
+   "start": 570,
+   "end": 575,
+   "ref": "S9",
+   "ref_span": [
+    575,
+    580
+   ],
+   "sentence": "FY2026 ROIC was 16.5% [S9].",
+   "sentence_start": 554,
+   "year": 2026,
+   "year_span": [
+    554,
+    560
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1648301920383915,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: MOD FY2026 ROIC = 16.5% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$73.5m",
+   "kind": "money",
+   "value": 73500000.0,
+   "start": 660,
+   "end": 666,
+   "ref": "S11",
+   "ref_span": [
+    666,
+    672
+   ],
+   "sentence": "At the end of FY2026 the company held cash of $73.5m [S11] against total debt of $436.3m [S12], giving net debt of $362.8m [S13].",
+   "sentence_start": 614,
+   "year": 2026,
+   "year_span": [
+    628,
+    634
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 73500000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: MOD FY2026 cash = $73.5m (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$436.3m",
+   "kind": "money",
+   "value": 436300000.0,
+   "start": 695,
+   "end": 702,
+   "ref": "S12",
+   "ref_span": [
+    702,
+    708
+   ],
+   "sentence": "At the end of FY2026 the company held cash of $73.5m [S11] against total debt of $436.3m [S12], giving net debt of $362.8m [S13].",
+   "sentence_start": 614,
+   "year": 2026,
+   "year_span": [
+    628,
+    634
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 436300000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: MOD FY2026 total debt = $436.3m (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "$362.8m",
+   "kind": "money",
+   "value": 362800000.0,
+   "start": 729,
+   "end": 736,
+   "ref": "S13",
+   "ref_span": [
+    736,
+    742
+   ],
+   "sentence": "At the end of FY2026 the company held cash of $73.5m [S11] against total debt of $436.3m [S12], giving net debt of $362.8m [S13].",
+   "sentence_start": 614,
+   "year": 2026,
+   "year_span": [
+    628,
+    634
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 362800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: MOD FY2026 net debt = $362.8m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$248.7m",
+   "kind": "money",
+   "value": 248700000.0,
+   "start": 775,
+   "end": 782,
+   "ref": "S14",
+   "ref_span": [
+    782,
+    788
+   ],
+   "sentence": "FY2026 operating cash flow was $248.7m [S14] and capex was $143.3m [S15].",
+   "sentence_start": 744,
+   "year": 2026,
+   "year_span": [
+    744,
+    750
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 248700000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: MOD FY2026 operating cash flow = $248.7m (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$143.3m",
+   "kind": "money",
+   "value": 143300000.0,
+   "start": 803,
+   "end": 810,
+   "ref": "S15",
+   "ref_span": [
+    810,
+    816
+   ],
+   "sentence": "FY2026 operating cash flow was $248.7m [S14] and capex was $143.3m [S15].",
+   "sentence_start": 744,
+   "year": 2026,
+   "year_span": [
+    744,
+    750
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 143300000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: MOD FY2026 capex = $143.3m (xbrl; 0001104659-26-066795)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$148.86",
+   "kind": "per_share",
+   "value": 148.86,
+   "start": 866,
+   "end": 873,
+   "ref": "S19",
+   "ref_span": [
+    873,
+    879
+   ],
+   "sentence": "The shares closed at $148.86 [S19] on 2026-10-16.",
+   "sentence_start": 845,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 148.86,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: MOD share price = $148.86 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "19.6x",
+   "kind": "multiple",
+   "value": 19.6,
+   "start": 957,
+   "end": 962,
+   "ref": "S58",
+   "ref_span": [
+    962,
+    968
+   ],
+   "sentence": "On 2026-10-16 prices, Modine trades at an FY2026 EV/EBITDA of 19.6x [S58], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 895,
+   "year": 2026,
+   "year_span": [
+    937,
+    943
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 19.590518154181478,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S58: MOD FY2026 EV/EBITDA = 19.6x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "26.1x",
+   "kind": "multiple",
+   "value": 26.1,
+   "start": 1003,
+   "end": 1008,
+   "ref": "S126",
+   "ref_span": [
+    1008,
+    1015
+   ],
+   "sentence": "On 2026-10-16 prices, Modine trades at an FY2026 EV/EBITDA of 19.6x [S58], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 895,
+   "year": 2026,
+   "year_span": [
+    937,
+    943
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 26.093947240653826,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 26.1x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "2.6x",
+   "kind": "multiple",
+   "value": 2.6,
+   "start": 1040,
+   "end": 1044,
+   "ref": "S57",
+   "ref_span": [
+    1044,
+    1050
+   ],
+   "sentence": "Its FY2026 EV/Sales is 2.6x [S57] against a peer median of 5.0x [S127].",
+   "sentence_start": 1017,
+   "year": 2026,
+   "year_span": [
+    1021,
+    1027
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2.599464874691145,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S57: MOD FY2026 EV/Sales = 2.6x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "5.0x",
+   "kind": "multiple",
+   "value": 5.0,
+   "start": 1076,
+   "end": 1080,
+   "ref": "S127",
+   "ref_span": [
+    1080,
+    1087
+   ],
+   "sentence": "Its FY2026 EV/Sales is 2.6x [S57] against a peer median of 5.0x [S127].",
+   "sentence_start": 1017,
+   "year": 2026,
+   "year_span": [
+    1021,
+    1027
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.039974553489121,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 5.0x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "65.9x",
+   "kind": "multiple",
+   "value": 65.9,
+   "start": 1107,
+   "end": 1112,
+   "ref": "S59",
+   "ref_span": [
+    1112,
+    1118
+   ],
+   "sentence": "Its FY2026 P/E is 65.9x [S59] against a peer median of 33.3x [S128].",
+   "sentence_start": 1089,
+   "year": 2026,
+   "year_span": [
+    1093,
+    1099
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 65.86725663716815,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S59: MOD FY2026 P/E = 65.9x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "33.3x",
+   "kind": "multiple",
+   "value": 33.3,
+   "start": 1144,
+   "end": 1149,
+   "ref": "S128",
+   "ref_span": [
+    1149,
+    1156
+   ],
+   "sentence": "Its FY2026 P/E is 65.9x [S59] against a peer median of 33.3x [S128].",
+   "sentence_start": 1089,
+   "year": 2026,
+   "year_span": [
+    1093,
+    1099
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 33.33916554508748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 33.3x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "10.8%",
+   "kind": "pct",
+   "value": 0.10800000000000001,
+   "start": 1197,
+   "end": 1202,
+   "ref": "S5",
+   "ref_span": [
+    1202,
+    1207
+   ],
+   "sentence": "For context, its FY2026 EBIT margin of 10.8% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1158,
+   "year": 2026,
+   "year_span": [
+    1175,
+    1181
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.10763572349187388,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: MOD FY2026 EBIT margin = 10.8% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "17.9%",
+   "kind": "pct",
+   "value": 0.179,
+   "start": 1236,
+   "end": 1241,
+   "ref": "S129",
+   "ref_span": [
+    1241,
+    1248
+   ],
+   "sentence": "For context, its FY2026 EBIT margin of 10.8% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1158,
+   "year": 2026,
+   "year_span": [
+    1175,
+    1181
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1788580533534052,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 17.9% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "At Modine Manufacturing Company, we are Engineering a Cleaner, Healthier World \u2122 .",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001104659-26-066795"
+  },
+  {
+   "quote": "Economic, political, and general market conditions could adversely affect our business, financial position, results of operations and cash flows.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001104659-26-066795"
+  },
+  {
+   "quote": "Additional risks and uncertainties related to international trade policies and related matters are discussed throughout this section.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001104659-26-066795"
+  },
+  {
+   "quote": "A future widespread outbreak of an illness or other public health threat could adversely affect our business, financial position, results of operations and cash flows.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001104659-26-066795"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

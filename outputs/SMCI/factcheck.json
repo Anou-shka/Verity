@@ -1,0 +1,737 @@
+{
+ "run_id": "SMCI-rules-20261019T113143",
+ "ticker": "SMCI",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 3.57
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "77.8%",
+   "kind": "pct",
+   "value": 0.778,
+   "start": 357,
+   "end": 362,
+   "ref": "S2",
+   "ref_span": [
+    362,
+    367
+   ],
+   "sentence": "FY2026 revenue grew 77.8% [S2] to $39,063.1m [S1], from $21,972.0m [S16] in FY2025.",
+   "sentence_start": 337,
+   "year": 2026,
+   "year_span": [
+    337,
+    343
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.7778535103837869,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: SMCI FY2026 revenue growth = 77.8% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$39,063.1m",
+   "kind": "money",
+   "value": 39063100000.0,
+   "start": 371,
+   "end": 381,
+   "ref": "S1",
+   "ref_span": [
+    381,
+    386
+   ],
+   "sentence": "FY2026 revenue grew 77.8% [S2] to $39,063.1m [S1], from $21,972.0m [S16] in FY2025.",
+   "sentence_start": 337,
+   "year": 2026,
+   "year_span": [
+    337,
+    343
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 39063072000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: SMCI FY2026 revenue = $39,063.1m (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$21,972.0m",
+   "kind": "money",
+   "value": 21972000000.0,
+   "start": 393,
+   "end": 403,
+   "ref": "S16",
+   "ref_span": [
+    403,
+    409
+   ],
+   "sentence": "FY2026 revenue grew 77.8% [S2] to $39,063.1m [S1], from $21,972.0m [S16] in FY2025.",
+   "sentence_start": 337,
+   "year": 2025,
+   "year_span": [
+    413,
+    419
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 21972042000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: SMCI FY2025 revenue = $21,972.0m (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$2,230.5m",
+   "kind": "money",
+   "value": 2230500000.0,
+   "start": 443,
+   "end": 452,
+   "ref": "S6",
+   "ref_span": [
+    452,
+    457
+   ],
+   "sentence": "FY2026 net income was $2,230.5m [S6], or diluted EPS of $3.26 [S7].",
+   "sentence_start": 421,
+   "year": 2026,
+   "year_span": [
+    421,
+    427
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2230453000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: SMCI FY2026 net income = $2,230.5m (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$3.26",
+   "kind": "per_share",
+   "value": 3.26,
+   "start": 477,
+   "end": 482,
+   "ref": "S7",
+   "ref_span": [
+    482,
+    487
+   ],
+   "sentence": "FY2026 net income was $2,230.5m [S6], or diluted EPS of $3.26 [S7].",
+   "sentence_start": 421,
+   "year": 2026,
+   "year_span": [
+    421,
+    427
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3.26,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: SMCI FY2026 diluted EPS = $3.26 (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$2,823.5m",
+   "kind": "money",
+   "value": 2823500000.0,
+   "start": 507,
+   "end": 516,
+   "ref": "S8",
+   "ref_span": [
+    516,
+    521
+   ],
+   "sentence": "FY2026 EBITDA was $2,823.5m [S8].",
+   "sentence_start": 489,
+   "year": 2026,
+   "year_span": [
+    489,
+    495
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2823486000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: SMCI FY2026 EBITDA = $2,823.5m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "10.8%",
+   "kind": "pct",
+   "value": 0.10800000000000001,
+   "start": 571,
+   "end": 576,
+   "ref": "S3",
+   "ref_span": [
+    576,
+    581
+   ],
+   "sentence": "FY2026 gross margin was 10.8% [S3], down from 11.1% [S17] in FY2025.",
+   "sentence_start": 547,
+   "year": 2026,
+   "year_span": [
+    547,
+    553
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.10821604097086886,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: SMCI FY2026 gross margin = 10.8% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "11.1%",
+   "kind": "pct",
+   "value": 0.111,
+   "start": 593,
+   "end": 598,
+   "ref": "S17",
+   "ref_span": [
+    598,
+    604
+   ],
+   "sentence": "FY2026 gross margin was 10.8% [S3], down from 11.1% [S17] in FY2025.",
+   "sentence_start": 547,
+   "year": 2025,
+   "year_span": [
+    608,
+    614
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.11059154174200105,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: SMCI FY2025 gross margin = 11.1% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "7.1%",
+   "kind": "pct",
+   "value": 0.071,
+   "start": 639,
+   "end": 643,
+   "ref": "S5",
+   "ref_span": [
+    643,
+    648
+   ],
+   "sentence": "FY2026 EBIT margin was 7.1% [S5], up from 5.7% [S18] in FY2025.",
+   "sentence_start": 616,
+   "year": 2026,
+   "year_span": [
+    616,
+    622
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.07092340305442439,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: SMCI FY2026 EBIT margin = 7.1% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "5.7%",
+   "kind": "pct",
+   "value": 0.057,
+   "start": 658,
+   "end": 662,
+   "ref": "S18",
+   "ref_span": [
+    662,
+    668
+   ],
+   "sentence": "FY2026 EBIT margin was 7.1% [S5], up from 5.7% [S18] in FY2025.",
+   "sentence_start": 616,
+   "year": 2025,
+   "year_span": [
+    672,
+    678
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.057026743349571245,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: SMCI FY2025 EBIT margin = 5.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "36.2%",
+   "kind": "pct",
+   "value": 0.36200000000000004,
+   "start": 696,
+   "end": 701,
+   "ref": "S9",
+   "ref_span": [
+    701,
+    706
+   ],
+   "sentence": "FY2026 ROIC was 36.2% [S9].",
+   "sentence_start": 680,
+   "year": 2026,
+   "year_span": [
+    680,
+    686
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.3618588750914011,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: SMCI FY2026 ROIC = 36.2% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$7,521.5m",
+   "kind": "money",
+   "value": 7521500000.0,
+   "start": 786,
+   "end": 795,
+   "ref": "S11",
+   "ref_span": [
+    795,
+    801
+   ],
+   "sentence": "At the end of FY2026 the company held cash of $7,521.5m [S11] against total debt of $4,056.1m [S12], giving a net cash position (net debt of -$3,465.3m [S13]).",
+   "sentence_start": 740,
+   "year": 2026,
+   "year_span": [
+    754,
+    760
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 7521474000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: SMCI FY2026 cash = $7,521.5m (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$4,056.1m",
+   "kind": "money",
+   "value": 4056100000.0,
+   "start": 824,
+   "end": 833,
+   "ref": "S12",
+   "ref_span": [
+    833,
+    839
+   ],
+   "sentence": "At the end of FY2026 the company held cash of $7,521.5m [S11] against total debt of $4,056.1m [S12], giving a net cash position (net debt of -$3,465.3m [S13]).",
+   "sentence_start": 740,
+   "year": 2026,
+   "year_span": [
+    754,
+    760
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4056148000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: SMCI FY2026 total debt = $4,056.1m (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "-$3,465.3m",
+   "kind": "money",
+   "value": -3465300000.0,
+   "start": 881,
+   "end": 891,
+   "ref": "S13",
+   "ref_span": [
+    891,
+    897
+   ],
+   "sentence": "At the end of FY2026 the company held cash of $7,521.5m [S11] against total debt of $4,056.1m [S12], giving a net cash position (net debt of -$3,465.3m [S13]).",
+   "sentence_start": 740,
+   "year": 2026,
+   "year_span": [
+    754,
+    760
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": -3465326000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: SMCI FY2026 net debt = -$3,465.3m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "-$6,809.9m",
+   "kind": "money",
+   "value": -6809900000.0,
+   "start": 931,
+   "end": 941,
+   "ref": "S14",
+   "ref_span": [
+    941,
+    947
+   ],
+   "sentence": "FY2026 operating cash flow was -$6,809.9m [S14] and capex was $162.0m [S15].",
+   "sentence_start": 900,
+   "year": 2026,
+   "year_span": [
+    900,
+    906
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": -6809886000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: SMCI FY2026 operating cash flow = -$6,809.9m (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$162.0m",
+   "kind": "money",
+   "value": 162000000.0,
+   "start": 962,
+   "end": 969,
+   "ref": "S15",
+   "ref_span": [
+    969,
+    975
+   ],
+   "sentence": "FY2026 operating cash flow was -$6,809.9m [S14] and capex was $162.0m [S15].",
+   "sentence_start": 900,
+   "year": 2026,
+   "year_span": [
+    900,
+    906
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 161999000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: SMCI FY2026 capex = $162.0m (xbrl; 0001375365-26-000022)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$31.63",
+   "kind": "per_share",
+   "value": 31.63,
+   "start": 1025,
+   "end": 1031,
+   "ref": "S19",
+   "ref_span": [
+    1031,
+    1037
+   ],
+   "sentence": "The shares closed at $31.63 [S19] on 2026-10-16.",
+   "sentence_start": 1004,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 31.63,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: SMCI share price = $31.63 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "6.1x",
+   "kind": "multiple",
+   "value": 6.1,
+   "start": 1129,
+   "end": 1133,
+   "ref": "S113",
+   "ref_span": [
+    1133,
+    1140
+   ],
+   "sentence": "On 2026-10-16 prices, Super Micro Computer trades at an FY2026 EV/EBITDA of 6.1x [S113], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 1053,
+   "year": 2026,
+   "year_span": [
+    1109,
+    1115
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 6.132309172391858,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S113: SMCI FY2026 EV/EBITDA = 6.1x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "26.1x",
+   "kind": "multiple",
+   "value": 26.1,
+   "start": 1175,
+   "end": 1180,
+   "ref": "S126",
+   "ref_span": [
+    1180,
+    1187
+   ],
+   "sentence": "On 2026-10-16 prices, Super Micro Computer trades at an FY2026 EV/EBITDA of 6.1x [S113], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 1053,
+   "year": 2026,
+   "year_span": [
+    1109,
+    1115
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 26.093947240653826,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 26.1x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "0.4x",
+   "kind": "multiple",
+   "value": 0.4,
+   "start": 1212,
+   "end": 1216,
+   "ref": "S112",
+   "ref_span": [
+    1216,
+    1223
+   ],
+   "sentence": "Its FY2026 EV/Sales is 0.4x [S112] against a peer median of 5.0x [S127].",
+   "sentence_start": 1189,
+   "year": 2026,
+   "year_span": [
+    1193,
+    1199
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.44324443033870964,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S112: SMCI FY2026 EV/Sales = 0.4x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "5.0x",
+   "kind": "multiple",
+   "value": 5.0,
+   "start": 1249,
+   "end": 1253,
+   "ref": "S127",
+   "ref_span": [
+    1253,
+    1260
+   ],
+   "sentence": "Its FY2026 EV/Sales is 0.4x [S112] against a peer median of 5.0x [S127].",
+   "sentence_start": 1189,
+   "year": 2026,
+   "year_span": [
+    1193,
+    1199
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.039974553489121,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 5.0x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "9.7x",
+   "kind": "multiple",
+   "value": 9.7,
+   "start": 1280,
+   "end": 1284,
+   "ref": "S114",
+   "ref_span": [
+    1284,
+    1291
+   ],
+   "sentence": "Its FY2026 P/E is 9.7x [S114] against a peer median of 35.4x [S128].",
+   "sentence_start": 1262,
+   "year": 2026,
+   "year_span": [
+    1266,
+    1272
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 9.702453987730062,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S114: SMCI FY2026 P/E = 9.7x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "35.4x",
+   "kind": "multiple",
+   "value": 35.4,
+   "start": 1317,
+   "end": 1322,
+   "ref": "S128",
+   "ref_span": [
+    1322,
+    1329
+   ],
+   "sentence": "Its FY2026 P/E is 9.7x [S114] against a peer median of 35.4x [S128].",
+   "sentence_start": 1262,
+   "year": 2026,
+   "year_span": [
+    1266,
+    1272
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 35.35362095531587,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 35.4x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "7.1%",
+   "kind": "pct",
+   "value": 0.071,
+   "start": 1370,
+   "end": 1374,
+   "ref": "S5",
+   "ref_span": [
+    1374,
+    1379
+   ],
+   "sentence": "For context, its FY2026 EBIT margin of 7.1% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1331,
+   "year": 2026,
+   "year_span": [
+    1348,
+    1354
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.07092340305442439,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: SMCI FY2026 EBIT margin = 7.1% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "17.9%",
+   "kind": "pct",
+   "value": 0.179,
+   "start": 1408,
+   "end": 1413,
+   "ref": "S129",
+   "ref_span": [
+    1413,
+    1420
+   ],
+   "sentence": "For context, its FY2026 EBIT margin of 7.1% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1331,
+   "year": 2026,
+   "year_span": [
+    1348,
+    1354
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1788580533534052,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 17.9% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "We deliver rack-scale solutions optimized for various workloads, including artificial intelligence (\"AI\") and high-performance computing (\"HPC\"), where acceleration is critical.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001375365-26-000022"
+  },
+  {
+   "quote": "Our operating results have in the past fluctuated and will likely fluctuate in the future, and if our operating results are below the expectations of securities analysts or investors, our stock price could decline.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001375365-26-000022"
+  },
+  {
+   "quote": "If we fail to meet any publicly announced financial guidance or other expectations about our business, it could cause our stock to decline in value.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001375365-26-000022"
+  },
+  {
+   "quote": "Failure to meet the evolving needs of our industry and markets may adversely impact our financial results.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001375365-26-000022"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

@@ -1,0 +1,737 @@
+{
+ "run_id": "GEV-rules-20261019T113119",
+ "ticker": "GEV",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 2.36
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "9.0%",
+   "kind": "pct",
+   "value": 0.09,
+   "start": 364,
+   "end": 368,
+   "ref": "S2",
+   "ref_span": [
+    368,
+    373
+   ],
+   "sentence": "FY2025 revenue grew 9.0% [S2] to $38,068.0m [S1], from $34,935.0m [S16] in FY2024.",
+   "sentence_start": 344,
+   "year": 2025,
+   "year_span": [
+    344,
+    350
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.08968083583798481,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: GEV FY2025 revenue growth = 9.0% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$38,068.0m",
+   "kind": "money",
+   "value": 38068000000.0,
+   "start": 377,
+   "end": 387,
+   "ref": "S1",
+   "ref_span": [
+    387,
+    392
+   ],
+   "sentence": "FY2025 revenue grew 9.0% [S2] to $38,068.0m [S1], from $34,935.0m [S16] in FY2024.",
+   "sentence_start": 344,
+   "year": 2025,
+   "year_span": [
+    344,
+    350
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 38068000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: GEV FY2025 revenue = $38,068.0m (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$34,935.0m",
+   "kind": "money",
+   "value": 34935000000.0,
+   "start": 399,
+   "end": 409,
+   "ref": "S16",
+   "ref_span": [
+    409,
+    415
+   ],
+   "sentence": "FY2025 revenue grew 9.0% [S2] to $38,068.0m [S1], from $34,935.0m [S16] in FY2024.",
+   "sentence_start": 344,
+   "year": 2024,
+   "year_span": [
+    419,
+    425
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 34935000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: GEV FY2024 revenue = $34,935.0m (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$4,884.0m",
+   "kind": "money",
+   "value": 4884000000.0,
+   "start": 449,
+   "end": 458,
+   "ref": "S6",
+   "ref_span": [
+    458,
+    463
+   ],
+   "sentence": "FY2025 net income was $4,884.0m [S6], or diluted EPS of $17.69 [S7].",
+   "sentence_start": 427,
+   "year": 2025,
+   "year_span": [
+    427,
+    433
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4884000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: GEV FY2025 net income = $4,884.0m (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$17.69",
+   "kind": "per_share",
+   "value": 17.69,
+   "start": 483,
+   "end": 489,
+   "ref": "S7",
+   "ref_span": [
+    489,
+    494
+   ],
+   "sentence": "FY2025 net income was $4,884.0m [S6], or diluted EPS of $17.69 [S7].",
+   "sentence_start": 427,
+   "year": 2025,
+   "year_span": [
+    427,
+    433
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 17.69,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: GEV FY2025 diluted EPS = $17.69 (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$2,241.0m",
+   "kind": "money",
+   "value": 2241000000.0,
+   "start": 514,
+   "end": 523,
+   "ref": "S8",
+   "ref_span": [
+    523,
+    528
+   ],
+   "sentence": "FY2025 EBITDA was $2,241.0m [S8].",
+   "sentence_start": 496,
+   "year": 2025,
+   "year_span": [
+    496,
+    502
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2241000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: GEV FY2025 EBITDA = $2,241.0m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "19.8%",
+   "kind": "pct",
+   "value": 0.198,
+   "start": 578,
+   "end": 583,
+   "ref": "S3",
+   "ref_span": [
+    583,
+    588
+   ],
+   "sentence": "FY2025 gross margin was 19.8% [S3], up from 17.4% [S17] in FY2024.",
+   "sentence_start": 554,
+   "year": 2025,
+   "year_span": [
+    554,
+    560
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.19793527372071032,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: GEV FY2025 gross margin = 19.8% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "17.4%",
+   "kind": "pct",
+   "value": 0.174,
+   "start": 598,
+   "end": 603,
+   "ref": "S17",
+   "ref_span": [
+    603,
+    609
+   ],
+   "sentence": "FY2025 gross margin was 19.8% [S3], up from 17.4% [S17] in FY2024.",
+   "sentence_start": 554,
+   "year": 2024,
+   "year_span": [
+    613,
+    619
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1741806211535709,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: GEV FY2024 gross margin = 17.4% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "3.6%",
+   "kind": "pct",
+   "value": 0.036000000000000004,
+   "start": 644,
+   "end": 648,
+   "ref": "S5",
+   "ref_span": [
+    648,
+    653
+   ],
+   "sentence": "FY2025 EBIT margin was 3.6% [S5], up from 1.3% [S18] in FY2024.",
+   "sentence_start": 621,
+   "year": 2025,
+   "year_span": [
+    621,
+    627
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.03646106966481034,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: GEV FY2025 EBIT margin = 3.6% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "1.3%",
+   "kind": "pct",
+   "value": 0.013000000000000001,
+   "start": 663,
+   "end": 667,
+   "ref": "S18",
+   "ref_span": [
+    667,
+    673
+   ],
+   "sentence": "FY2025 EBIT margin was 3.6% [S5], up from 1.3% [S18] in FY2024.",
+   "sentence_start": 621,
+   "year": 2024,
+   "year_span": [
+    677,
+    683
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.013482181193645342,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: GEV FY2024 EBIT margin = 1.3% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "57.8%",
+   "kind": "pct",
+   "value": 0.578,
+   "start": 701,
+   "end": 706,
+   "ref": "S9",
+   "ref_span": [
+    706,
+    711
+   ],
+   "sentence": "FY2025 ROIC was 57.8% [S9].",
+   "sentence_start": 685,
+   "year": 2025,
+   "year_span": [
+    685,
+    691
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.5780284659989458,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: GEV FY2025 ROIC = 57.8% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$8,848.0m",
+   "kind": "money",
+   "value": 8848000000.0,
+   "start": 791,
+   "end": 800,
+   "ref": "S11",
+   "ref_span": [
+    800,
+    806
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $8,848.0m [S11] against total debt of $63.0m [S12], giving a net cash position (net debt of -$8,785.0m [S13]).",
+   "sentence_start": 745,
+   "year": 2025,
+   "year_span": [
+    759,
+    765
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 8848000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: GEV FY2025 cash = $8,848.0m (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$63.0m",
+   "kind": "money",
+   "value": 63000000.0,
+   "start": 829,
+   "end": 835,
+   "ref": "S12",
+   "ref_span": [
+    835,
+    841
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $8,848.0m [S11] against total debt of $63.0m [S12], giving a net cash position (net debt of -$8,785.0m [S13]).",
+   "sentence_start": 745,
+   "year": 2025,
+   "year_span": [
+    759,
+    765
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 63000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: GEV FY2025 total debt = $63.0m (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "-$8,785.0m",
+   "kind": "money",
+   "value": -8785000000.0,
+   "start": 883,
+   "end": 893,
+   "ref": "S13",
+   "ref_span": [
+    893,
+    899
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $8,848.0m [S11] against total debt of $63.0m [S12], giving a net cash position (net debt of -$8,785.0m [S13]).",
+   "sentence_start": 745,
+   "year": 2025,
+   "year_span": [
+    759,
+    765
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": -8785000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: GEV FY2025 net debt = -$8,785.0m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$4,987.0m",
+   "kind": "money",
+   "value": 4987000000.0,
+   "start": 933,
+   "end": 942,
+   "ref": "S14",
+   "ref_span": [
+    942,
+    948
+   ],
+   "sentence": "FY2025 operating cash flow was $4,987.0m [S14] and capex was $1,277.0m [S15].",
+   "sentence_start": 902,
+   "year": 2025,
+   "year_span": [
+    902,
+    908
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4987000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: GEV FY2025 operating cash flow = $4,987.0m (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$1,277.0m",
+   "kind": "money",
+   "value": 1277000000.0,
+   "start": 963,
+   "end": 972,
+   "ref": "S15",
+   "ref_span": [
+    972,
+    978
+   ],
+   "sentence": "FY2025 operating cash flow was $4,987.0m [S14] and capex was $1,277.0m [S15].",
+   "sentence_start": 902,
+   "year": 2025,
+   "year_span": [
+    902,
+    908
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1277000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: GEV FY2025 capex = $1,277.0m (xbrl; 0001996810-26-000015)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$921.20",
+   "kind": "per_share",
+   "value": 921.2,
+   "start": 1028,
+   "end": 1035,
+   "ref": "S19",
+   "ref_span": [
+    1035,
+    1041
+   ],
+   "sentence": "The shares closed at $921.20 [S19] on 2026-10-16.",
+   "sentence_start": 1007,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 921.2,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: GEV share price = $921.20 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "105.6x",
+   "kind": "multiple",
+   "value": 105.6,
+   "start": 1123,
+   "end": 1129,
+   "ref": "S80",
+   "ref_span": [
+    1129,
+    1135
+   ],
+   "sentence": "On 2026-10-16 prices, GE Vernova trades at an FY2025 EV/EBITDA of 105.6x [S80], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 1057,
+   "year": 2025,
+   "year_span": [
+    1103,
+    1109
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 105.56068488049978,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S80: GEV FY2025 EV/EBITDA = 105.6x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "24.7x",
+   "kind": "multiple",
+   "value": 24.7,
+   "start": 1169,
+   "end": 1174,
+   "ref": "S126",
+   "ref_span": [
+    1174,
+    1181
+   ],
+   "sentence": "On 2026-10-16 prices, GE Vernova trades at an FY2025 EV/EBITDA of 105.6x [S80], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 1057,
+   "year": 2025,
+   "year_span": [
+    1103,
+    1109
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 24.72286338238756,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 24.7x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "6.2x",
+   "kind": "multiple",
+   "value": 6.2,
+   "start": 1206,
+   "end": 1210,
+   "ref": "S79",
+   "ref_span": [
+    1210,
+    1216
+   ],
+   "sentence": "Its FY2025 EV/Sales is 6.2x [S79] against a peer median of 4.9x [S127].",
+   "sentence_start": 1183,
+   "year": 2025,
+   "year_span": [
+    1187,
+    1193
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 6.214182379352738,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S79: GEV FY2025 EV/Sales = 6.2x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "4.9x",
+   "kind": "multiple",
+   "value": 4.9,
+   "start": 1242,
+   "end": 1246,
+   "ref": "S127",
+   "ref_span": [
+    1246,
+    1253
+   ],
+   "sentence": "Its FY2025 EV/Sales is 6.2x [S79] against a peer median of 4.9x [S127].",
+   "sentence_start": 1183,
+   "year": 2025,
+   "year_span": [
+    1187,
+    1193
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.869089325694708,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 4.9x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "52.1x",
+   "kind": "multiple",
+   "value": 52.1,
+   "start": 1273,
+   "end": 1278,
+   "ref": "S81",
+   "ref_span": [
+    1278,
+    1284
+   ],
+   "sentence": "Its FY2025 P/E is 52.1x [S81] against a peer median of 33.3x [S128].",
+   "sentence_start": 1255,
+   "year": 2025,
+   "year_span": [
+    1259,
+    1265
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 52.07461842849067,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S81: GEV FY2025 P/E = 52.1x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "33.3x",
+   "kind": "multiple",
+   "value": 33.3,
+   "start": 1310,
+   "end": 1315,
+   "ref": "S128",
+   "ref_span": [
+    1315,
+    1322
+   ],
+   "sentence": "Its FY2025 P/E is 52.1x [S81] against a peer median of 33.3x [S128].",
+   "sentence_start": 1255,
+   "year": 2025,
+   "year_span": [
+    1259,
+    1265
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 33.33916554508748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 33.3x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "3.6%",
+   "kind": "pct",
+   "value": 0.036000000000000004,
+   "start": 1363,
+   "end": 1367,
+   "ref": "S5",
+   "ref_span": [
+    1367,
+    1372
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 3.6% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1324,
+   "year": 2025,
+   "year_span": [
+    1341,
+    1347
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.03646106966481034,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: GEV FY2025 EBIT margin = 3.6% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "17.9%",
+   "kind": "pct",
+   "value": 0.179,
+   "start": 1401,
+   "end": 1406,
+   "ref": "S129",
+   "ref_span": [
+    1406,
+    1413
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 3.6% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1324,
+   "year": 2025,
+   "year_span": [
+    1341,
+    1347
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1788580533534052,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 17.9% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "GE Vernova Inc. (the Company, GE Vernova, our, we, or us) is a global leader in the electric power industry, with products and services that generate, transfer, orchestrate, convert, and store electricity.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001996810-26-000015"
+  },
+  {
+   "quote": "We may not be able to access the capital and credit markets or obtain other financing on terms that are favorable to us, or at all.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001996810-26-000015"
+  },
+  {
+   "quote": "Noncompliance with antitrust and competition laws could result in fines, sanctions, business restrictions, and reputational harm.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001996810-26-000015"
+  },
+  {
+   "quote": "Volatility in foreign currency exchange rates may adversely affect our financial condition, results of operation, and cash flows.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001996810-26-000015"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

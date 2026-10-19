@@ -1,0 +1,737 @@
+{
+ "run_id": "JCI-rules-20261019T113122",
+ "ticker": "JCI",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 2.27
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "2.8%",
+   "kind": "pct",
+   "value": 0.027999999999999997,
+   "start": 362,
+   "end": 366,
+   "ref": "S2",
+   "ref_span": [
+    366,
+    371
+   ],
+   "sentence": "FY2025 revenue grew 2.8% [S2] to $23,596.0m [S1], from $22,952.0m [S16] in FY2024.",
+   "sentence_start": 342,
+   "year": 2025,
+   "year_span": [
+    342,
+    348
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.028058556988497685,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: JCI FY2025 revenue growth = 2.8% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$23,596.0m",
+   "kind": "money",
+   "value": 23596000000.0,
+   "start": 375,
+   "end": 385,
+   "ref": "S1",
+   "ref_span": [
+    385,
+    390
+   ],
+   "sentence": "FY2025 revenue grew 2.8% [S2] to $23,596.0m [S1], from $22,952.0m [S16] in FY2024.",
+   "sentence_start": 342,
+   "year": 2025,
+   "year_span": [
+    342,
+    348
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 23596000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: JCI FY2025 revenue = $23,596.0m (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$22,952.0m",
+   "kind": "money",
+   "value": 22952000000.0,
+   "start": 397,
+   "end": 407,
+   "ref": "S16",
+   "ref_span": [
+    407,
+    413
+   ],
+   "sentence": "FY2025 revenue grew 2.8% [S2] to $23,596.0m [S1], from $22,952.0m [S16] in FY2024.",
+   "sentence_start": 342,
+   "year": 2024,
+   "year_span": [
+    417,
+    423
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 22952000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: JCI FY2024 revenue = $22,952.0m (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$3,291.0m",
+   "kind": "money",
+   "value": 3291000000.0,
+   "start": 447,
+   "end": 456,
+   "ref": "S6",
+   "ref_span": [
+    456,
+    461
+   ],
+   "sentence": "FY2025 net income was $3,291.0m [S6], or diluted EPS of $5.03 [S7].",
+   "sentence_start": 425,
+   "year": 2025,
+   "year_span": [
+    425,
+    431
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3291000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: JCI FY2025 net income = $3,291.0m (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$5.03",
+   "kind": "per_share",
+   "value": 5.03,
+   "start": 481,
+   "end": 486,
+   "ref": "S7",
+   "ref_span": [
+    486,
+    491
+   ],
+   "sentence": "FY2025 net income was $3,291.0m [S6], or diluted EPS of $5.03 [S7].",
+   "sentence_start": 425,
+   "year": 2025,
+   "year_span": [
+    425,
+    431
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.03,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: JCI FY2025 diluted EPS = $5.03 (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$3,153.0m",
+   "kind": "money",
+   "value": 3153000000.0,
+   "start": 511,
+   "end": 520,
+   "ref": "S8",
+   "ref_span": [
+    520,
+    525
+   ],
+   "sentence": "FY2025 EBITDA was $3,153.0m [S8].",
+   "sentence_start": 493,
+   "year": 2025,
+   "year_span": [
+    493,
+    499
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3153000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: JCI FY2025 EBITDA = $3,153.0m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "36.4%",
+   "kind": "pct",
+   "value": 0.364,
+   "start": 575,
+   "end": 580,
+   "ref": "S3",
+   "ref_span": [
+    580,
+    585
+   ],
+   "sentence": "FY2025 gross margin was 36.4% [S3], up from 35.2% [S17] in FY2024.",
+   "sentence_start": 551,
+   "year": 2025,
+   "year_span": [
+    551,
+    557
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.3641295134768605,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: JCI FY2025 gross margin = 36.4% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "35.2%",
+   "kind": "pct",
+   "value": 0.35200000000000004,
+   "start": 595,
+   "end": 600,
+   "ref": "S17",
+   "ref_span": [
+    600,
+    606
+   ],
+   "sentence": "FY2025 gross margin was 36.4% [S3], up from 35.2% [S17] in FY2024.",
+   "sentence_start": 551,
+   "year": 2024,
+   "year_span": [
+    610,
+    616
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.35190833042872083,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: JCI FY2024 gross margin = 35.2% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "9.7%",
+   "kind": "pct",
+   "value": 0.09699999999999999,
+   "start": 641,
+   "end": 645,
+   "ref": "S5",
+   "ref_span": [
+    645,
+    650
+   ],
+   "sentence": "FY2025 EBIT margin was 9.7% [S5], up from 8.1% [S18] in FY2024.",
+   "sentence_start": 618,
+   "year": 2025,
+   "year_span": [
+    618,
+    624
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.09696558738769283,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: JCI FY2025 EBIT margin = 9.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "8.1%",
+   "kind": "pct",
+   "value": 0.081,
+   "start": 660,
+   "end": 664,
+   "ref": "S18",
+   "ref_span": [
+    664,
+    670
+   ],
+   "sentence": "FY2025 EBIT margin was 9.7% [S5], up from 8.1% [S18] in FY2024.",
+   "sentence_start": 618,
+   "year": 2024,
+   "year_span": [
+    674,
+    680
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.08121296619031021,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: JCI FY2024 EBIT margin = 8.1% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "8.5%",
+   "kind": "pct",
+   "value": 0.085,
+   "start": 698,
+   "end": 702,
+   "ref": "S9",
+   "ref_span": [
+    702,
+    707
+   ],
+   "sentence": "FY2025 ROIC was 8.5% [S9].",
+   "sentence_start": 682,
+   "year": 2025,
+   "year_span": [
+    682,
+    688
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.08450455624279553,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: JCI FY2025 ROIC = 8.5% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$379.0m",
+   "kind": "money",
+   "value": 379000000.0,
+   "start": 787,
+   "end": 794,
+   "ref": "S11",
+   "ref_span": [
+    794,
+    800
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $379.0m [S11] against total debt of $9,880.0m [S12], giving net debt of $9,501.0m [S13].",
+   "sentence_start": 741,
+   "year": 2025,
+   "year_span": [
+    755,
+    761
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 379000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: JCI FY2025 cash = $379.0m (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$9,880.0m",
+   "kind": "money",
+   "value": 9880000000.0,
+   "start": 823,
+   "end": 832,
+   "ref": "S12",
+   "ref_span": [
+    832,
+    838
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $379.0m [S11] against total debt of $9,880.0m [S12], giving net debt of $9,501.0m [S13].",
+   "sentence_start": 741,
+   "year": 2025,
+   "year_span": [
+    755,
+    761
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 9880000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: JCI FY2025 total debt = $9,880.0m (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "$9,501.0m",
+   "kind": "money",
+   "value": 9501000000.0,
+   "start": 859,
+   "end": 868,
+   "ref": "S13",
+   "ref_span": [
+    868,
+    874
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $379.0m [S11] against total debt of $9,880.0m [S12], giving net debt of $9,501.0m [S13].",
+   "sentence_start": 741,
+   "year": 2025,
+   "year_span": [
+    755,
+    761
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 9501000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: JCI FY2025 net debt = $9,501.0m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$2,554.0m",
+   "kind": "money",
+   "value": 2554000000.0,
+   "start": 907,
+   "end": 916,
+   "ref": "S14",
+   "ref_span": [
+    916,
+    922
+   ],
+   "sentence": "FY2025 operating cash flow was $2,554.0m [S14] and capex was $434.0m [S15].",
+   "sentence_start": 876,
+   "year": 2025,
+   "year_span": [
+    876,
+    882
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2554000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: JCI FY2025 operating cash flow = $2,554.0m (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$434.0m",
+   "kind": "money",
+   "value": 434000000.0,
+   "start": 937,
+   "end": 944,
+   "ref": "S15",
+   "ref_span": [
+    944,
+    950
+   ],
+   "sentence": "FY2025 operating cash flow was $2,554.0m [S14] and capex was $434.0m [S15].",
+   "sentence_start": 876,
+   "year": 2025,
+   "year_span": [
+    876,
+    882
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 434000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: JCI FY2025 capex = $434.0m (xbrl; 0000833444-25-000097)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$145.47",
+   "kind": "per_share",
+   "value": 145.47,
+   "start": 1000,
+   "end": 1007,
+   "ref": "S19",
+   "ref_span": [
+    1007,
+    1013
+   ],
+   "sentence": "The shares closed at $145.47 [S19] on 2026-10-16.",
+   "sentence_start": 979,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 145.47,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: JCI share price = $145.47 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "31.2x",
+   "kind": "multiple",
+   "value": 31.2,
+   "start": 1101,
+   "end": 1106,
+   "ref": "S91",
+   "ref_span": [
+    1106,
+    1112
+   ],
+   "sentence": "On 2026-10-16 prices, Johnson Controls trades at an FY2025 EV/EBITDA of 31.2x [S91], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 1029,
+   "year": 2025,
+   "year_span": [
+    1081,
+    1087
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 31.162231769238822,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S91: JCI FY2025 EV/EBITDA = 31.2x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "24.7x",
+   "kind": "multiple",
+   "value": 24.7,
+   "start": 1146,
+   "end": 1151,
+   "ref": "S126",
+   "ref_span": [
+    1151,
+    1158
+   ],
+   "sentence": "On 2026-10-16 prices, Johnson Controls trades at an FY2025 EV/EBITDA of 31.2x [S91], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 1029,
+   "year": 2025,
+   "year_span": [
+    1081,
+    1087
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 24.72286338238756,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 24.7x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "4.2x",
+   "kind": "multiple",
+   "value": 4.2,
+   "start": 1183,
+   "end": 1187,
+   "ref": "S90",
+   "ref_span": [
+    1187,
+    1193
+   ],
+   "sentence": "Its FY2025 EV/Sales is 4.2x [S90] against a peer median of 5.0x [S127].",
+   "sentence_start": 1160,
+   "year": 2025,
+   "year_span": [
+    1164,
+    1170
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.164032749974996,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S90: JCI FY2025 EV/Sales = 4.2x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "5.0x",
+   "kind": "multiple",
+   "value": 5.0,
+   "start": 1219,
+   "end": 1223,
+   "ref": "S127",
+   "ref_span": [
+    1223,
+    1230
+   ],
+   "sentence": "Its FY2025 EV/Sales is 4.2x [S90] against a peer median of 5.0x [S127].",
+   "sentence_start": 1160,
+   "year": 2025,
+   "year_span": [
+    1164,
+    1170
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.039974553489121,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 5.0x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "28.9x",
+   "kind": "multiple",
+   "value": 28.9,
+   "start": 1250,
+   "end": 1255,
+   "ref": "S92",
+   "ref_span": [
+    1255,
+    1261
+   ],
+   "sentence": "Its FY2025 P/E is 28.9x [S92] against a peer median of 35.4x [S128].",
+   "sentence_start": 1232,
+   "year": 2025,
+   "year_span": [
+    1236,
+    1242
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 28.92047713717694,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S92: JCI FY2025 P/E = 28.9x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "35.4x",
+   "kind": "multiple",
+   "value": 35.4,
+   "start": 1287,
+   "end": 1292,
+   "ref": "S128",
+   "ref_span": [
+    1292,
+    1299
+   ],
+   "sentence": "Its FY2025 P/E is 28.9x [S92] against a peer median of 35.4x [S128].",
+   "sentence_start": 1232,
+   "year": 2025,
+   "year_span": [
+    1236,
+    1242
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 35.35362095531587,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 35.4x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "9.7%",
+   "kind": "pct",
+   "value": 0.09699999999999999,
+   "start": 1340,
+   "end": 1344,
+   "ref": "S5",
+   "ref_span": [
+    1344,
+    1349
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 9.7% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1301,
+   "year": 2025,
+   "year_span": [
+    1318,
+    1324
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.09696558738769283,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: JCI FY2025 EBIT margin = 9.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "17.9%",
+   "kind": "pct",
+   "value": 0.179,
+   "start": 1378,
+   "end": 1383,
+   "ref": "S129",
+   "ref_span": [
+    1383,
+    1390
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 9.7% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1301,
+   "year": 2025,
+   "year_span": [
+    1318,
+    1324
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1788580533534052,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 17.9% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "General Johnson Controls International plc, headquartered in Cork, Ireland, is a global leader in smart, healthy and sustainable buildings, serving a wide range of customers around the globe.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000833444-25-000097"
+  },
+  {
+   "quote": "Our future growth is dependent upon our ability to develop or acquire new products, services and technologies that achieve market acceptance with acceptable margins.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000833444-25-000097"
+  },
+  {
+   "quote": "Failure to increase organizational effectiveness through the execution of our operating model and organizational improvements may reduce our profitability or adversely impact our business.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000833444-25-000097"
+  },
+  {
+   "quote": "Failure to achieve and maintain a high level of product and service quality and on-time delivery could damage our reputation with customers and negatively impact our results.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000833444-25-000097"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

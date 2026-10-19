@@ -1,0 +1,737 @@
+{
+ "run_id": "HUBB-rules-20261019T113117",
+ "ticker": "HUBB",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 2.55
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "3.8%",
+   "kind": "pct",
+   "value": 0.038,
+   "start": 444,
+   "end": 448,
+   "ref": "S2",
+   "ref_span": [
+    448,
+    453
+   ],
+   "sentence": "FY2025 revenue grew 3.8% [S2] to $5,844.6m [S1], from $5,628.5m [S16] in FY2024.",
+   "sentence_start": 424,
+   "year": 2025,
+   "year_span": [
+    424,
+    430
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.03839388824731271,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: HUBB FY2025 revenue growth = 3.8% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$5,844.6m",
+   "kind": "money",
+   "value": 5844600000.0,
+   "start": 457,
+   "end": 466,
+   "ref": "S1",
+   "ref_span": [
+    466,
+    471
+   ],
+   "sentence": "FY2025 revenue grew 3.8% [S2] to $5,844.6m [S1], from $5,628.5m [S16] in FY2024.",
+   "sentence_start": 424,
+   "year": 2025,
+   "year_span": [
+    424,
+    430
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5844600000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: HUBB FY2025 revenue = $5,844.6m (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$5,628.5m",
+   "kind": "money",
+   "value": 5628500000.0,
+   "start": 478,
+   "end": 487,
+   "ref": "S16",
+   "ref_span": [
+    487,
+    493
+   ],
+   "sentence": "FY2025 revenue grew 3.8% [S2] to $5,844.6m [S1], from $5,628.5m [S16] in FY2024.",
+   "sentence_start": 424,
+   "year": 2024,
+   "year_span": [
+    497,
+    503
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5628500000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: HUBB FY2024 revenue = $5,628.5m (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$887.1m",
+   "kind": "money",
+   "value": 887100000.0,
+   "start": 527,
+   "end": 534,
+   "ref": "S6",
+   "ref_span": [
+    534,
+    539
+   ],
+   "sentence": "FY2025 net income was $887.1m [S6], or diluted EPS of $16.54 [S7].",
+   "sentence_start": 505,
+   "year": 2025,
+   "year_span": [
+    505,
+    511
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 887100000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: HUBB FY2025 net income = $887.1m (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$16.54",
+   "kind": "per_share",
+   "value": 16.54,
+   "start": 559,
+   "end": 565,
+   "ref": "S7",
+   "ref_span": [
+    565,
+    570
+   ],
+   "sentence": "FY2025 net income was $887.1m [S6], or diluted EPS of $16.54 [S7].",
+   "sentence_start": 505,
+   "year": 2025,
+   "year_span": [
+    505,
+    511
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 16.54,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: HUBB FY2025 diluted EPS = $16.54 (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$1,414.9m",
+   "kind": "money",
+   "value": 1414900000.0,
+   "start": 590,
+   "end": 599,
+   "ref": "S8",
+   "ref_span": [
+    599,
+    604
+   ],
+   "sentence": "FY2025 EBITDA was $1,414.9m [S8].",
+   "sentence_start": 572,
+   "year": 2025,
+   "year_span": [
+    572,
+    578
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1414900000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: HUBB FY2025 EBITDA = $1,414.9m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "35.3%",
+   "kind": "pct",
+   "value": 0.353,
+   "start": 654,
+   "end": 659,
+   "ref": "S3",
+   "ref_span": [
+    659,
+    664
+   ],
+   "sentence": "FY2025 gross margin was 35.3% [S3], up from 33.9% [S17] in FY2024.",
+   "sentence_start": 630,
+   "year": 2025,
+   "year_span": [
+    630,
+    636
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.35316360401053964,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: HUBB FY2025 gross margin = 35.3% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "33.9%",
+   "kind": "pct",
+   "value": 0.33899999999999997,
+   "start": 674,
+   "end": 679,
+   "ref": "S17",
+   "ref_span": [
+    679,
+    685
+   ],
+   "sentence": "FY2025 gross margin was 35.3% [S3], up from 33.9% [S17] in FY2024.",
+   "sentence_start": 630,
+   "year": 2024,
+   "year_span": [
+    689,
+    695
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.33856267211512836,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: HUBB FY2024 gross margin = 33.9% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "20.7%",
+   "kind": "pct",
+   "value": 0.207,
+   "start": 720,
+   "end": 725,
+   "ref": "S5",
+   "ref_span": [
+    725,
+    730
+   ],
+   "sentence": "FY2025 EBIT margin was 20.7% [S5], up from 19.4% [S18] in FY2024.",
+   "sentence_start": 697,
+   "year": 2025,
+   "year_span": [
+    697,
+    703
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.20682339253327858,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: HUBB FY2025 EBIT margin = 20.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "19.4%",
+   "kind": "pct",
+   "value": 0.19399999999999998,
+   "start": 740,
+   "end": 745,
+   "ref": "S18",
+   "ref_span": [
+    745,
+    751
+   ],
+   "sentence": "FY2025 EBIT margin was 20.7% [S5], up from 19.4% [S18] in FY2024.",
+   "sentence_start": 697,
+   "year": 2024,
+   "year_span": [
+    755,
+    761
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.19420804832548635,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: HUBB FY2024 EBIT margin = 19.4% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "18.7%",
+   "kind": "pct",
+   "value": 0.187,
+   "start": 779,
+   "end": 784,
+   "ref": "S9",
+   "ref_span": [
+    784,
+    789
+   ],
+   "sentence": "FY2025 ROIC was 18.7% [S9].",
+   "sentence_start": 763,
+   "year": 2025,
+   "year_span": [
+    763,
+    769
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.18659482481331108,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: HUBB FY2025 ROIC = 18.7% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$482.5m",
+   "kind": "money",
+   "value": 482500000.0,
+   "start": 869,
+   "end": 876,
+   "ref": "S11",
+   "ref_span": [
+    876,
+    882
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $482.5m [S11] against total debt of $2,325.4m [S12], giving net debt of $1,842.9m [S13].",
+   "sentence_start": 823,
+   "year": 2025,
+   "year_span": [
+    837,
+    843
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 482500000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: HUBB FY2025 cash = $482.5m (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$2,325.4m",
+   "kind": "money",
+   "value": 2325400000.0,
+   "start": 905,
+   "end": 914,
+   "ref": "S12",
+   "ref_span": [
+    914,
+    920
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $482.5m [S11] against total debt of $2,325.4m [S12], giving net debt of $1,842.9m [S13].",
+   "sentence_start": 823,
+   "year": 2025,
+   "year_span": [
+    837,
+    843
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2325400000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: HUBB FY2025 total debt = $2,325.4m (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "$1,842.9m",
+   "kind": "money",
+   "value": 1842900000.0,
+   "start": 941,
+   "end": 950,
+   "ref": "S13",
+   "ref_span": [
+    950,
+    956
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $482.5m [S11] against total debt of $2,325.4m [S12], giving net debt of $1,842.9m [S13].",
+   "sentence_start": 823,
+   "year": 2025,
+   "year_span": [
+    837,
+    843
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1842900000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: HUBB FY2025 net debt = $1,842.9m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$1,029.8m",
+   "kind": "money",
+   "value": 1029800000.0,
+   "start": 989,
+   "end": 998,
+   "ref": "S14",
+   "ref_span": [
+    998,
+    1004
+   ],
+   "sentence": "FY2025 operating cash flow was $1,029.8m [S14] and capex was $155.1m [S15].",
+   "sentence_start": 958,
+   "year": 2025,
+   "year_span": [
+    958,
+    964
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1029800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: HUBB FY2025 operating cash flow = $1,029.8m (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$155.1m",
+   "kind": "money",
+   "value": 155100000.0,
+   "start": 1019,
+   "end": 1026,
+   "ref": "S15",
+   "ref_span": [
+    1026,
+    1032
+   ],
+   "sentence": "FY2025 operating cash flow was $1,029.8m [S14] and capex was $155.1m [S15].",
+   "sentence_start": 958,
+   "year": 2025,
+   "year_span": [
+    958,
+    964
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 155100000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: HUBB FY2025 capex = $155.1m (xbrl; 0001628280-26-007500)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$461.10",
+   "kind": "per_share",
+   "value": 461.1,
+   "start": 1082,
+   "end": 1089,
+   "ref": "S19",
+   "ref_span": [
+    1089,
+    1095
+   ],
+   "sentence": "The shares closed at $461.10 [S19] on 2026-10-16.",
+   "sentence_start": 1061,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 461.1,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: HUBB share price = $461.10 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "18.5x",
+   "kind": "multiple",
+   "value": 18.5,
+   "start": 1174,
+   "end": 1179,
+   "ref": "S69",
+   "ref_span": [
+    1179,
+    1185
+   ],
+   "sentence": "On 2026-10-16 prices, Hubbell trades at an FY2025 EV/EBITDA of 18.5x [S69], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 1111,
+   "year": 2025,
+   "year_span": [
+    1154,
+    1160
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 18.523035815039933,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S69: HUBB FY2025 EV/EBITDA = 18.5x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "26.1x",
+   "kind": "multiple",
+   "value": 26.1,
+   "start": 1220,
+   "end": 1225,
+   "ref": "S126",
+   "ref_span": [
+    1225,
+    1232
+   ],
+   "sentence": "On 2026-10-16 prices, Hubbell trades at an FY2025 EV/EBITDA of 18.5x [S69], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 1111,
+   "year": 2025,
+   "year_span": [
+    1154,
+    1160
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 26.093947240653826,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 26.1x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "4.5x",
+   "kind": "multiple",
+   "value": 4.5,
+   "start": 1257,
+   "end": 1261,
+   "ref": "S68",
+   "ref_span": [
+    1261,
+    1267
+   ],
+   "sentence": "Its FY2025 EV/Sales is 4.5x [S68] against a peer median of 5.0x [S127].",
+   "sentence_start": 1234,
+   "year": 2025,
+   "year_span": [
+    1238,
+    1244
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.484180846371009,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S68: HUBB FY2025 EV/Sales = 4.5x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "5.0x",
+   "kind": "multiple",
+   "value": 5.0,
+   "start": 1293,
+   "end": 1297,
+   "ref": "S127",
+   "ref_span": [
+    1297,
+    1304
+   ],
+   "sentence": "Its FY2025 EV/Sales is 4.5x [S68] against a peer median of 5.0x [S127].",
+   "sentence_start": 1234,
+   "year": 2025,
+   "year_span": [
+    1238,
+    1244
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.039974553489121,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 5.0x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "27.9x",
+   "kind": "multiple",
+   "value": 27.9,
+   "start": 1324,
+   "end": 1329,
+   "ref": "S70",
+   "ref_span": [
+    1329,
+    1335
+   ],
+   "sentence": "Its FY2025 P/E is 27.9x [S70] against a peer median of 35.4x [S128].",
+   "sentence_start": 1306,
+   "year": 2025,
+   "year_span": [
+    1310,
+    1316
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 27.877871825876664,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S70: HUBB FY2025 P/E = 27.9x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "35.4x",
+   "kind": "multiple",
+   "value": 35.4,
+   "start": 1361,
+   "end": 1366,
+   "ref": "S128",
+   "ref_span": [
+    1366,
+    1373
+   ],
+   "sentence": "Its FY2025 P/E is 27.9x [S70] against a peer median of 35.4x [S128].",
+   "sentence_start": 1306,
+   "year": 2025,
+   "year_span": [
+    1310,
+    1316
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 35.35362095531587,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 35.4x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "20.7%",
+   "kind": "pct",
+   "value": 0.207,
+   "start": 1414,
+   "end": 1419,
+   "ref": "S5",
+   "ref_span": [
+    1419,
+    1424
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 20.7% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1375,
+   "year": 2025,
+   "year_span": [
+    1392,
+    1398
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.20682339253327858,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: HUBB FY2025 EBIT margin = 20.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "15.8%",
+   "kind": "pct",
+   "value": 0.158,
+   "start": 1453,
+   "end": 1458,
+   "ref": "S129",
+   "ref_span": [
+    1458,
+    1465
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 20.7% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1375,
+   "year": 2025,
+   "year_span": [
+    1392,
+    1398
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.15843415273175618,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 15.8% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "We provide utility and electrical solutions that enable our customers to operate critical infrastructure reliably and efficiently, and we empower and energize communities through innovative solutions supporting energy infrastructure In Front of the Meter, on The Edge, and Behind the Meter.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-007500"
+  },
+  {
+   "quote": "Inflation and other unfavorable economic conditions may adversely affect our business results of operations and financial condition.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-007500"
+  },
+  {
+   "quote": "We operate in markets that are subject to competitive pressures that could affect selling prices or demand for our products.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-007500"
+  },
+  {
+   "quote": "Volatility in currency exchange rates may adversely affect our financial condition, results of operations and cash flows.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-007500"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

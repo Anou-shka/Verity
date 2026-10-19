@@ -1,0 +1,737 @@
+{
+ "run_id": "TT-rules-20261019T113124",
+ "ticker": "TT",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 1.89
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "7.5%",
+   "kind": "pct",
+   "value": 0.075,
+   "start": 391,
+   "end": 395,
+   "ref": "S2",
+   "ref_span": [
+    395,
+    400
+   ],
+   "sentence": "FY2025 revenue grew 7.5% [S2] to $21,321.9m [S1], from $19,838.2m [S16] in FY2024.",
+   "sentence_start": 371,
+   "year": 2025,
+   "year_span": [
+    371,
+    377
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.07479005151677076,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: TT FY2025 revenue growth = 7.5% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$21,321.9m",
+   "kind": "money",
+   "value": 21321900000.0,
+   "start": 404,
+   "end": 414,
+   "ref": "S1",
+   "ref_span": [
+    414,
+    419
+   ],
+   "sentence": "FY2025 revenue grew 7.5% [S2] to $21,321.9m [S1], from $19,838.2m [S16] in FY2024.",
+   "sentence_start": 371,
+   "year": 2025,
+   "year_span": [
+    371,
+    377
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 21321900000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: TT FY2025 revenue = $21,321.9m (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$19,838.2m",
+   "kind": "money",
+   "value": 19838200000.0,
+   "start": 426,
+   "end": 436,
+   "ref": "S16",
+   "ref_span": [
+    436,
+    442
+   ],
+   "sentence": "FY2025 revenue grew 7.5% [S2] to $21,321.9m [S1], from $19,838.2m [S16] in FY2024.",
+   "sentence_start": 371,
+   "year": 2024,
+   "year_span": [
+    446,
+    452
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 19838200000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: TT FY2024 revenue = $19,838.2m (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$2,918.6m",
+   "kind": "money",
+   "value": 2918600000.0,
+   "start": 476,
+   "end": 485,
+   "ref": "S6",
+   "ref_span": [
+    485,
+    490
+   ],
+   "sentence": "FY2025 net income was $2,918.6m [S6], or diluted EPS of $12.98 [S7].",
+   "sentence_start": 454,
+   "year": 2025,
+   "year_span": [
+    454,
+    460
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2918600000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: TT FY2025 net income = $2,918.6m (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$12.98",
+   "kind": "per_share",
+   "value": 12.98,
+   "start": 510,
+   "end": 516,
+   "ref": "S7",
+   "ref_span": [
+    516,
+    521
+   ],
+   "sentence": "FY2025 net income was $2,918.6m [S6], or diluted EPS of $12.98 [S7].",
+   "sentence_start": 454,
+   "year": 2025,
+   "year_span": [
+    454,
+    460
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 12.98,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: TT FY2025 diluted EPS = $12.98 (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$4,343.7m",
+   "kind": "money",
+   "value": 4343700000.0,
+   "start": 541,
+   "end": 550,
+   "ref": "S8",
+   "ref_span": [
+    550,
+    555
+   ],
+   "sentence": "FY2025 EBITDA was $4,343.7m [S8].",
+   "sentence_start": 523,
+   "year": 2025,
+   "year_span": [
+    523,
+    529
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4343700000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: TT FY2025 EBITDA = $4,343.7m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "36.2%",
+   "kind": "pct",
+   "value": 0.36200000000000004,
+   "start": 605,
+   "end": 610,
+   "ref": "S3",
+   "ref_span": [
+    610,
+    615
+   ],
+   "sentence": "FY2025 gross margin was 36.2% [S3], up from 35.7% [S17] in FY2024.",
+   "sentence_start": 581,
+   "year": 2025,
+   "year_span": [
+    581,
+    587
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.3616094250512384,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: TT FY2025 gross margin = 36.2% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "35.7%",
+   "kind": "pct",
+   "value": 0.35700000000000004,
+   "start": 625,
+   "end": 630,
+   "ref": "S17",
+   "ref_span": [
+    630,
+    636
+   ],
+   "sentence": "FY2025 gross margin was 36.2% [S3], up from 35.7% [S17] in FY2024.",
+   "sentence_start": 581,
+   "year": 2024,
+   "year_span": [
+    640,
+    646
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.3569124214898529,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: TT FY2024 gross margin = 35.7% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "18.6%",
+   "kind": "pct",
+   "value": 0.18600000000000003,
+   "start": 671,
+   "end": 676,
+   "ref": "S5",
+   "ref_span": [
+    676,
+    681
+   ],
+   "sentence": "FY2025 EBIT margin was 18.6% [S5], up from 17.6% [S18] in FY2024.",
+   "sentence_start": 648,
+   "year": 2025,
+   "year_span": [
+    648,
+    654
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.18607159774691748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: TT FY2025 EBIT margin = 18.6% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "17.6%",
+   "kind": "pct",
+   "value": 0.17600000000000002,
+   "start": 691,
+   "end": 696,
+   "ref": "S18",
+   "ref_span": [
+    696,
+    702
+   ],
+   "sentence": "FY2025 EBIT margin was 18.6% [S5], up from 17.6% [S18] in FY2024.",
+   "sentence_start": 648,
+   "year": 2024,
+   "year_span": [
+    706,
+    712
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.17643233761127522,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: TT FY2024 EBIT margin = 17.6% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "29.1%",
+   "kind": "pct",
+   "value": 0.29100000000000004,
+   "start": 730,
+   "end": 735,
+   "ref": "S9",
+   "ref_span": [
+    735,
+    740
+   ],
+   "sentence": "FY2025 ROIC was 29.1% [S9].",
+   "sentence_start": 714,
+   "year": 2025,
+   "year_span": [
+    714,
+    720
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.2905559131417226,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: TT FY2025 ROIC = 29.1% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$1,763.3m",
+   "kind": "money",
+   "value": 1763300000.0,
+   "start": 820,
+   "end": 829,
+   "ref": "S11",
+   "ref_span": [
+    829,
+    835
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $1,763.3m [S11] against total debt of $4,615.1m [S12], giving net debt of $2,851.8m [S13].",
+   "sentence_start": 774,
+   "year": 2025,
+   "year_span": [
+    788,
+    794
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1763300000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: TT FY2025 cash = $1,763.3m (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$4,615.1m",
+   "kind": "money",
+   "value": 4615100000.0,
+   "start": 858,
+   "end": 867,
+   "ref": "S12",
+   "ref_span": [
+    867,
+    873
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $1,763.3m [S11] against total debt of $4,615.1m [S12], giving net debt of $2,851.8m [S13].",
+   "sentence_start": 774,
+   "year": 2025,
+   "year_span": [
+    788,
+    794
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4615100000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: TT FY2025 total debt = $4,615.1m (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "$2,851.8m",
+   "kind": "money",
+   "value": 2851800000.0,
+   "start": 894,
+   "end": 903,
+   "ref": "S13",
+   "ref_span": [
+    903,
+    909
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $1,763.3m [S11] against total debt of $4,615.1m [S12], giving net debt of $2,851.8m [S13].",
+   "sentence_start": 774,
+   "year": 2025,
+   "year_span": [
+    788,
+    794
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2851800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: TT FY2025 net debt = $2,851.8m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$3,194.5m",
+   "kind": "money",
+   "value": 3194500000.0,
+   "start": 942,
+   "end": 951,
+   "ref": "S14",
+   "ref_span": [
+    951,
+    957
+   ],
+   "sentence": "FY2025 operating cash flow was $3,194.5m [S14] and capex was $383.0m [S15].",
+   "sentence_start": 911,
+   "year": 2025,
+   "year_span": [
+    911,
+    917
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3194500000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: TT FY2025 operating cash flow = $3,194.5m (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$383.0m",
+   "kind": "money",
+   "value": 383000000.0,
+   "start": 972,
+   "end": 979,
+   "ref": "S15",
+   "ref_span": [
+    979,
+    985
+   ],
+   "sentence": "FY2025 operating cash flow was $3,194.5m [S14] and capex was $383.0m [S15].",
+   "sentence_start": 911,
+   "year": 2025,
+   "year_span": [
+    911,
+    917
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 383000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: TT FY2025 capex = $383.0m (xbrl; 0001628280-26-005731)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$458.89",
+   "kind": "per_share",
+   "value": 458.89,
+   "start": 1035,
+   "end": 1042,
+   "ref": "S19",
+   "ref_span": [
+    1042,
+    1048
+   ],
+   "sentence": "The shares closed at $458.89 [S19] on 2026-10-16.",
+   "sentence_start": 1014,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 458.89,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: TT share price = $458.89 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "23.9x",
+   "kind": "multiple",
+   "value": 23.9,
+   "start": 1138,
+   "end": 1143,
+   "ref": "S102",
+   "ref_span": [
+    1143,
+    1150
+   ],
+   "sentence": "On 2026-10-16 prices, Trane Technologies trades at an FY2025 EV/EBITDA of 23.9x [S102], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 1064,
+   "year": 2025,
+   "year_span": [
+    1118,
+    1124
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 23.90087614096968,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S102: TT FY2025 EV/EBITDA = 23.9x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "26.1x",
+   "kind": "multiple",
+   "value": 26.1,
+   "start": 1185,
+   "end": 1190,
+   "ref": "S126",
+   "ref_span": [
+    1190,
+    1197
+   ],
+   "sentence": "On 2026-10-16 prices, Trane Technologies trades at an FY2025 EV/EBITDA of 23.9x [S102], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 1064,
+   "year": 2025,
+   "year_span": [
+    1118,
+    1124
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 26.093947240653826,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 26.1x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "4.9x",
+   "kind": "multiple",
+   "value": 4.9,
+   "start": 1222,
+   "end": 1226,
+   "ref": "S101",
+   "ref_span": [
+    1226,
+    1233
+   ],
+   "sentence": "Its FY2025 EV/Sales is 4.9x [S101] against a peer median of 5.0x [S127].",
+   "sentence_start": 1199,
+   "year": 2025,
+   "year_span": [
+    1203,
+    1209
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.869089325694708,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S101: TT FY2025 EV/Sales = 4.9x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "5.0x",
+   "kind": "multiple",
+   "value": 5.0,
+   "start": 1259,
+   "end": 1263,
+   "ref": "S127",
+   "ref_span": [
+    1263,
+    1270
+   ],
+   "sentence": "Its FY2025 EV/Sales is 4.9x [S101] against a peer median of 5.0x [S127].",
+   "sentence_start": 1199,
+   "year": 2025,
+   "year_span": [
+    1203,
+    1209
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.039974553489121,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 5.0x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "35.4x",
+   "kind": "multiple",
+   "value": 35.4,
+   "start": 1290,
+   "end": 1295,
+   "ref": "S103",
+   "ref_span": [
+    1295,
+    1302
+   ],
+   "sentence": "Its FY2025 P/E is 35.4x [S103] against a peer median of 33.3x [S128].",
+   "sentence_start": 1272,
+   "year": 2025,
+   "year_span": [
+    1276,
+    1282
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 35.35362095531587,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S103: TT FY2025 P/E = 35.4x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "33.3x",
+   "kind": "multiple",
+   "value": 33.3,
+   "start": 1328,
+   "end": 1333,
+   "ref": "S128",
+   "ref_span": [
+    1333,
+    1340
+   ],
+   "sentence": "Its FY2025 P/E is 35.4x [S103] against a peer median of 33.3x [S128].",
+   "sentence_start": 1272,
+   "year": 2025,
+   "year_span": [
+    1276,
+    1282
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 33.33916554508748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 33.3x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "18.6%",
+   "kind": "pct",
+   "value": 0.18600000000000003,
+   "start": 1381,
+   "end": 1386,
+   "ref": "S5",
+   "ref_span": [
+    1386,
+    1391
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 18.6% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1342,
+   "year": 2025,
+   "year_span": [
+    1359,
+    1365
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.18607159774691748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: TT FY2025 EBIT margin = 18.6% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "15.8%",
+   "kind": "pct",
+   "value": 0.158,
+   "start": 1420,
+   "end": 1425,
+   "ref": "S129",
+   "ref_span": [
+    1425,
+    1432
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 18.6% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1342,
+   "year": 2025,
+   "year_span": [
+    1359,
+    1365
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.15843415273175618,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 15.8% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "We generate revenue and cash primarily through the design, manufacture, sales and service of solutions for Heating, Ventilation and Air Conditioning (HVAC), transport refrigeration, and custom refrigeration solutions.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-005731"
+  },
+  {
+   "quote": "Commodity and raw material shortages, supply chain risks and price increases could adversely affect our financial results.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-005731"
+  },
+  {
+   "quote": "We face significant competition in the markets that we serve.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-005731"
+  },
+  {
+   "quote": "Our growth is dependent, in part, on the timely development, commercialization and acceptance of new and enhanced products and services.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-005731"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

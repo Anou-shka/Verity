@@ -1,0 +1,737 @@
+{
+ "run_id": "POWL-rules-20261019T113128",
+ "ticker": "POWL",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 1.79
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "9.1%",
+   "kind": "pct",
+   "value": 0.091,
+   "start": 254,
+   "end": 258,
+   "ref": "S2",
+   "ref_span": [
+    258,
+    263
+   ],
+   "sentence": "FY2025 revenue grew 9.1% [S2] to $1,104.3m [S1], from $1,012.4m [S16] in FY2024.",
+   "sentence_start": 234,
+   "year": 2025,
+   "year_span": [
+    234,
+    240
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.09083958607446396,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: POWL FY2025 revenue growth = 9.1% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$1,104.3m",
+   "kind": "money",
+   "value": 1104300000.0,
+   "start": 267,
+   "end": 276,
+   "ref": "S1",
+   "ref_span": [
+    276,
+    281
+   ],
+   "sentence": "FY2025 revenue grew 9.1% [S2] to $1,104.3m [S1], from $1,012.4m [S16] in FY2024.",
+   "sentence_start": 234,
+   "year": 2025,
+   "year_span": [
+    234,
+    240
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1104318000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: POWL FY2025 revenue = $1,104.3m (xbrl; 0000080420-25-000152)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$1,012.4m",
+   "kind": "money",
+   "value": 1012400000.0,
+   "start": 288,
+   "end": 297,
+   "ref": "S16",
+   "ref_span": [
+    297,
+    303
+   ],
+   "sentence": "FY2025 revenue grew 9.1% [S2] to $1,104.3m [S1], from $1,012.4m [S16] in FY2024.",
+   "sentence_start": 234,
+   "year": 2024,
+   "year_span": [
+    307,
+    313
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1012356000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: POWL FY2024 revenue = $1,012.4m (xbrl; 0000080420-25-000152)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$180.7m",
+   "kind": "money",
+   "value": 180700000.0,
+   "start": 337,
+   "end": 344,
+   "ref": "S6",
+   "ref_span": [
+    344,
+    349
+   ],
+   "sentence": "FY2025 net income was $180.7m [S6], or diluted EPS of $14.86 [S7].",
+   "sentence_start": 315,
+   "year": 2025,
+   "year_span": [
+    315,
+    321
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 180747000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: POWL FY2025 net income = $180.7m (xbrl; 0000080420-25-000152)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$14.86",
+   "kind": "per_share",
+   "value": 14.86,
+   "start": 369,
+   "end": 375,
+   "ref": "S7",
+   "ref_span": [
+    375,
+    380
+   ],
+   "sentence": "FY2025 net income was $180.7m [S6], or diluted EPS of $14.86 [S7].",
+   "sentence_start": 315,
+   "year": 2025,
+   "year_span": [
+    315,
+    321
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 14.86,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: POWL FY2025 diluted EPS = $14.86 (xbrl; 0000080420-25-000152)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$225.1m",
+   "kind": "money",
+   "value": 225100000.0,
+   "start": 400,
+   "end": 407,
+   "ref": "S8",
+   "ref_span": [
+    407,
+    412
+   ],
+   "sentence": "FY2025 EBITDA was $225.1m [S8].",
+   "sentence_start": 382,
+   "year": 2025,
+   "year_span": [
+    382,
+    388
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 225125000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: POWL FY2025 EBITDA = $225.1m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "29.4%",
+   "kind": "pct",
+   "value": 0.294,
+   "start": 462,
+   "end": 467,
+   "ref": "S3",
+   "ref_span": [
+    467,
+    472
+   ],
+   "sentence": "FY2025 gross margin was 29.4% [S3], up from 27.0% [S17] in FY2024.",
+   "sentence_start": 438,
+   "year": 2025,
+   "year_span": [
+    438,
+    444
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.293738760031078,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: POWL FY2025 gross margin = 29.4% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "27.0%",
+   "kind": "pct",
+   "value": 0.27,
+   "start": 482,
+   "end": 487,
+   "ref": "S17",
+   "ref_span": [
+    487,
+    493
+   ],
+   "sentence": "FY2025 gross margin was 29.4% [S3], up from 27.0% [S17] in FY2024.",
+   "sentence_start": 438,
+   "year": 2024,
+   "year_span": [
+    497,
+    503
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.2697549083523978,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: POWL FY2024 gross margin = 27.0% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "19.7%",
+   "kind": "pct",
+   "value": 0.19699999999999998,
+   "start": 528,
+   "end": 533,
+   "ref": "S5",
+   "ref_span": [
+    533,
+    538
+   ],
+   "sentence": "FY2025 EBIT margin was 19.7% [S5], up from 17.7% [S18] in FY2024.",
+   "sentence_start": 505,
+   "year": 2025,
+   "year_span": [
+    505,
+    511
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.19728013126653735,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: POWL FY2025 EBIT margin = 19.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "17.7%",
+   "kind": "pct",
+   "value": 0.177,
+   "start": 548,
+   "end": 553,
+   "ref": "S18",
+   "ref_span": [
+    553,
+    559
+   ],
+   "sentence": "FY2025 EBIT margin was 19.7% [S5], up from 17.7% [S18] in FY2024.",
+   "sentence_start": 505,
+   "year": 2024,
+   "year_span": [
+    563,
+    569
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.17659104109621518,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: POWL FY2024 EBIT margin = 17.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "94.3%",
+   "kind": "pct",
+   "value": 0.943,
+   "start": 587,
+   "end": 592,
+   "ref": "S9",
+   "ref_span": [
+    592,
+    597
+   ],
+   "sentence": "FY2025 ROIC was 94.3% [S9].",
+   "sentence_start": 571,
+   "year": 2025,
+   "year_span": [
+    571,
+    577
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.9425212670371333,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: POWL FY2025 ROIC = 94.3% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$450.7m",
+   "kind": "money",
+   "value": 450700000.0,
+   "start": 677,
+   "end": 684,
+   "ref": "S11",
+   "ref_span": [
+    684,
+    690
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $450.7m [S11] against total debt of $0.0m [S12], giving a net cash position (net debt of -$450.7m [S13]).",
+   "sentence_start": 631,
+   "year": 2025,
+   "year_span": [
+    645,
+    651
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 450739000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: POWL FY2025 cash = $450.7m (xbrl; 0000080420-25-000152)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$0.0m",
+   "kind": "money",
+   "value": 0.0,
+   "start": 713,
+   "end": 718,
+   "ref": "S12",
+   "ref_span": [
+    718,
+    724
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $450.7m [S11] against total debt of $0.0m [S12], giving a net cash position (net debt of -$450.7m [S13]).",
+   "sentence_start": 631,
+   "year": 2025,
+   "year_span": [
+    645,
+    651
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: POWL FY2025 total debt = $0.0m (xbrl; )",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "-$450.7m",
+   "kind": "money",
+   "value": -450700000.0,
+   "start": 766,
+   "end": 774,
+   "ref": "S13",
+   "ref_span": [
+    774,
+    780
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $450.7m [S11] against total debt of $0.0m [S12], giving a net cash position (net debt of -$450.7m [S13]).",
+   "sentence_start": 631,
+   "year": 2025,
+   "year_span": [
+    645,
+    651
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": -450739000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: POWL FY2025 net debt = -$450.7m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$167.9m",
+   "kind": "money",
+   "value": 167900000.0,
+   "start": 814,
+   "end": 821,
+   "ref": "S14",
+   "ref_span": [
+    821,
+    827
+   ],
+   "sentence": "FY2025 operating cash flow was $167.9m [S14] and capex was $13.1m [S15].",
+   "sentence_start": 783,
+   "year": 2025,
+   "year_span": [
+    783,
+    789
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 167937000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: POWL FY2025 operating cash flow = $167.9m (xbrl; 0000080420-25-000152)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$13.1m",
+   "kind": "money",
+   "value": 13100000.0,
+   "start": 842,
+   "end": 848,
+   "ref": "S15",
+   "ref_span": [
+    848,
+    854
+   ],
+   "sentence": "FY2025 operating cash flow was $167.9m [S14] and capex was $13.1m [S15].",
+   "sentence_start": 783,
+   "year": 2025,
+   "year_span": [
+    783,
+    789
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 13149000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: POWL FY2025 capex = $13.1m (xbrl; 0000080420-25-000152)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$165.14",
+   "kind": "per_share",
+   "value": 165.14,
+   "start": 904,
+   "end": 911,
+   "ref": "S19",
+   "ref_span": [
+    911,
+    917
+   ],
+   "sentence": "The shares closed at $165.14 [S19] on 2026-10-16.",
+   "sentence_start": 883,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 165.14,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: POWL share price = $165.14 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "24.7x",
+   "kind": "multiple",
+   "value": 24.7,
+   "start": 1006,
+   "end": 1011,
+   "ref": "S124",
+   "ref_span": [
+    1011,
+    1018
+   ],
+   "sentence": "On 2026-10-16 prices, Powell Industries trades at an FY2025 EV/EBITDA of 24.7x [S124], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 933,
+   "year": 2025,
+   "year_span": [
+    986,
+    992
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 24.72286338238756,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S124: POWL FY2025 EV/EBITDA = 24.7x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "26.1x",
+   "kind": "multiple",
+   "value": 26.1,
+   "start": 1053,
+   "end": 1058,
+   "ref": "S126",
+   "ref_span": [
+    1058,
+    1065
+   ],
+   "sentence": "On 2026-10-16 prices, Powell Industries trades at an FY2025 EV/EBITDA of 24.7x [S124], a discount to the peer median of 26.1x [S126].",
+   "sentence_start": 933,
+   "year": 2025,
+   "year_span": [
+    986,
+    992
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 26.093947240653826,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 26.1x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "5.0x",
+   "kind": "multiple",
+   "value": 5.0,
+   "start": 1090,
+   "end": 1094,
+   "ref": "S123",
+   "ref_span": [
+    1094,
+    1101
+   ],
+   "sentence": "Its FY2025 EV/Sales is 5.0x [S123] against a peer median of 4.9x [S127].",
+   "sentence_start": 1067,
+   "year": 2025,
+   "year_span": [
+    1071,
+    1077
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 5.039974553489121,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S123: POWL FY2025 EV/Sales = 5.0x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "4.9x",
+   "kind": "multiple",
+   "value": 4.9,
+   "start": 1127,
+   "end": 1131,
+   "ref": "S127",
+   "ref_span": [
+    1131,
+    1138
+   ],
+   "sentence": "Its FY2025 EV/Sales is 5.0x [S123] against a peer median of 4.9x [S127].",
+   "sentence_start": 1067,
+   "year": 2025,
+   "year_span": [
+    1071,
+    1077
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.869089325694708,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 4.9x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "33.3x",
+   "kind": "multiple",
+   "value": 33.3,
+   "start": 1158,
+   "end": 1163,
+   "ref": "S125",
+   "ref_span": [
+    1163,
+    1170
+   ],
+   "sentence": "Its FY2025 P/E is 33.3x [S125] against a peer median of 35.4x [S128].",
+   "sentence_start": 1140,
+   "year": 2025,
+   "year_span": [
+    1144,
+    1150
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 33.33916554508748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S125: POWL FY2025 P/E = 33.3x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "35.4x",
+   "kind": "multiple",
+   "value": 35.4,
+   "start": 1196,
+   "end": 1201,
+   "ref": "S128",
+   "ref_span": [
+    1201,
+    1208
+   ],
+   "sentence": "Its FY2025 P/E is 33.3x [S125] against a peer median of 35.4x [S128].",
+   "sentence_start": 1140,
+   "year": 2025,
+   "year_span": [
+    1144,
+    1150
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 35.35362095531587,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 35.4x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "19.7%",
+   "kind": "pct",
+   "value": 0.19699999999999998,
+   "start": 1249,
+   "end": 1254,
+   "ref": "S5",
+   "ref_span": [
+    1254,
+    1259
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 19.7% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1210,
+   "year": 2025,
+   "year_span": [
+    1227,
+    1233
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.19728013126653735,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: POWL FY2025 EBIT margin = 19.7% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "15.8%",
+   "kind": "pct",
+   "value": 0.158,
+   "start": 1288,
+   "end": 1293,
+   "ref": "S129",
+   "ref_span": [
+    1293,
+    1300
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 19.7% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1210,
+   "year": 2025,
+   "year_span": [
+    1227,
+    1233
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.15843415273175618,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 15.8% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "Overview Powell Industries, Inc. is a Delaware corporation founded by William E.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000080420-25-000152"
+  },
+  {
+   "quote": "Our backlog is subject to unexpected adjustments, cancellations and scope reductions and, therefore, may not be a reliable indicator of our future earnings.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000080420-25-000152"
+  },
+  {
+   "quote": "Failure to place competitive bids and adequately project future costs may result in losses on our fixed-price contracts with customers.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000080420-25-000152"
+  },
+  {
+   "quote": "Supplier concentration and limited supplier capacity may adversely impact our business and results of operations.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0000080420-25-000152"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}

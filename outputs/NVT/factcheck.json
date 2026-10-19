@@ -1,0 +1,737 @@
+{
+ "run_id": "NVT-rules-20261019T113112",
+ "ticker": "NVT",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 1.9
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "29.5%",
+   "kind": "pct",
+   "value": 0.295,
+   "start": 251,
+   "end": 256,
+   "ref": "S2",
+   "ref_span": [
+    256,
+    261
+   ],
+   "sentence": "FY2025 revenue grew 29.5% [S2] to $3,893.1m [S1], from $3,006.1m [S16] in FY2024.",
+   "sentence_start": 231,
+   "year": 2025,
+   "year_span": [
+    231,
+    237
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.2950666977146468,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: NVT FY2025 revenue growth = 29.5% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$3,893.1m",
+   "kind": "money",
+   "value": 3893100000.0,
+   "start": 265,
+   "end": 274,
+   "ref": "S1",
+   "ref_span": [
+    274,
+    279
+   ],
+   "sentence": "FY2025 revenue grew 29.5% [S2] to $3,893.1m [S1], from $3,006.1m [S16] in FY2024.",
+   "sentence_start": 231,
+   "year": 2025,
+   "year_span": [
+    231,
+    237
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3893100000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: NVT FY2025 revenue = $3,893.1m (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$3,006.1m",
+   "kind": "money",
+   "value": 3006100000.0,
+   "start": 286,
+   "end": 295,
+   "ref": "S16",
+   "ref_span": [
+    295,
+    301
+   ],
+   "sentence": "FY2025 revenue grew 29.5% [S2] to $3,893.1m [S1], from $3,006.1m [S16] in FY2024.",
+   "sentence_start": 231,
+   "year": 2024,
+   "year_span": [
+    305,
+    311
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3006100000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: NVT FY2024 revenue = $3,006.1m (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$710.2m",
+   "kind": "money",
+   "value": 710200000.0,
+   "start": 335,
+   "end": 342,
+   "ref": "S6",
+   "ref_span": [
+    342,
+    347
+   ],
+   "sentence": "FY2025 net income was $710.2m [S6], or diluted EPS of $4.31 [S7].",
+   "sentence_start": 313,
+   "year": 2025,
+   "year_span": [
+    313,
+    319
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 710200000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: NVT FY2025 net income = $710.2m (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$4.31",
+   "kind": "per_share",
+   "value": 4.31,
+   "start": 367,
+   "end": 372,
+   "ref": "S7",
+   "ref_span": [
+    372,
+    377
+   ],
+   "sentence": "FY2025 net income was $710.2m [S6], or diluted EPS of $4.31 [S7].",
+   "sentence_start": 313,
+   "year": 2025,
+   "year_span": [
+    313,
+    319
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.31,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: NVT FY2025 diluted EPS = $4.31 (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$824.6m",
+   "kind": "money",
+   "value": 824600000.0,
+   "start": 397,
+   "end": 404,
+   "ref": "S8",
+   "ref_span": [
+    404,
+    409
+   ],
+   "sentence": "FY2025 EBITDA was $824.6m [S8].",
+   "sentence_start": 379,
+   "year": 2025,
+   "year_span": [
+    379,
+    385
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 824600000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: NVT FY2025 EBITDA = $824.6m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "37.7%",
+   "kind": "pct",
+   "value": 0.377,
+   "start": 459,
+   "end": 464,
+   "ref": "S3",
+   "ref_span": [
+    464,
+    469
+   ],
+   "sentence": "FY2025 gross margin was 37.7% [S3], down from 40.2% [S17] in FY2024.",
+   "sentence_start": 435,
+   "year": 2025,
+   "year_span": [
+    435,
+    441
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.37735994451722277,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: NVT FY2025 gross margin = 37.7% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "40.2%",
+   "kind": "pct",
+   "value": 0.402,
+   "start": 481,
+   "end": 486,
+   "ref": "S17",
+   "ref_span": [
+    486,
+    492
+   ],
+   "sentence": "FY2025 gross margin was 37.7% [S3], down from 40.2% [S17] in FY2024.",
+   "sentence_start": 435,
+   "year": 2024,
+   "year_span": [
+    496,
+    502
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.4022154951598417,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: NVT FY2024 gross margin = 40.2% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "15.8%",
+   "kind": "pct",
+   "value": 0.158,
+   "start": 527,
+   "end": 532,
+   "ref": "S5",
+   "ref_span": [
+    532,
+    537
+   ],
+   "sentence": "FY2025 EBIT margin was 15.8% [S5], down from 17.5% [S18] in FY2024.",
+   "sentence_start": 504,
+   "year": 2025,
+   "year_span": [
+    504,
+    510
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.15843415273175618,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: NVT FY2025 EBIT margin = 15.8% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "17.5%",
+   "kind": "pct",
+   "value": 0.175,
+   "start": 549,
+   "end": 554,
+   "ref": "S18",
+   "ref_span": [
+    554,
+    560
+   ],
+   "sentence": "FY2025 EBIT margin was 15.8% [S5], down from 17.5% [S18] in FY2024.",
+   "sentence_start": 504,
+   "year": 2024,
+   "year_span": [
+    564,
+    570
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.17534346828116165,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: NVT FY2024 EBIT margin = 17.5% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C11",
+   "value_text": "9.3%",
+   "kind": "pct",
+   "value": 0.09300000000000001,
+   "start": 588,
+   "end": 592,
+   "ref": "S9",
+   "ref_span": [
+    592,
+    597
+   ],
+   "sentence": "FY2025 ROIC was 9.3% [S9].",
+   "sentence_start": 572,
+   "year": 2025,
+   "year_span": [
+    572,
+    578
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.09318362069193471,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: NVT FY2025 ROIC = 9.3% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$237.5m",
+   "kind": "money",
+   "value": 237500000.0,
+   "start": 677,
+   "end": 684,
+   "ref": "S11",
+   "ref_span": [
+    684,
+    690
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $237.5m [S11] against total debt of $1,559.8m [S12], giving net debt of $1,322.3m [S13].",
+   "sentence_start": 631,
+   "year": 2025,
+   "year_span": [
+    645,
+    651
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 237500000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: NVT FY2025 cash = $237.5m (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$1,559.8m",
+   "kind": "money",
+   "value": 1559800000.0,
+   "start": 713,
+   "end": 722,
+   "ref": "S12",
+   "ref_span": [
+    722,
+    728
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $237.5m [S11] against total debt of $1,559.8m [S12], giving net debt of $1,322.3m [S13].",
+   "sentence_start": 631,
+   "year": 2025,
+   "year_span": [
+    645,
+    651
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1559800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: NVT FY2025 total debt = $1,559.8m (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "$1,322.3m",
+   "kind": "money",
+   "value": 1322300000.0,
+   "start": 749,
+   "end": 758,
+   "ref": "S13",
+   "ref_span": [
+    758,
+    764
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $237.5m [S11] against total debt of $1,559.8m [S12], giving net debt of $1,322.3m [S13].",
+   "sentence_start": 631,
+   "year": 2025,
+   "year_span": [
+    645,
+    651
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1322300000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: NVT FY2025 net debt = $1,322.3m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$465.2m",
+   "kind": "money",
+   "value": 465200000.0,
+   "start": 797,
+   "end": 804,
+   "ref": "S14",
+   "ref_span": [
+    804,
+    810
+   ],
+   "sentence": "FY2025 operating cash flow was $465.2m [S14] and capex was $93.3m [S15].",
+   "sentence_start": 766,
+   "year": 2025,
+   "year_span": [
+    766,
+    772
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 465200000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: NVT FY2025 operating cash flow = $465.2m (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$93.3m",
+   "kind": "money",
+   "value": 93300000.0,
+   "start": 825,
+   "end": 831,
+   "ref": "S15",
+   "ref_span": [
+    831,
+    837
+   ],
+   "sentence": "FY2025 operating cash flow was $465.2m [S14] and capex was $93.3m [S15].",
+   "sentence_start": 766,
+   "year": 2025,
+   "year_span": [
+    766,
+    772
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 93300000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: NVT FY2025 capex = $93.3m (xbrl; 0001628280-26-008608)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$142.03",
+   "kind": "per_share",
+   "value": 142.03,
+   "start": 887,
+   "end": 894,
+   "ref": "S19",
+   "ref_span": [
+    894,
+    900
+   ],
+   "sentence": "The shares closed at $142.03 [S19] on 2026-10-16.",
+   "sentence_start": 866,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 142.03,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: NVT share price = $142.03 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "29.5x",
+   "kind": "multiple",
+   "value": 29.5,
+   "start": 977,
+   "end": 982,
+   "ref": "S47",
+   "ref_span": [
+    982,
+    988
+   ],
+   "sentence": "On 2026-10-16 prices, nVent trades at an FY2025 EV/EBITDA of 29.5x [S47], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 916,
+   "year": 2025,
+   "year_span": [
+    957,
+    963
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 29.482152651188457,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S47: NVT FY2025 EV/EBITDA = 29.5x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "24.7x",
+   "kind": "multiple",
+   "value": 24.7,
+   "start": 1022,
+   "end": 1027,
+   "ref": "S126",
+   "ref_span": [
+    1027,
+    1034
+   ],
+   "sentence": "On 2026-10-16 prices, nVent trades at an FY2025 EV/EBITDA of 29.5x [S47], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 916,
+   "year": 2025,
+   "year_span": [
+    957,
+    963
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 24.72286338238756,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 24.7x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "6.2x",
+   "kind": "multiple",
+   "value": 6.2,
+   "start": 1059,
+   "end": 1063,
+   "ref": "S46",
+   "ref_span": [
+    1063,
+    1069
+   ],
+   "sentence": "Its FY2025 EV/Sales is 6.2x [S46] against a peer median of 4.9x [S127].",
+   "sentence_start": 1036,
+   "year": 2025,
+   "year_span": [
+    1040,
+    1046
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 6.244633602057487,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S46: NVT FY2025 EV/Sales = 6.2x (valuation; ev / revenue (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C21",
+   "value_text": "4.9x",
+   "kind": "multiple",
+   "value": 4.9,
+   "start": 1095,
+   "end": 1099,
+   "ref": "S127",
+   "ref_span": [
+    1099,
+    1106
+   ],
+   "sentence": "Its FY2025 EV/Sales is 6.2x [S46] against a peer median of 4.9x [S127].",
+   "sentence_start": 1036,
+   "year": 2025,
+   "year_span": [
+    1040,
+    1046
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.869089325694708,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 4.9x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "33.0x",
+   "kind": "multiple",
+   "value": 33.0,
+   "start": 1126,
+   "end": 1131,
+   "ref": "S48",
+   "ref_span": [
+    1131,
+    1137
+   ],
+   "sentence": "Its FY2025 P/E is 33.0x [S48] against a peer median of 35.4x [S128].",
+   "sentence_start": 1108,
+   "year": 2025,
+   "year_span": [
+    1112,
+    1118
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 32.95359628770302,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S48: NVT FY2025 P/E = 33.0x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "35.4x",
+   "kind": "multiple",
+   "value": 35.4,
+   "start": 1163,
+   "end": 1168,
+   "ref": "S128",
+   "ref_span": [
+    1168,
+    1175
+   ],
+   "sentence": "Its FY2025 P/E is 33.0x [S48] against a peer median of 35.4x [S128].",
+   "sentence_start": 1108,
+   "year": 2025,
+   "year_span": [
+    1112,
+    1118
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 35.35362095531587,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 35.4x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "15.8%",
+   "kind": "pct",
+   "value": 0.158,
+   "start": 1216,
+   "end": 1221,
+   "ref": "S5",
+   "ref_span": [
+    1221,
+    1226
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 15.8% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1177,
+   "year": 2025,
+   "year_span": [
+    1194,
+    1200
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.15843415273175618,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: NVT FY2025 EBIT margin = 15.8% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "17.9%",
+   "kind": "pct",
+   "value": 0.179,
+   "start": 1255,
+   "end": 1260,
+   "ref": "S129",
+   "ref_span": [
+    1260,
+    1267
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 15.8% [S5] is below the peer median of 17.9% [S129].",
+   "sentence_start": 1177,
+   "year": 2025,
+   "year_span": [
+    1194,
+    1200
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1788580533534052,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 17.9% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "COMPANY OVERVIEW nVent is a leading global provider of electrical connection and protection solutions.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-008608"
+  },
+  {
+   "quote": "General global economic and business conditions affect demand for our products.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-008608"
+  },
+  {
+   "quote": "We compete in attractive markets with a high level of competition, which may result in pressure on our profit margins and limit our ability to maintain or increase the market share of our products.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-008608"
+  },
+  {
+   "quote": "We may not be able to identify, finance and complete suitable acquisitions and investments, and any completed acquisitions and investments could be unsuccessful or consume significant resources.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001628280-26-008608"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": []
+}
