@@ -4,7 +4,7 @@
 |---|---:|---:|---:|---:|
 | 0 | 25 | 25 | 0 | 0 |
 
-Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 3.96s.
+Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 2.32s.
 
 | Claim | Status | Source | Note |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool cal
 
 | Quote | Status | Filing |
 |---|---|---|
-| Overview Vertiv is a global leader in critical digital infrastructure for applications in … | verified | 0001674101-26-000008 |
+| Vertiv is a global leader in critical digital infrastructure for applications in data cent… | verified | 0001674101-26-000008 |
 | We may not realize all of the sales expected from our backlog of orders and contracts.… | verified | 0001674101-26-000008 |
 | Any disruption or consolidation of our customers’ markets or reduction in customer spendin… | verified | 0001674101-26-000008 |
 | Larger customers often require terms and conditions that are more favorable to the custome… | verified | 0001674101-26-000008 |

@@ -1,7 +1,7 @@
 # Johnson Controls (JCI): FY2025 research note
 
 ## Business
-In its 10-K, Johnson Controls describes itself as follows: “General Johnson Controls International plc, headquartered in Cork, Ireland, is a global leader in smart, healthy and sustainable buildings, serving a wide range of customers around the globe.” [S20]
+In its 10-K, Johnson Controls describes itself as follows: “Johnson Controls International plc, headquartered in Cork, Ireland, is a global leader in smart, healthy and sustainable buildings, serving a wide range of customers around the globe.” [S20]
 
 ## Recent performance
 FY2025 revenue grew 2.8% [S2] to $23,596.0m [S1], from $22,952.0m [S16] in FY2024. FY2025 net income was $3,291.0m [S6], or diluted EPS of $5.03 [S7]. FY2025 EBITDA was $3,153.0m [S8].

@@ -1,0 +1,797 @@
+{
+ "run_id": "VRT-demo-rules-20261019T115951",
+ "ticker": "VRT",
+ "mode": "rules",
+ "rounds": [
+  {
+   "round": 0,
+   "claims": 26,
+   "verified": 22,
+   "wrong": 4,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  },
+  {
+   "round": 1,
+   "claims": 25,
+   "verified": 25,
+   "wrong": 0,
+   "unverifiable": 0,
+   "quotes": 4,
+   "quotes_verified": 4,
+   "table_cells": 110,
+   "table_wrong": 0
+  }
+ ],
+ "totals": {
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "tool_calls": 23,
+  "seconds": 2.14
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "value_text": "27.7%",
+   "kind": "pct",
+   "value": 0.27699999999999997,
+   "start": 313,
+   "end": 318,
+   "ref": "S2",
+   "ref_span": [
+    318,
+    323
+   ],
+   "sentence": "FY2025 revenue grew 27.7% [S2] to $10,229.9m [S1], from $8,011.8m [S16] in FY2024.",
+   "sentence_start": 293,
+   "year": 2025,
+   "year_span": [
+    293,
+    299
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.2768541401432887,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S2: VRT FY2025 revenue growth = 27.7% (derived; revenue / revenue_prior_year - 1)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C2",
+   "value_text": "$10,229.9m",
+   "kind": "money",
+   "value": 10229900000.0,
+   "start": 327,
+   "end": 337,
+   "ref": "S1",
+   "ref_span": [
+    337,
+    342
+   ],
+   "sentence": "FY2025 revenue grew 27.7% [S2] to $10,229.9m [S1], from $8,011.8m [S16] in FY2024.",
+   "sentence_start": 293,
+   "year": 2025,
+   "year_span": [
+    293,
+    299
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 10229900000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S1: VRT FY2025 revenue = $10,229.9m (xbrl; 0001674101-26-000008)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C3",
+   "value_text": "$8,011.8m",
+   "kind": "money",
+   "value": 8011800000.0,
+   "start": 349,
+   "end": 358,
+   "ref": "S16",
+   "ref_span": [
+    358,
+    364
+   ],
+   "sentence": "FY2025 revenue grew 27.7% [S2] to $10,229.9m [S1], from $8,011.8m [S16] in FY2024.",
+   "sentence_start": 293,
+   "year": 2024,
+   "year_span": [
+    368,
+    374
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 8011800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: VRT FY2024 revenue = $8,011.8m (xbrl; 0001674101-26-000008)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C4",
+   "value_text": "$1,332.8m",
+   "kind": "money",
+   "value": 1332800000.0,
+   "start": 398,
+   "end": 407,
+   "ref": "S6",
+   "ref_span": [
+    407,
+    412
+   ],
+   "sentence": "FY2025 net income was $1,332.8m [S6], or diluted EPS of $3.41 [S7].",
+   "sentence_start": 376,
+   "year": 2025,
+   "year_span": [
+    376,
+    382
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1332800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S6: VRT FY2025 net income = $1,332.8m (xbrl; 0001674101-26-000008)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C5",
+   "value_text": "$3.41",
+   "kind": "per_share",
+   "value": 3.41,
+   "start": 432,
+   "end": 437,
+   "ref": "S7",
+   "ref_span": [
+    437,
+    442
+   ],
+   "sentence": "FY2025 net income was $1,332.8m [S6], or diluted EPS of $3.41 [S7].",
+   "sentence_start": 376,
+   "year": 2025,
+   "year_span": [
+    376,
+    382
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 3.41,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S7: VRT FY2025 diluted EPS = $3.41 (xbrl; 0001674101-26-000008)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C6",
+   "value_text": "$2,138.3m",
+   "kind": "money",
+   "value": 2138300000.0000002,
+   "start": 462,
+   "end": 471,
+   "ref": "S8",
+   "ref_span": [
+    471,
+    476
+   ],
+   "sentence": "FY2025 EBITDA was $2,138.3m [S8].",
+   "sentence_start": 444,
+   "year": 2025,
+   "year_span": [
+    444,
+    450
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2138300000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S8: VRT FY2025 EBITDA = $2,138.3m (derived; operating_income + d_and_a)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C7",
+   "value_text": "36.3%",
+   "kind": "pct",
+   "value": 0.363,
+   "start": 526,
+   "end": 531,
+   "ref": "S3",
+   "ref_span": [
+    531,
+    536
+   ],
+   "sentence": "FY2025 gross margin was 36.3% [S3], down from 36.6% [S17] in FY2024.",
+   "sentence_start": 502,
+   "year": 2025,
+   "year_span": [
+    502,
+    508
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.363170705480992,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S3: VRT FY2025 gross margin = 36.3% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C8",
+   "value_text": "36.6%",
+   "kind": "pct",
+   "value": 0.366,
+   "start": 548,
+   "end": 553,
+   "ref": "S17",
+   "ref_span": [
+    553,
+    559
+   ],
+   "sentence": "FY2025 gross margin was 36.3% [S3], down from 36.6% [S17] in FY2024.",
+   "sentence_start": 502,
+   "year": 2024,
+   "year_span": [
+    563,
+    569
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.3662348036645947,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S17: VRT FY2024 gross margin = 36.6% (derived; gross_profit / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C9",
+   "value_text": "17.9%",
+   "kind": "pct",
+   "value": 0.179,
+   "start": 594,
+   "end": 599,
+   "ref": "S5",
+   "ref_span": [
+    599,
+    604
+   ],
+   "sentence": "FY2025 EBIT margin was 17.9% [S5], up from 17.1% [S18] in FY2024.",
+   "sentence_start": 571,
+   "year": 2025,
+   "year_span": [
+    571,
+    577
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1788580533534052,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: VRT FY2025 EBIT margin = 17.9% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C10",
+   "value_text": "17.1%",
+   "kind": "pct",
+   "value": 0.171,
+   "start": 614,
+   "end": 619,
+   "ref": "S18",
+   "ref_span": [
+    619,
+    625
+   ],
+   "sentence": "FY2025 EBIT margin was 17.9% [S5], up from 17.1% [S18] in FY2024.",
+   "sentence_start": 571,
+   "year": 2024,
+   "year_span": [
+    629,
+    635
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.17067325694600463,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S18: VRT FY2024 EBIT margin = 17.1% (derived; operating_income / revenue)",
+   "final_status": "corrected"
+  },
+  {
+   "id": "C11",
+   "value_text": "30.2%",
+   "kind": "pct",
+   "value": 0.302,
+   "start": 653,
+   "end": 658,
+   "ref": "S9",
+   "ref_span": [
+    658,
+    663
+   ],
+   "sentence": "FY2025 ROIC was 30.2% [S9].",
+   "sentence_start": 637,
+   "year": 2025,
+   "year_span": [
+    637,
+    643
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.3023452455006177,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S9: VRT FY2025 ROIC = 30.2% (derived; operating_income * (1 - tax_rate) / average(equity + debt - cash))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C12",
+   "value_text": "$1,728.4m",
+   "kind": "money",
+   "value": 1728400000.0,
+   "start": 743,
+   "end": 752,
+   "ref": "S11",
+   "ref_span": [
+    752,
+    758
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $1,728.4m [S11] against total debt of $2,913.0m [S12], giving net debt of $1,184.6m [S13].",
+   "sentence_start": 697,
+   "year": 2025,
+   "year_span": [
+    711,
+    717
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1728400000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S11: VRT FY2025 cash = $1,728.4m (xbrl; 0001674101-26-000008)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C13",
+   "value_text": "$2,913.0m",
+   "kind": "money",
+   "value": 2913000000.0,
+   "start": 781,
+   "end": 790,
+   "ref": "S12",
+   "ref_span": [
+    790,
+    796
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $1,728.4m [S11] against total debt of $2,913.0m [S12], giving net debt of $1,184.6m [S13].",
+   "sentence_start": 697,
+   "year": 2025,
+   "year_span": [
+    711,
+    717
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2913000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S12: VRT FY2025 total debt = $2,913.0m (xbrl; 0001674101-26-000008)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C14",
+   "value_text": "$1,184.6m",
+   "kind": "money",
+   "value": 1184600000.0,
+   "start": 817,
+   "end": 826,
+   "ref": "S13",
+   "ref_span": [
+    826,
+    832
+   ],
+   "sentence": "At the end of FY2025 the company held cash of $1,728.4m [S11] against total debt of $2,913.0m [S12], giving net debt of $1,184.6m [S13].",
+   "sentence_start": 697,
+   "year": 2025,
+   "year_span": [
+    711,
+    717
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 1184600000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S13: VRT FY2025 net debt = $1,184.6m (derived; total_debt - cash)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C15",
+   "value_text": "$2,113.8m",
+   "kind": "money",
+   "value": 2113800000.0000002,
+   "start": 865,
+   "end": 874,
+   "ref": "S14",
+   "ref_span": [
+    874,
+    880
+   ],
+   "sentence": "FY2025 operating cash flow was $2,113.8m [S14] and capex was $220.0m [S15].",
+   "sentence_start": 834,
+   "year": 2025,
+   "year_span": [
+    834,
+    840
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 2113800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S14: VRT FY2025 operating cash flow = $2,113.8m (xbrl; 0001674101-26-000008)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C16",
+   "value_text": "$220.0m",
+   "kind": "money",
+   "value": 220000000.0,
+   "start": 895,
+   "end": 902,
+   "ref": "S15",
+   "ref_span": [
+    902,
+    908
+   ],
+   "sentence": "FY2025 operating cash flow was $2,113.8m [S14] and capex was $220.0m [S15].",
+   "sentence_start": 834,
+   "year": 2025,
+   "year_span": [
+    834,
+    840
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 220000000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S15: VRT FY2025 capex = $220.0m (xbrl; 0001674101-26-000008)",
+   "final_status": "corrected"
+  },
+  {
+   "id": "C17",
+   "value_text": "$206.42",
+   "kind": "per_share",
+   "value": 206.42,
+   "start": 958,
+   "end": 965,
+   "ref": "S19",
+   "ref_span": [
+    965,
+    971
+   ],
+   "sentence": "The shares closed at $206.42 [S19] on 2026-10-16.",
+   "sentence_start": 937,
+   "year": null,
+   "year_span": null,
+   "status": "verified",
+   "reason": "",
+   "true_value": 206.42,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S19: VRT share price = $206.42 (price; 2026-10-16)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C18",
+   "value_text": "37.7x",
+   "kind": "multiple",
+   "value": 37.7,
+   "start": 1049,
+   "end": 1054,
+   "ref": "S25",
+   "ref_span": [
+    1054,
+    1060
+   ],
+   "sentence": "On 2026-10-16 prices, Vertiv trades at an FY2025 EV/EBITDA of 37.7x [S25], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 987,
+   "year": 2025,
+   "year_span": [
+    1029,
+    1035
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 37.71868244430622,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S25: VRT FY2025 EV/EBITDA = 37.7x (valuation; ev / ebitda (LFY))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C19",
+   "value_text": "24.7x",
+   "kind": "multiple",
+   "value": 24.7,
+   "start": 1094,
+   "end": 1099,
+   "ref": "S126",
+   "ref_span": [
+    1099,
+    1106
+   ],
+   "sentence": "On 2026-10-16 prices, Vertiv trades at an FY2025 EV/EBITDA of 37.7x [S25], a premium to the peer median of 24.7x [S126].",
+   "sentence_start": 987,
+   "year": 2025,
+   "year_span": [
+    1029,
+    1035
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 24.72286338238756,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S126:  peer median EV/EBITDA = 24.7x (computed; median(ev_ebitda) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C20",
+   "value_text": "7.9x",
+   "kind": "multiple",
+   "value": 7.9,
+   "start": 1131,
+   "end": 1135,
+   "ref": "S24",
+   "ref_span": [
+    1135,
+    1141
+   ],
+   "sentence": "Its FY2025 EV/Sales is 7.9x [S24] against a peer median of 4.9x [S127].",
+   "sentence_start": 1108,
+   "year": 2025,
+   "year_span": [
+    1112,
+    1118
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 7.884129724695255,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S24: VRT FY2025 EV/Sales = 7.9x (valuation; ev / revenue (LFY))",
+   "final_status": "corrected"
+  },
+  {
+   "id": "C21",
+   "value_text": "4.9x",
+   "kind": "multiple",
+   "value": 4.9,
+   "start": 1167,
+   "end": 1171,
+   "ref": "S127",
+   "ref_span": [
+    1171,
+    1178
+   ],
+   "sentence": "Its FY2025 EV/Sales is 7.9x [S24] against a peer median of 4.9x [S127].",
+   "sentence_start": 1108,
+   "year": 2025,
+   "year_span": [
+    1112,
+    1118
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 4.869089325694708,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S127:  peer median EV/Sales = 4.9x (computed; median(ev_sales) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C22",
+   "value_text": "60.5x",
+   "kind": "multiple",
+   "value": 60.5,
+   "start": 1198,
+   "end": 1203,
+   "ref": "S26",
+   "ref_span": [
+    1203,
+    1209
+   ],
+   "sentence": "Its FY2025 P/E is 60.5x [S26] against a peer median of 33.3x [S128].",
+   "sentence_start": 1180,
+   "year": 2025,
+   "year_span": [
+    1184,
+    1190
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 60.533724340175944,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S26: VRT FY2025 P/E = 60.5x (valuation; price / eps_diluted (LFY, split-adjusted))",
+   "final_status": "verified"
+  },
+  {
+   "id": "C23",
+   "value_text": "33.3x",
+   "kind": "multiple",
+   "value": 33.3,
+   "start": 1235,
+   "end": 1240,
+   "ref": "S128",
+   "ref_span": [
+    1240,
+    1247
+   ],
+   "sentence": "Its FY2025 P/E is 60.5x [S26] against a peer median of 33.3x [S128].",
+   "sentence_start": 1180,
+   "year": 2025,
+   "year_span": [
+    1184,
+    1190
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 33.33916554508748,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S128:  peer median P/E = 33.3x (computed; median(pe) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C24",
+   "value_text": "17.9%",
+   "kind": "pct",
+   "value": 0.179,
+   "start": 1288,
+   "end": 1293,
+   "ref": "S5",
+   "ref_span": [
+    1293,
+    1298
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 17.9% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1249,
+   "year": 2025,
+   "year_span": [
+    1266,
+    1272
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.1788580533534052,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S5: VRT FY2025 EBIT margin = 17.9% (derived; operating_income / revenue)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C25",
+   "value_text": "15.8%",
+   "kind": "pct",
+   "value": 0.158,
+   "start": 1327,
+   "end": 1332,
+   "ref": "S129",
+   "ref_span": [
+    1332,
+    1339
+   ],
+   "sentence": "For context, its FY2025 EBIT margin of 17.9% [S5] is above the peer median of 15.8% [S129].",
+   "sentence_start": 1249,
+   "year": 2025,
+   "year_span": [
+    1266,
+    1272
+   ],
+   "status": "verified",
+   "reason": "",
+   "true_value": 0.15843415273175618,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S129:  peer median EBIT margin = 15.8% (computed; median(ebit_margin) over 9 peers)",
+   "final_status": "verified"
+  },
+  {
+   "id": "C17",
+   "value_text": "$4,784.6m",
+   "kind": "money",
+   "value": 4784600000.0,
+   "start": 941,
+   "end": 950,
+   "ref": "S16",
+   "ref_span": [
+    950,
+    956
+   ],
+   "sentence": "Organic orders in FY2025 were $4,784.6m [S16].",
+   "sentence_start": 911,
+   "year": 2025,
+   "year_span": [
+    929,
+    935
+   ],
+   "status": "wrong",
+   "reason": "value: source says $8,011.8m; year: source is FY2024, text says FY2025; the text does not describe revenue",
+   "true_value": 8011800000.0,
+   "correct_display": null,
+   "correct_year": null,
+   "source": "S16: VRT FY2024 revenue = $8,011.8m (xbrl; 0001674101-26-000008)",
+   "final_status": "removed (fabricated)"
+  }
+ ],
+ "quotes": [
+  {
+   "quote": "Vertiv is a global leader in critical digital infrastructure for applications in data centers, communication networks, and commercial and industrial environments.",
+   "ref": "S20",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001674101-26-000008"
+  },
+  {
+   "quote": "We may not realize all of the sales expected from our backlog of orders and contracts.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001674101-26-000008"
+  },
+  {
+   "quote": "Any disruption or consolidation of our customers\u2019 markets or reduction in customer spending on technology could result in declines in the sales volume and prices of our products.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001674101-26-000008"
+  },
+  {
+   "quote": "Larger customers often require terms and conditions that are more favorable to the customer, which could result in downward pricing pressures on our business.",
+   "ref": "S21",
+   "status": "verified",
+   "reason": "",
+   "accession": "0001674101-26-000008"
+  }
+ ],
+ "table": {
+  "cells": 110,
+  "wrong": 0,
+  "details": []
+ },
+ "qualitative_flags": [],
+ "injected": [
+  {
+   "type": "wrong_year",
+   "was": "FY2025",
+   "now": "FY2024"
+  },
+  {
+   "type": "unit_swap",
+   "was": "$220.0m",
+   "now": "$220.0bn"
+  },
+  {
+   "type": "made_up_cited",
+   "was": "inserted",
+   "now": "Organic orders in FY2025 were $4,784.6m [S16]."
+  },
+  {
+   "type": "changed_pct",
+   "was": "17.1%",
+   "now": "15.3%"
+  }
+ ]
+}

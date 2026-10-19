@@ -104,7 +104,7 @@ class Report:
 def _sentences(text: str) -> list[tuple[int, str]]:
     """(start offset, sentence) pairs. Splits on sentence ends and line breaks."""
     out, pos = [], 0
-    for m in re.finditer(r"(?<=[.!?])(?:\s*\[S\d+\])?\s+(?=[A-Z#“\d-])|\n+", text):
+    for m in re.finditer(r"(?<=[.!?”])(?:\s*\[S\d+\])?\s+(?=[A-Z#“\d-])|\n+", text):
         end = m.end() if text[m.start():m.end()].strip().startswith("[") else m.start()
         out.append((pos, text[pos:end]))
         pos = m.end()
@@ -231,7 +231,13 @@ class FactChecker:
             return
         if problems:
             c.status, c.reason = "wrong", "; ".join(problems)
-            if not problems[0].startswith("year"):
+            if not self._describes(c, src):
+                # The words around the number don't name what the source is,
+                # so this is a fabricated claim with a borrowed citation.
+                # Patching the number would launder it; flag it for deletion.
+                c.correct_year = None
+                c.reason += f"; the text does not describe {LABELS.get(src.metric, src.metric)}"
+            elif not problems[0].startswith("year"):
                 c.correct_display = display(truth, src.unit)
         else:
             c.status = "verified"
@@ -242,13 +248,25 @@ class FactChecker:
         slack = display_precision(unit)
         return abs(claimed - truth) <= max(abs(truth) * self.tol["reported_rel"], slack)
 
+    def _clause(self, c: Claim) -> str:
+        """The words just before the number, back to the previous citation or comma."""
+        rel = c.start - c.sentence_start
+        prev = max(c.sentence.rfind("]", 0, rel), c.sentence.rfind(",", 0, rel), 0)
+        return " " + c.sentence[prev:rel].lower() + " "
+
+    def _describes(self, c: Claim, src: Source) -> bool:
+        """Does the sentence name the cited metric (or a closely related one)?"""
+        if not src.metric or src.metric not in SYNONYMS:
+            return True
+        text = " " + c.sentence.lower() + " "
+        names = [m for m, ws in SYNONYMS.items() if any(w in text for w in ws)]
+        return src.metric in names or any(_related(src.metric, m) for m in names)
+
     def _mislabeled(self, c: Claim, src: Source) -> bool:
         """True only if the words before the number name a different metric."""
         if not src.metric or src.metric not in SYNONYMS:
             return False
-        rel = c.start - c.sentence_start
-        prev = max(c.sentence.rfind("]", 0, rel), c.sentence.rfind(",", 0, rel), 0)
-        clause = " " + c.sentence[prev:rel].lower() + " "
+        clause = self._clause(c)
         if any(w in clause for w in SYNONYMS[src.metric]):
             return False
         others = [m for m, ws in SYNONYMS.items() if m != src.metric and any(w in clause for w in ws)]

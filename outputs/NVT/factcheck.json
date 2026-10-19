@@ -1,5 +1,5 @@
 {
- "run_id": "NVT-rules-20261019T113112",
+ "run_id": "NVT-rules-20261019T120020",
  "ticker": "NVT",
  "mode": "rules",
  "rounds": [
@@ -22,7 +22,7 @@
   "output_tokens": 0,
   "cost_usd": 0.0,
   "tool_calls": 23,
-  "seconds": 1.9
+  "seconds": 1.75
  },
  "claims": [
   {
@@ -30,19 +30,19 @@
    "value_text": "29.5%",
    "kind": "pct",
    "value": 0.295,
-   "start": 251,
-   "end": 256,
+   "start": 234,
+   "end": 239,
    "ref": "S2",
    "ref_span": [
-    256,
-    261
+    239,
+    244
    ],
    "sentence": "FY2025 revenue grew 29.5% [S2] to $3,893.1m [S1], from $3,006.1m [S16] in FY2024.",
-   "sentence_start": 231,
+   "sentence_start": 214,
    "year": 2025,
    "year_span": [
-    231,
-    237
+    214,
+    220
    ],
    "status": "verified",
    "reason": "",
@@ -57,19 +57,19 @@
    "value_text": "$3,893.1m",
    "kind": "money",
    "value": 3893100000.0,
-   "start": 265,
-   "end": 274,
+   "start": 248,
+   "end": 257,
    "ref": "S1",
    "ref_span": [
-    274,
-    279
+    257,
+    262
    ],
    "sentence": "FY2025 revenue grew 29.5% [S2] to $3,893.1m [S1], from $3,006.1m [S16] in FY2024.",
-   "sentence_start": 231,
+   "sentence_start": 214,
    "year": 2025,
    "year_span": [
-    231,
-    237
+    214,
+    220
    ],
    "status": "verified",
    "reason": "",
@@ -84,19 +84,19 @@
    "value_text": "$3,006.1m",
    "kind": "money",
    "value": 3006100000.0,
-   "start": 286,
-   "end": 295,
+   "start": 269,
+   "end": 278,
    "ref": "S16",
    "ref_span": [
-    295,
-    301
+    278,
+    284
    ],
    "sentence": "FY2025 revenue grew 29.5% [S2] to $3,893.1m [S1], from $3,006.1m [S16] in FY2024.",
-   "sentence_start": 231,
+   "sentence_start": 214,
    "year": 2024,
    "year_span": [
-    305,
-    311
+    288,
+    294
    ],
    "status": "verified",
    "reason": "",
@@ -111,19 +111,19 @@
    "value_text": "$710.2m",
    "kind": "money",
    "value": 710200000.0,
-   "start": 335,
-   "end": 342,
+   "start": 318,
+   "end": 325,
    "ref": "S6",
    "ref_span": [
-    342,
-    347
+    325,
+    330
    ],
    "sentence": "FY2025 net income was $710.2m [S6], or diluted EPS of $4.31 [S7].",
-   "sentence_start": 313,
+   "sentence_start": 296,
    "year": 2025,
    "year_span": [
-    313,
-    319
+    296,
+    302
    ],
    "status": "verified",
    "reason": "",
@@ -138,19 +138,19 @@
    "value_text": "$4.31",
    "kind": "per_share",
    "value": 4.31,
-   "start": 367,
-   "end": 372,
+   "start": 350,
+   "end": 355,
    "ref": "S7",
    "ref_span": [
-    372,
-    377
+    355,
+    360
    ],
    "sentence": "FY2025 net income was $710.2m [S6], or diluted EPS of $4.31 [S7].",
-   "sentence_start": 313,
+   "sentence_start": 296,
    "year": 2025,
    "year_span": [
-    313,
-    319
+    296,
+    302
    ],
    "status": "verified",
    "reason": "",
@@ -165,19 +165,19 @@
    "value_text": "$824.6m",
    "kind": "money",
    "value": 824600000.0,
-   "start": 397,
-   "end": 404,
+   "start": 380,
+   "end": 387,
    "ref": "S8",
    "ref_span": [
-    404,
-    409
+    387,
+    392
    ],
    "sentence": "FY2025 EBITDA was $824.6m [S8].",
-   "sentence_start": 379,
+   "sentence_start": 362,
    "year": 2025,
    "year_span": [
-    379,
-    385
+    362,
+    368
    ],
    "status": "verified",
    "reason": "",
@@ -192,19 +192,19 @@
    "value_text": "37.7%",
    "kind": "pct",
    "value": 0.377,
-   "start": 459,
-   "end": 464,
+   "start": 442,
+   "end": 447,
    "ref": "S3",
    "ref_span": [
-    464,
-    469
+    447,
+    452
    ],
    "sentence": "FY2025 gross margin was 37.7% [S3], down from 40.2% [S17] in FY2024.",
-   "sentence_start": 435,
+   "sentence_start": 418,
    "year": 2025,
    "year_span": [
-    435,
-    441
+    418,
+    424
    ],
    "status": "verified",
    "reason": "",
@@ -219,19 +219,19 @@
    "value_text": "40.2%",
    "kind": "pct",
    "value": 0.402,
-   "start": 481,
-   "end": 486,
+   "start": 464,
+   "end": 469,
    "ref": "S17",
    "ref_span": [
-    486,
-    492
+    469,
+    475
    ],
    "sentence": "FY2025 gross margin was 37.7% [S3], down from 40.2% [S17] in FY2024.",
-   "sentence_start": 435,
+   "sentence_start": 418,
    "year": 2024,
    "year_span": [
-    496,
-    502
+    479,
+    485
    ],
    "status": "verified",
    "reason": "",
@@ -246,19 +246,19 @@
    "value_text": "15.8%",
    "kind": "pct",
    "value": 0.158,
-   "start": 527,
-   "end": 532,
+   "start": 510,
+   "end": 515,
    "ref": "S5",
    "ref_span": [
-    532,
-    537
+    515,
+    520
    ],
    "sentence": "FY2025 EBIT margin was 15.8% [S5], down from 17.5% [S18] in FY2024.",
-   "sentence_start": 504,
+   "sentence_start": 487,
    "year": 2025,
    "year_span": [
-    504,
-    510
+    487,
+    493
    ],
    "status": "verified",
    "reason": "",
@@ -273,19 +273,19 @@
    "value_text": "17.5%",
    "kind": "pct",
    "value": 0.175,
-   "start": 549,
-   "end": 554,
+   "start": 532,
+   "end": 537,
    "ref": "S18",
    "ref_span": [
-    554,
-    560
+    537,
+    543
    ],
    "sentence": "FY2025 EBIT margin was 15.8% [S5], down from 17.5% [S18] in FY2024.",
-   "sentence_start": 504,
+   "sentence_start": 487,
    "year": 2024,
    "year_span": [
-    564,
-    570
+    547,
+    553
    ],
    "status": "verified",
    "reason": "",
@@ -300,19 +300,19 @@
    "value_text": "9.3%",
    "kind": "pct",
    "value": 0.09300000000000001,
-   "start": 588,
-   "end": 592,
+   "start": 571,
+   "end": 575,
    "ref": "S9",
    "ref_span": [
-    592,
-    597
+    575,
+    580
    ],
    "sentence": "FY2025 ROIC was 9.3% [S9].",
-   "sentence_start": 572,
+   "sentence_start": 555,
    "year": 2025,
    "year_span": [
-    572,
-    578
+    555,
+    561
    ],
    "status": "verified",
    "reason": "",
@@ -327,19 +327,19 @@
    "value_text": "$237.5m",
    "kind": "money",
    "value": 237500000.0,
-   "start": 677,
-   "end": 684,
+   "start": 660,
+   "end": 667,
    "ref": "S11",
    "ref_span": [
-    684,
-    690
+    667,
+    673
    ],
    "sentence": "At the end of FY2025 the company held cash of $237.5m [S11] against total debt of $1,559.8m [S12], giving net debt of $1,322.3m [S13].",
-   "sentence_start": 631,
+   "sentence_start": 614,
    "year": 2025,
    "year_span": [
-    645,
-    651
+    628,
+    634
    ],
    "status": "verified",
    "reason": "",
@@ -354,19 +354,19 @@
    "value_text": "$1,559.8m",
    "kind": "money",
    "value": 1559800000.0,
-   "start": 713,
-   "end": 722,
+   "start": 696,
+   "end": 705,
    "ref": "S12",
    "ref_span": [
-    722,
-    728
+    705,
+    711
    ],
    "sentence": "At the end of FY2025 the company held cash of $237.5m [S11] against total debt of $1,559.8m [S12], giving net debt of $1,322.3m [S13].",
-   "sentence_start": 631,
+   "sentence_start": 614,
    "year": 2025,
    "year_span": [
-    645,
-    651
+    628,
+    634
    ],
    "status": "verified",
    "reason": "",
@@ -381,19 +381,19 @@
    "value_text": "$1,322.3m",
    "kind": "money",
    "value": 1322300000.0,
-   "start": 749,
-   "end": 758,
+   "start": 732,
+   "end": 741,
    "ref": "S13",
    "ref_span": [
-    758,
-    764
+    741,
+    747
    ],
    "sentence": "At the end of FY2025 the company held cash of $237.5m [S11] against total debt of $1,559.8m [S12], giving net debt of $1,322.3m [S13].",
-   "sentence_start": 631,
+   "sentence_start": 614,
    "year": 2025,
    "year_span": [
-    645,
-    651
+    628,
+    634
    ],
    "status": "verified",
    "reason": "",
@@ -408,19 +408,19 @@
    "value_text": "$465.2m",
    "kind": "money",
    "value": 465200000.0,
-   "start": 797,
-   "end": 804,
+   "start": 780,
+   "end": 787,
    "ref": "S14",
    "ref_span": [
-    804,
-    810
+    787,
+    793
    ],
    "sentence": "FY2025 operating cash flow was $465.2m [S14] and capex was $93.3m [S15].",
-   "sentence_start": 766,
+   "sentence_start": 749,
    "year": 2025,
    "year_span": [
-    766,
-    772
+    749,
+    755
    ],
    "status": "verified",
    "reason": "",
@@ -435,19 +435,19 @@
    "value_text": "$93.3m",
    "kind": "money",
    "value": 93300000.0,
-   "start": 825,
-   "end": 831,
+   "start": 808,
+   "end": 814,
    "ref": "S15",
    "ref_span": [
-    831,
-    837
+    814,
+    820
    ],
    "sentence": "FY2025 operating cash flow was $465.2m [S14] and capex was $93.3m [S15].",
-   "sentence_start": 766,
+   "sentence_start": 749,
    "year": 2025,
    "year_span": [
-    766,
-    772
+    749,
+    755
    ],
    "status": "verified",
    "reason": "",
@@ -462,15 +462,15 @@
    "value_text": "$142.03",
    "kind": "per_share",
    "value": 142.03,
-   "start": 887,
-   "end": 894,
+   "start": 870,
+   "end": 877,
    "ref": "S19",
    "ref_span": [
-    894,
-    900
+    877,
+    883
    ],
    "sentence": "The shares closed at $142.03 [S19] on 2026-10-16.",
-   "sentence_start": 866,
+   "sentence_start": 849,
    "year": null,
    "year_span": null,
    "status": "verified",
@@ -486,19 +486,19 @@
    "value_text": "29.5x",
    "kind": "multiple",
    "value": 29.5,
-   "start": 977,
-   "end": 982,
+   "start": 960,
+   "end": 965,
    "ref": "S47",
    "ref_span": [
-    982,
-    988
+    965,
+    971
    ],
    "sentence": "On 2026-10-16 prices, nVent trades at an FY2025 EV/EBITDA of 29.5x [S47], a premium to the peer median of 24.7x [S126].",
-   "sentence_start": 916,
+   "sentence_start": 899,
    "year": 2025,
    "year_span": [
-    957,
-    963
+    940,
+    946
    ],
    "status": "verified",
    "reason": "",
@@ -513,19 +513,19 @@
    "value_text": "24.7x",
    "kind": "multiple",
    "value": 24.7,
-   "start": 1022,
-   "end": 1027,
+   "start": 1005,
+   "end": 1010,
    "ref": "S126",
    "ref_span": [
-    1027,
-    1034
+    1010,
+    1017
    ],
    "sentence": "On 2026-10-16 prices, nVent trades at an FY2025 EV/EBITDA of 29.5x [S47], a premium to the peer median of 24.7x [S126].",
-   "sentence_start": 916,
+   "sentence_start": 899,
    "year": 2025,
    "year_span": [
-    957,
-    963
+    940,
+    946
    ],
    "status": "verified",
    "reason": "",
@@ -540,19 +540,19 @@
    "value_text": "6.2x",
    "kind": "multiple",
    "value": 6.2,
-   "start": 1059,
-   "end": 1063,
+   "start": 1042,
+   "end": 1046,
    "ref": "S46",
    "ref_span": [
-    1063,
-    1069
+    1046,
+    1052
    ],
    "sentence": "Its FY2025 EV/Sales is 6.2x [S46] against a peer median of 4.9x [S127].",
-   "sentence_start": 1036,
+   "sentence_start": 1019,
    "year": 2025,
    "year_span": [
-    1040,
-    1046
+    1023,
+    1029
    ],
    "status": "verified",
    "reason": "",
@@ -567,19 +567,19 @@
    "value_text": "4.9x",
    "kind": "multiple",
    "value": 4.9,
-   "start": 1095,
-   "end": 1099,
+   "start": 1078,
+   "end": 1082,
    "ref": "S127",
    "ref_span": [
-    1099,
-    1106
+    1082,
+    1089
    ],
    "sentence": "Its FY2025 EV/Sales is 6.2x [S46] against a peer median of 4.9x [S127].",
-   "sentence_start": 1036,
+   "sentence_start": 1019,
    "year": 2025,
    "year_span": [
-    1040,
-    1046
+    1023,
+    1029
    ],
    "status": "verified",
    "reason": "",
@@ -594,19 +594,19 @@
    "value_text": "33.0x",
    "kind": "multiple",
    "value": 33.0,
-   "start": 1126,
-   "end": 1131,
+   "start": 1109,
+   "end": 1114,
    "ref": "S48",
    "ref_span": [
-    1131,
-    1137
+    1114,
+    1120
    ],
    "sentence": "Its FY2025 P/E is 33.0x [S48] against a peer median of 35.4x [S128].",
-   "sentence_start": 1108,
+   "sentence_start": 1091,
    "year": 2025,
    "year_span": [
-    1112,
-    1118
+    1095,
+    1101
    ],
    "status": "verified",
    "reason": "",
@@ -621,19 +621,19 @@
    "value_text": "35.4x",
    "kind": "multiple",
    "value": 35.4,
-   "start": 1163,
-   "end": 1168,
+   "start": 1146,
+   "end": 1151,
    "ref": "S128",
    "ref_span": [
-    1168,
-    1175
+    1151,
+    1158
    ],
    "sentence": "Its FY2025 P/E is 33.0x [S48] against a peer median of 35.4x [S128].",
-   "sentence_start": 1108,
+   "sentence_start": 1091,
    "year": 2025,
    "year_span": [
-    1112,
-    1118
+    1095,
+    1101
    ],
    "status": "verified",
    "reason": "",
@@ -648,19 +648,19 @@
    "value_text": "15.8%",
    "kind": "pct",
    "value": 0.158,
-   "start": 1216,
-   "end": 1221,
+   "start": 1199,
+   "end": 1204,
    "ref": "S5",
    "ref_span": [
-    1221,
-    1226
+    1204,
+    1209
    ],
    "sentence": "For context, its FY2025 EBIT margin of 15.8% [S5] is below the peer median of 17.9% [S129].",
-   "sentence_start": 1177,
+   "sentence_start": 1160,
    "year": 2025,
    "year_span": [
-    1194,
-    1200
+    1177,
+    1183
    ],
    "status": "verified",
    "reason": "",
@@ -675,19 +675,19 @@
    "value_text": "17.9%",
    "kind": "pct",
    "value": 0.179,
-   "start": 1255,
-   "end": 1260,
+   "start": 1238,
+   "end": 1243,
    "ref": "S129",
    "ref_span": [
-    1260,
-    1267
+    1243,
+    1250
    ],
    "sentence": "For context, its FY2025 EBIT margin of 15.8% [S5] is below the peer median of 17.9% [S129].",
-   "sentence_start": 1177,
+   "sentence_start": 1160,
    "year": 2025,
    "year_span": [
-    1194,
-    1200
+    1177,
+    1183
    ],
    "status": "verified",
    "reason": "",
@@ -700,7 +700,7 @@
  ],
  "quotes": [
   {
-   "quote": "COMPANY OVERVIEW nVent is a leading global provider of electrical connection and protection solutions.",
+   "quote": "nVent is a leading global provider of electrical connection and protection solutions.",
    "ref": "S20",
    "status": "verified",
    "reason": "",
@@ -733,5 +733,6 @@
   "wrong": 0,
   "details": []
  },
- "qualitative_flags": []
+ "qualitative_flags": [],
+ "injected": []
 }

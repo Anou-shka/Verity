@@ -12,6 +12,9 @@ def main(argv: list[str] | None = None) -> None:
     r.add_argument("tickers", nargs="+")
     r.add_argument("--provider", help="rules | anthropic | openai | ollama (default: VERITY_PROVIDER)")
     r.add_argument("--replay", action="store_true", help="serve LLM calls only from the cache")
+    r.add_argument("--inject", type=int, default=0, metavar="N",
+                   help="demo: plant N known errors in the first draft (output goes to <TICKER>-demo)")
+    r.add_argument("--seed", type=int, default=7)
     sub.add_parser("comps", help="print the peer comps table")
     sub.add_parser("metrics", help="rebuild data/processed/ from the XBRL cache")
     args = p.parse_args(argv)
@@ -34,7 +37,7 @@ def main(argv: list[str] | None = None) -> None:
     elif args.cmd == "run":
         from .orchestrator import OUTPUTS, run
         for t in args.tickers:
-            res = run(t)
+            res = run(t, inject_errors=args.inject, seed=args.seed)
             s, tot = res.reports[-1].summary(), res.totals
             print(f"{res.ticker}: {s['claims']} claims, {s['verified']} verified, {s['wrong']} wrong, "
                   f"{s['unverifiable']} unverifiable after {len(res.reports) - 1} revision round(s); "
@@ -42,7 +45,9 @@ def main(argv: list[str] | None = None) -> None:
                   f"{s['table_wrong']} mismatches")
             print(f"   {tot['llm_calls']} LLM calls, {tot['input_tokens'] + tot['output_tokens']:,} tokens, "
                   f"${tot['cost_usd']:.4f}, {tot['tool_calls']} tool calls, {tot['seconds']}s "
-                  f"-> {OUTPUTS / res.ticker}")
+                  f"-> {OUTPUTS / (res.ticker + ('-demo' if args.inject else ''))}")
+            for i in res.injected:
+                print(f"   planted {i.type}: {i.detail} -> {i.replacement.strip()}")
 
 
 if __name__ == "__main__":

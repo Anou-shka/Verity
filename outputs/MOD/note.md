@@ -1,7 +1,7 @@
 # Modine (MOD): FY2026 research note
 
 ## Business
-In its 10-K, Modine describes itself as follows: “At Modine Manufacturing Company, we are Engineering a Cleaner, Healthier World ™ .” [S20]
+In its 10-K, Modine describes itself as follows: “We partner with our customers to provide solutions including systems, services, and components to solve complex heat transfer challenges and are committed to helping them reach their sustainability goals.” [S20]
 
 ## Recent performance
 FY2026 revenue grew 23.1% [S2] to $3,181.1m [S1], from $2,583.5m [S16] in FY2025. FY2026 net income was $121.5m [S6], or diluted EPS of $2.26 [S7]. FY2026 EBITDA was $422.1m [S8].

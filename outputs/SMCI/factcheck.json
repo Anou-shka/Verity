@@ -1,5 +1,5 @@
 {
- "run_id": "SMCI-rules-20261019T113143",
+ "run_id": "SMCI-rules-20261019T120033",
  "ticker": "SMCI",
  "mode": "rules",
  "rounds": [
@@ -22,7 +22,7 @@
   "output_tokens": 0,
   "cost_usd": 0.0,
   "tool_calls": 23,
-  "seconds": 3.57
+  "seconds": 2.22
  },
  "claims": [
   {
@@ -733,5 +733,6 @@
   "wrong": 0,
   "details": []
  },
- "qualitative_flags": []
+ "qualitative_flags": [],
+ "injected": []
 }

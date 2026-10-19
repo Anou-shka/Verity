@@ -1,5 +1,5 @@
 {
- "run_id": "JCI-rules-20261019T113122",
+ "run_id": "JCI-rules-20261019T120029",
  "ticker": "JCI",
  "mode": "rules",
  "rounds": [
@@ -22,7 +22,7 @@
   "output_tokens": 0,
   "cost_usd": 0.0,
   "tool_calls": 23,
-  "seconds": 2.27
+  "seconds": 2.07
  },
  "claims": [
   {
@@ -30,19 +30,19 @@
    "value_text": "2.8%",
    "kind": "pct",
    "value": 0.027999999999999997,
-   "start": 362,
-   "end": 366,
+   "start": 354,
+   "end": 358,
    "ref": "S2",
    "ref_span": [
-    366,
-    371
+    358,
+    363
    ],
    "sentence": "FY2025 revenue grew 2.8% [S2] to $23,596.0m [S1], from $22,952.0m [S16] in FY2024.",
-   "sentence_start": 342,
+   "sentence_start": 334,
    "year": 2025,
    "year_span": [
-    342,
-    348
+    334,
+    340
    ],
    "status": "verified",
    "reason": "",
@@ -57,19 +57,19 @@
    "value_text": "$23,596.0m",
    "kind": "money",
    "value": 23596000000.0,
-   "start": 375,
-   "end": 385,
+   "start": 367,
+   "end": 377,
    "ref": "S1",
    "ref_span": [
-    385,
-    390
+    377,
+    382
    ],
    "sentence": "FY2025 revenue grew 2.8% [S2] to $23,596.0m [S1], from $22,952.0m [S16] in FY2024.",
-   "sentence_start": 342,
+   "sentence_start": 334,
    "year": 2025,
    "year_span": [
-    342,
-    348
+    334,
+    340
    ],
    "status": "verified",
    "reason": "",
@@ -84,19 +84,19 @@
    "value_text": "$22,952.0m",
    "kind": "money",
    "value": 22952000000.0,
-   "start": 397,
-   "end": 407,
+   "start": 389,
+   "end": 399,
    "ref": "S16",
    "ref_span": [
-    407,
-    413
+    399,
+    405
    ],
    "sentence": "FY2025 revenue grew 2.8% [S2] to $23,596.0m [S1], from $22,952.0m [S16] in FY2024.",
-   "sentence_start": 342,
+   "sentence_start": 334,
    "year": 2024,
    "year_span": [
-    417,
-    423
+    409,
+    415
    ],
    "status": "verified",
    "reason": "",
@@ -111,19 +111,19 @@
    "value_text": "$3,291.0m",
    "kind": "money",
    "value": 3291000000.0,
-   "start": 447,
-   "end": 456,
+   "start": 439,
+   "end": 448,
    "ref": "S6",
    "ref_span": [
-    456,
-    461
+    448,
+    453
    ],
    "sentence": "FY2025 net income was $3,291.0m [S6], or diluted EPS of $5.03 [S7].",
-   "sentence_start": 425,
+   "sentence_start": 417,
    "year": 2025,
    "year_span": [
-    425,
-    431
+    417,
+    423
    ],
    "status": "verified",
    "reason": "",
@@ -138,19 +138,19 @@
    "value_text": "$5.03",
    "kind": "per_share",
    "value": 5.03,
-   "start": 481,
-   "end": 486,
+   "start": 473,
+   "end": 478,
    "ref": "S7",
    "ref_span": [
-    486,
-    491
+    478,
+    483
    ],
    "sentence": "FY2025 net income was $3,291.0m [S6], or diluted EPS of $5.03 [S7].",
-   "sentence_start": 425,
+   "sentence_start": 417,
    "year": 2025,
    "year_span": [
-    425,
-    431
+    417,
+    423
    ],
    "status": "verified",
    "reason": "",
@@ -165,19 +165,19 @@
    "value_text": "$3,153.0m",
    "kind": "money",
    "value": 3153000000.0,
-   "start": 511,
-   "end": 520,
+   "start": 503,
+   "end": 512,
    "ref": "S8",
    "ref_span": [
-    520,
-    525
+    512,
+    517
    ],
    "sentence": "FY2025 EBITDA was $3,153.0m [S8].",
-   "sentence_start": 493,
+   "sentence_start": 485,
    "year": 2025,
    "year_span": [
-    493,
-    499
+    485,
+    491
    ],
    "status": "verified",
    "reason": "",
@@ -192,19 +192,19 @@
    "value_text": "36.4%",
    "kind": "pct",
    "value": 0.364,
-   "start": 575,
-   "end": 580,
+   "start": 567,
+   "end": 572,
    "ref": "S3",
    "ref_span": [
-    580,
-    585
+    572,
+    577
    ],
    "sentence": "FY2025 gross margin was 36.4% [S3], up from 35.2% [S17] in FY2024.",
-   "sentence_start": 551,
+   "sentence_start": 543,
    "year": 2025,
    "year_span": [
-    551,
-    557
+    543,
+    549
    ],
    "status": "verified",
    "reason": "",
@@ -219,19 +219,19 @@
    "value_text": "35.2%",
    "kind": "pct",
    "value": 0.35200000000000004,
-   "start": 595,
-   "end": 600,
+   "start": 587,
+   "end": 592,
    "ref": "S17",
    "ref_span": [
-    600,
-    606
+    592,
+    598
    ],
    "sentence": "FY2025 gross margin was 36.4% [S3], up from 35.2% [S17] in FY2024.",
-   "sentence_start": 551,
+   "sentence_start": 543,
    "year": 2024,
    "year_span": [
-    610,
-    616
+    602,
+    608
    ],
    "status": "verified",
    "reason": "",
@@ -246,19 +246,19 @@
    "value_text": "9.7%",
    "kind": "pct",
    "value": 0.09699999999999999,
-   "start": 641,
-   "end": 645,
+   "start": 633,
+   "end": 637,
    "ref": "S5",
    "ref_span": [
-    645,
-    650
+    637,
+    642
    ],
    "sentence": "FY2025 EBIT margin was 9.7% [S5], up from 8.1% [S18] in FY2024.",
-   "sentence_start": 618,
+   "sentence_start": 610,
    "year": 2025,
    "year_span": [
-    618,
-    624
+    610,
+    616
    ],
    "status": "verified",
    "reason": "",
@@ -273,19 +273,19 @@
    "value_text": "8.1%",
    "kind": "pct",
    "value": 0.081,
-   "start": 660,
-   "end": 664,
+   "start": 652,
+   "end": 656,
    "ref": "S18",
    "ref_span": [
-    664,
-    670
+    656,
+    662
    ],
    "sentence": "FY2025 EBIT margin was 9.7% [S5], up from 8.1% [S18] in FY2024.",
-   "sentence_start": 618,
+   "sentence_start": 610,
    "year": 2024,
    "year_span": [
-    674,
-    680
+    666,
+    672
    ],
    "status": "verified",
    "reason": "",
@@ -300,19 +300,19 @@
    "value_text": "8.5%",
    "kind": "pct",
    "value": 0.085,
-   "start": 698,
-   "end": 702,
+   "start": 690,
+   "end": 694,
    "ref": "S9",
    "ref_span": [
-    702,
-    707
+    694,
+    699
    ],
    "sentence": "FY2025 ROIC was 8.5% [S9].",
-   "sentence_start": 682,
+   "sentence_start": 674,
    "year": 2025,
    "year_span": [
-    682,
-    688
+    674,
+    680
    ],
    "status": "verified",
    "reason": "",
@@ -327,19 +327,19 @@
    "value_text": "$379.0m",
    "kind": "money",
    "value": 379000000.0,
-   "start": 787,
-   "end": 794,
+   "start": 779,
+   "end": 786,
    "ref": "S11",
    "ref_span": [
-    794,
-    800
+    786,
+    792
    ],
    "sentence": "At the end of FY2025 the company held cash of $379.0m [S11] against total debt of $9,880.0m [S12], giving net debt of $9,501.0m [S13].",
-   "sentence_start": 741,
+   "sentence_start": 733,
    "year": 2025,
    "year_span": [
-    755,
-    761
+    747,
+    753
    ],
    "status": "verified",
    "reason": "",
@@ -354,19 +354,19 @@
    "value_text": "$9,880.0m",
    "kind": "money",
    "value": 9880000000.0,
-   "start": 823,
-   "end": 832,
+   "start": 815,
+   "end": 824,
    "ref": "S12",
    "ref_span": [
-    832,
-    838
+    824,
+    830
    ],
    "sentence": "At the end of FY2025 the company held cash of $379.0m [S11] against total debt of $9,880.0m [S12], giving net debt of $9,501.0m [S13].",
-   "sentence_start": 741,
+   "sentence_start": 733,
    "year": 2025,
    "year_span": [
-    755,
-    761
+    747,
+    753
    ],
    "status": "verified",
    "reason": "",
@@ -381,19 +381,19 @@
    "value_text": "$9,501.0m",
    "kind": "money",
    "value": 9501000000.0,
-   "start": 859,
-   "end": 868,
+   "start": 851,
+   "end": 860,
    "ref": "S13",
    "ref_span": [
-    868,
-    874
+    860,
+    866
    ],
    "sentence": "At the end of FY2025 the company held cash of $379.0m [S11] against total debt of $9,880.0m [S12], giving net debt of $9,501.0m [S13].",
-   "sentence_start": 741,
+   "sentence_start": 733,
    "year": 2025,
    "year_span": [
-    755,
-    761
+    747,
+    753
    ],
    "status": "verified",
    "reason": "",
@@ -408,19 +408,19 @@
    "value_text": "$2,554.0m",
    "kind": "money",
    "value": 2554000000.0,
-   "start": 907,
-   "end": 916,
+   "start": 899,
+   "end": 908,
    "ref": "S14",
    "ref_span": [
-    916,
-    922
+    908,
+    914
    ],
    "sentence": "FY2025 operating cash flow was $2,554.0m [S14] and capex was $434.0m [S15].",
-   "sentence_start": 876,
+   "sentence_start": 868,
    "year": 2025,
    "year_span": [
-    876,
-    882
+    868,
+    874
    ],
    "status": "verified",
    "reason": "",
@@ -435,19 +435,19 @@
    "value_text": "$434.0m",
    "kind": "money",
    "value": 434000000.0,
-   "start": 937,
-   "end": 944,
+   "start": 929,
+   "end": 936,
    "ref": "S15",
    "ref_span": [
-    944,
-    950
+    936,
+    942
    ],
    "sentence": "FY2025 operating cash flow was $2,554.0m [S14] and capex was $434.0m [S15].",
-   "sentence_start": 876,
+   "sentence_start": 868,
    "year": 2025,
    "year_span": [
-    876,
-    882
+    868,
+    874
    ],
    "status": "verified",
    "reason": "",
@@ -462,15 +462,15 @@
    "value_text": "$145.47",
    "kind": "per_share",
    "value": 145.47,
-   "start": 1000,
-   "end": 1007,
+   "start": 992,
+   "end": 999,
    "ref": "S19",
    "ref_span": [
-    1007,
-    1013
+    999,
+    1005
    ],
    "sentence": "The shares closed at $145.47 [S19] on 2026-10-16.",
-   "sentence_start": 979,
+   "sentence_start": 971,
    "year": null,
    "year_span": null,
    "status": "verified",
@@ -486,19 +486,19 @@
    "value_text": "31.2x",
    "kind": "multiple",
    "value": 31.2,
-   "start": 1101,
-   "end": 1106,
+   "start": 1093,
+   "end": 1098,
    "ref": "S91",
    "ref_span": [
-    1106,
-    1112
+    1098,
+    1104
    ],
    "sentence": "On 2026-10-16 prices, Johnson Controls trades at an FY2025 EV/EBITDA of 31.2x [S91], a premium to the peer median of 24.7x [S126].",
-   "sentence_start": 1029,
+   "sentence_start": 1021,
    "year": 2025,
    "year_span": [
-    1081,
-    1087
+    1073,
+    1079
    ],
    "status": "verified",
    "reason": "",
@@ -513,19 +513,19 @@
    "value_text": "24.7x",
    "kind": "multiple",
    "value": 24.7,
-   "start": 1146,
-   "end": 1151,
+   "start": 1138,
+   "end": 1143,
    "ref": "S126",
    "ref_span": [
-    1151,
-    1158
+    1143,
+    1150
    ],
    "sentence": "On 2026-10-16 prices, Johnson Controls trades at an FY2025 EV/EBITDA of 31.2x [S91], a premium to the peer median of 24.7x [S126].",
-   "sentence_start": 1029,
+   "sentence_start": 1021,
    "year": 2025,
    "year_span": [
-    1081,
-    1087
+    1073,
+    1079
    ],
    "status": "verified",
    "reason": "",
@@ -540,19 +540,19 @@
    "value_text": "4.2x",
    "kind": "multiple",
    "value": 4.2,
-   "start": 1183,
-   "end": 1187,
+   "start": 1175,
+   "end": 1179,
    "ref": "S90",
    "ref_span": [
-    1187,
-    1193
+    1179,
+    1185
    ],
    "sentence": "Its FY2025 EV/Sales is 4.2x [S90] against a peer median of 5.0x [S127].",
-   "sentence_start": 1160,
+   "sentence_start": 1152,
    "year": 2025,
    "year_span": [
-    1164,
-    1170
+    1156,
+    1162
    ],
    "status": "verified",
    "reason": "",
@@ -567,19 +567,19 @@
    "value_text": "5.0x",
    "kind": "multiple",
    "value": 5.0,
-   "start": 1219,
-   "end": 1223,
+   "start": 1211,
+   "end": 1215,
    "ref": "S127",
    "ref_span": [
-    1223,
-    1230
+    1215,
+    1222
    ],
    "sentence": "Its FY2025 EV/Sales is 4.2x [S90] against a peer median of 5.0x [S127].",
-   "sentence_start": 1160,
+   "sentence_start": 1152,
    "year": 2025,
    "year_span": [
-    1164,
-    1170
+    1156,
+    1162
    ],
    "status": "verified",
    "reason": "",
@@ -594,19 +594,19 @@
    "value_text": "28.9x",
    "kind": "multiple",
    "value": 28.9,
-   "start": 1250,
-   "end": 1255,
+   "start": 1242,
+   "end": 1247,
    "ref": "S92",
    "ref_span": [
-    1255,
-    1261
+    1247,
+    1253
    ],
    "sentence": "Its FY2025 P/E is 28.9x [S92] against a peer median of 35.4x [S128].",
-   "sentence_start": 1232,
+   "sentence_start": 1224,
    "year": 2025,
    "year_span": [
-    1236,
-    1242
+    1228,
+    1234
    ],
    "status": "verified",
    "reason": "",
@@ -621,19 +621,19 @@
    "value_text": "35.4x",
    "kind": "multiple",
    "value": 35.4,
-   "start": 1287,
-   "end": 1292,
+   "start": 1279,
+   "end": 1284,
    "ref": "S128",
    "ref_span": [
-    1292,
-    1299
+    1284,
+    1291
    ],
    "sentence": "Its FY2025 P/E is 28.9x [S92] against a peer median of 35.4x [S128].",
-   "sentence_start": 1232,
+   "sentence_start": 1224,
    "year": 2025,
    "year_span": [
-    1236,
-    1242
+    1228,
+    1234
    ],
    "status": "verified",
    "reason": "",
@@ -648,19 +648,19 @@
    "value_text": "9.7%",
    "kind": "pct",
    "value": 0.09699999999999999,
-   "start": 1340,
-   "end": 1344,
+   "start": 1332,
+   "end": 1336,
    "ref": "S5",
    "ref_span": [
-    1344,
-    1349
+    1336,
+    1341
    ],
    "sentence": "For context, its FY2025 EBIT margin of 9.7% [S5] is below the peer median of 17.9% [S129].",
-   "sentence_start": 1301,
+   "sentence_start": 1293,
    "year": 2025,
    "year_span": [
-    1318,
-    1324
+    1310,
+    1316
    ],
    "status": "verified",
    "reason": "",
@@ -675,19 +675,19 @@
    "value_text": "17.9%",
    "kind": "pct",
    "value": 0.179,
-   "start": 1378,
-   "end": 1383,
+   "start": 1370,
+   "end": 1375,
    "ref": "S129",
    "ref_span": [
-    1383,
-    1390
+    1375,
+    1382
    ],
    "sentence": "For context, its FY2025 EBIT margin of 9.7% [S5] is below the peer median of 17.9% [S129].",
-   "sentence_start": 1301,
+   "sentence_start": 1293,
    "year": 2025,
    "year_span": [
-    1318,
-    1324
+    1310,
+    1316
    ],
    "status": "verified",
    "reason": "",
@@ -700,7 +700,7 @@
  ],
  "quotes": [
   {
-   "quote": "General Johnson Controls International plc, headquartered in Cork, Ireland, is a global leader in smart, healthy and sustainable buildings, serving a wide range of customers around the globe.",
+   "quote": "Johnson Controls International plc, headquartered in Cork, Ireland, is a global leader in smart, healthy and sustainable buildings, serving a wide range of customers around the globe.",
    "ref": "S20",
    "status": "verified",
    "reason": "",
@@ -733,5 +733,6 @@
   "wrong": 0,
   "details": []
  },
- "qualitative_flags": []
+ "qualitative_flags": [],
+ "injected": []
 }

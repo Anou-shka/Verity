@@ -110,3 +110,28 @@ def test_revision_fixes_everything(setup):
     second = check(box, fixed)
     assert all(c.status == "verified" for c in second.claims)
     assert "$10,229.9m [S1]" in fixed and "9,500" not in fixed and "FY2025 net income" in fixed
+
+
+def test_failure_classification():
+    from eval.extraction import classify
+    truths = {("VRT", "revenue", 2025): 10_229.9e6, ("VRT", "revenue", 2024): 8_011.8e6,
+              ("VRT", "gross_profit", 2025): 3_715.2e6}
+    q = {"ticker": "VRT", "metric": "revenue", "fiscal_year": 2025, "truth": 10_229.9e6}
+    assert classify(10_230e6, q, truths) == "correct"
+    assert classify(10_229.9, q, truths) == "wrong_unit"
+    assert classify(8_011.8e6, q, truths) == "wrong_year"
+    assert classify(3_715.2e6, q, truths) == "wrong_concept"
+    assert classify(9_000e6, q, truths) == "made_up"
+    assert classify(None, q, truths) == "no_answer"
+
+
+def test_injector_plants_real_errors():
+    import random
+    from verity.inject import inject
+    box = ToolBox()
+    pack = research("POWL", box, use_llm=False)
+    note = template_note(pack)
+    rng = random.Random(1)
+    for _ in range(20):
+        bad, injs = inject(note, pack.fiscal_year, 3, rng)
+        assert bad != note and len(injs) == 3

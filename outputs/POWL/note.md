@@ -1,7 +1,7 @@
 # Powell Industries (POWL): FY2025 research note
 
 ## Business
-In its 10-K, Powell Industries describes itself as follows: “Overview Powell Industries, Inc. is a Delaware corporation founded by William E.” [S20]
+In its 10-K, Powell Industries describes itself as follows: “We develop, design, manufacture and service custom-engineered equipment and systems that distribute, control and monitor the flow of electrical energy and provide protection to motors, transformers and other electrically powered equipment.” [S20]
 
 ## Recent performance
 FY2025 revenue grew 9.1% [S2] to $1,104.3m [S1], from $1,012.4m [S16] in FY2024. FY2025 net income was $180.7m [S6], or diluted EPS of $14.86 [S7]. FY2025 EBITDA was $225.1m [S8].

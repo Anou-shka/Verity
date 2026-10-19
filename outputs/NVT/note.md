@@ -1,7 +1,7 @@
 # nVent (NVT): FY2025 research note
 
 ## Business
-In its 10-K, nVent describes itself as follows: “COMPANY OVERVIEW nVent is a leading global provider of electrical connection and protection solutions.” [S20]
+In its 10-K, nVent describes itself as follows: “nVent is a leading global provider of electrical connection and protection solutions.” [S20]
 
 ## Recent performance
 FY2025 revenue grew 29.5% [S2] to $3,893.1m [S1], from $3,006.1m [S16] in FY2024. FY2025 net income was $710.2m [S6], or diluted EPS of $4.31 [S7]. FY2025 EBITDA was $824.6m [S8].

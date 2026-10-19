@@ -152,6 +152,10 @@ def first_description(text: str, company: str) -> str | None:
     flat = re.sub(r"\s+", " ", text)
     for sent in re.split(r"(?<=[.!?])\s+(?=[A-Z])", flat):
         s = sent.strip()
+        # drop a heading glued onto the sentence ("Overview Vertiv is ...")
+        at = s.lower().find(first_word)
+        if 0 < at <= 30 and s[:at].strip().replace(" ", "").isalpha():
+            s = s[at:]
         if 80 <= len(s) <= 400 and (first_word in s.lower()[:80] or s.lower().startswith("we ")) \
                 and re.search(r"\b(is|are|provides?|designs?|manufactures?)\b", s) \
                 and not re.search(r"\d{2,}", s):

@@ -1,5 +1,5 @@
 {
- "run_id": "TT-rules-20261019T113124",
+ "run_id": "TT-rules-20261019T120031",
  "ticker": "TT",
  "mode": "rules",
  "rounds": [
@@ -22,7 +22,7 @@
   "output_tokens": 0,
   "cost_usd": 0.0,
   "tool_calls": 23,
-  "seconds": 1.89
+  "seconds": 1.96
  },
  "claims": [
   {
@@ -733,5 +733,6 @@
   "wrong": 0,
   "details": []
  },
- "qualitative_flags": []
+ "qualitative_flags": [],
+ "injected": []
 }

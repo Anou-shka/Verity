@@ -29,6 +29,7 @@ class RunResult:
     reports: list[fc.Report] = field(default_factory=list)
     totals: dict = field(default_factory=dict)
     run_id: str = ""
+    injected: list = field(default_factory=list)
 
     @property
     def final(self) -> writer.Draft:
@@ -36,10 +37,17 @@ class RunResult:
 
 
 def run(ticker: str, use_llm: bool | None = None, write_outputs: bool = True,
-        trace_path: Path | None = None, run_id: str | None = None) -> RunResult:
+        trace_path: Path | None = None, run_id: str | None = None,
+        inject_errors: int = 0, seed: int = 7) -> RunResult:
+    """Run the full pipeline for one company.
+
+    inject_errors > 0 plants that many known errors in the first draft (demo
+    mode), so the fact-check and revision loop has something to catch.
+    """
     use_llm = llm_available() if use_llm is None else use_llm
     mode = provider_name() if use_llm else "rules"
-    run_id = run_id or f"{ticker.upper()}-{mode}-{datetime.now(timezone.utc):%Y%m%dT%H%M%S}"
+    label = f"{ticker.upper()}-demo" if inject_errors else ticker.upper()
+    run_id = run_id or f"{label}-{mode}-{datetime.now(timezone.utc):%Y%m%dT%H%M%S}"
     tracer = Tracer(trace_path or (TRACES / f"{run_id}.jsonl" if write_outputs else None), run_id)
     max_rounds = load_settings()["max_revision_rounds"]
     box = ToolBox()
@@ -56,7 +64,17 @@ def run(ticker: str, use_llm: bool | None = None, write_outputs: bool = True,
             checker = fc.FactChecker(box.ledger, tracer)
             state = "write"
         elif state == "write":
-            result.drafts.append(writer.write(result.pack, tracer, use_llm=use_llm))
+            draft = writer.write(result.pack, tracer, use_llm=use_llm)
+            if inject_errors:
+                import random
+                from .inject import inject
+                bad, injs = inject(draft.note, result.pack.fiscal_year, inject_errors, random.Random(seed))
+                tracer.event("demo_injected", "orchestrator",
+                             errors=[{"type": i.type, "was": i.detail, "now": i.replacement.strip()}
+                                     for i in injs])
+                draft = writer.Draft(bad, draft.comps_table, draft.mode)
+                result.injected = injs
+            result.drafts.append(draft)
             state = "check"
         elif state == "check":
             report = checker.check(result.final.note, result.pack.comps, round_=rounds,
@@ -77,30 +95,35 @@ def run(ticker: str, use_llm: bool | None = None, write_outputs: bool = True,
 def final_log(result: RunResult) -> list[dict]:
     """One row per claim in the final note, plus claims removed during revision.
 
-    Status is verified, corrected (wrong in an earlier round, right now),
-    wrong (still wrong after the last round) or unverifiable.
+    Status is verified, corrected (its sentence was edited in a revision to
+    fix a wrong value or year), wrong (still wrong after the last round) or
+    unverifiable / removed.
     """
-    first, last = result.reports[0], result.reports[-1]
-    wrong_before = {(c.ref, c.correct_display) for r in result.reports[:-1] for c in r.claims
-                    if c.status == "wrong"}
-    wrong_refs = {ref for ref, _ in wrong_before}
+    last = result.reports[-1]
+    fixes = {(c.ref, c.correct_display or c.value_text) for r in result.reports[:-1]
+             for c in r.claims if c.status == "wrong" and (c.correct_display or c.correct_year)}
+    earlier_sentences = {c.sentence.strip() for r in result.reports[:-1] for c in r.claims}
     rows = []
     for c in last.claims:
         status = c.status
-        if status == "verified" and c.ref in wrong_refs and len(result.reports) > 1:
+        if (status == "verified" and len(result.reports) > 1 and (c.ref, c.value_text) in fixes
+                and c.sentence.strip() not in earlier_sentences):
             status = "corrected"
         rows.append({**c.to_json(), "final_status": status})
-    final_spans = {(c.value_text, c.ref) for c in last.claims}
+    final_sentences = {c.sentence.strip() for c in last.claims}
+    seen = set()
     for r in result.reports[:-1]:
         for c in r.claims:
-            if c.status == "unverifiable" and (c.value_text, c.ref) not in final_spans:
-                rows.append({**c.to_json(), "final_status": "removed (unverifiable)"})
-                final_spans.add((c.value_text, c.ref))
+            if (c.status != "verified" and c.sentence.strip() not in final_sentences
+                    and not (c.correct_display or c.correct_year) and c.sentence not in seen):
+                rows.append({**c.to_json(), "final_status": "removed (unverifiable)"
+                             if c.status == "unverifiable" else "removed (fabricated)"})
+                seen.add(c.sentence)
     return rows
 
 
 def save(result: RunResult) -> Path:
-    out = OUTPUTS / result.ticker
+    out = OUTPUTS / (f"{result.ticker}-demo" if result.injected else result.ticker)
     out.mkdir(parents=True, exist_ok=True)
     final = result.final
     (out / "note.md").write_text(final.note + "\n## Peer comparison\n\n" + final.comps_table + "\n")
@@ -111,7 +134,9 @@ def save(result: RunResult) -> Path:
            "rounds": [r.summary() for r in result.reports], "totals": result.totals,
            "claims": final_log(result), "quotes": result.reports[-1].quotes,
            "table": result.reports[-1].table,
-           "qualitative_flags": result.reports[-1].qualitative_flags}
+           "qualitative_flags": result.reports[-1].qualitative_flags,
+           "injected": [{"type": i.type, "was": i.detail, "now": i.replacement.strip()}
+                        for i in result.injected]}
     (out / "factcheck.json").write_text(json.dumps(log, indent=1, default=str))
     rows = result.pack.comps["rows"]
     import csv

@@ -1,5 +1,5 @@
 {
- "run_id": "HUBB-rules-20261019T113117",
+ "run_id": "HUBB-rules-20261019T120024",
  "ticker": "HUBB",
  "mode": "rules",
  "rounds": [
@@ -22,7 +22,7 @@
   "output_tokens": 0,
   "cost_usd": 0.0,
   "tool_calls": 23,
-  "seconds": 2.55
+  "seconds": 2.04
  },
  "claims": [
   {
@@ -733,5 +733,6 @@
   "wrong": 0,
   "details": []
  },
- "qualitative_flags": []
+ "qualitative_flags": [],
+ "injected": []
 }

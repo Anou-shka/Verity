@@ -1,0 +1,5 @@
+{
+ "status": "pending",
+ "n_questions": 360,
+ "reason": "needs a model: set VERITY_PROVIDER and an API key, then `make eval`"
+}

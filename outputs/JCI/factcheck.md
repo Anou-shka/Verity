@@ -4,7 +4,7 @@
 |---|---:|---:|---:|---:|
 | 0 | 25 | 25 | 0 | 0 |
 
-Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 2.27s.
+Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 2.07s.
 
 | Claim | Status | Source | Note |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool cal
 
 | Quote | Status | Filing |
 |---|---|---|
-| General Johnson Controls International plc, headquartered in Cork, Ireland, is a global le… | verified | 0000833444-25-000097 |
+| Johnson Controls International plc, headquartered in Cork, Ireland, is a global leader in … | verified | 0000833444-25-000097 |
 | Our future growth is dependent upon our ability to develop or acquire new products, servic… | verified | 0000833444-25-000097 |
 | Failure to increase organizational effectiveness through the execution of our operating mo… | verified | 0000833444-25-000097 |
 | Failure to achieve and maintain a high level of product and service quality and on-time de… | verified | 0000833444-25-000097 |

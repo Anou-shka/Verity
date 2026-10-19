@@ -1,5 +1,5 @@
 {
- "run_id": "MOD-rules-20261019T113114",
+ "run_id": "MOD-rules-20261019T120022",
  "ticker": "MOD",
  "mode": "rules",
  "rounds": [
@@ -22,7 +22,7 @@
   "output_tokens": 0,
   "cost_usd": 0.0,
   "tool_calls": 23,
-  "seconds": 2.12
+  "seconds": 2.36
  },
  "claims": [
   {
@@ -30,19 +30,19 @@
    "value_text": "23.1%",
    "kind": "pct",
    "value": 0.231,
-   "start": 233,
-   "end": 238,
+   "start": 355,
+   "end": 360,
    "ref": "S2",
    "ref_span": [
-    238,
-    243
+    360,
+    365
    ],
    "sentence": "FY2026 revenue grew 23.1% [S2] to $3,181.1m [S1], from $2,583.5m [S16] in FY2025.",
-   "sentence_start": 213,
+   "sentence_start": 335,
    "year": 2026,
    "year_span": [
-    213,
-    219
+    335,
+    341
    ],
    "status": "verified",
    "reason": "",
@@ -57,19 +57,19 @@
    "value_text": "$3,181.1m",
    "kind": "money",
    "value": 3181100000.0,
-   "start": 247,
-   "end": 256,
+   "start": 369,
+   "end": 378,
    "ref": "S1",
    "ref_span": [
-    256,
-    261
+    378,
+    383
    ],
    "sentence": "FY2026 revenue grew 23.1% [S2] to $3,181.1m [S1], from $2,583.5m [S16] in FY2025.",
-   "sentence_start": 213,
+   "sentence_start": 335,
    "year": 2026,
    "year_span": [
-    213,
-    219
+    335,
+    341
    ],
    "status": "verified",
    "reason": "",
@@ -84,19 +84,19 @@
    "value_text": "$2,583.5m",
    "kind": "money",
    "value": 2583500000.0,
-   "start": 268,
-   "end": 277,
+   "start": 390,
+   "end": 399,
    "ref": "S16",
    "ref_span": [
-    277,
-    283
+    399,
+    405
    ],
    "sentence": "FY2026 revenue grew 23.1% [S2] to $3,181.1m [S1], from $2,583.5m [S16] in FY2025.",
-   "sentence_start": 213,
+   "sentence_start": 335,
    "year": 2025,
    "year_span": [
-    287,
-    293
+    409,
+    415
    ],
    "status": "verified",
    "reason": "",
@@ -111,19 +111,19 @@
    "value_text": "$121.5m",
    "kind": "money",
    "value": 121500000.0,
-   "start": 317,
-   "end": 324,
+   "start": 439,
+   "end": 446,
    "ref": "S6",
    "ref_span": [
-    324,
-    329
+    446,
+    451
    ],
    "sentence": "FY2026 net income was $121.5m [S6], or diluted EPS of $2.26 [S7].",
-   "sentence_start": 295,
+   "sentence_start": 417,
    "year": 2026,
    "year_span": [
-    295,
-    301
+    417,
+    423
    ],
    "status": "verified",
    "reason": "",
@@ -138,19 +138,19 @@
    "value_text": "$2.26",
    "kind": "per_share",
    "value": 2.26,
-   "start": 349,
-   "end": 354,
+   "start": 471,
+   "end": 476,
    "ref": "S7",
    "ref_span": [
-    354,
-    359
+    476,
+    481
    ],
    "sentence": "FY2026 net income was $121.5m [S6], or diluted EPS of $2.26 [S7].",
-   "sentence_start": 295,
+   "sentence_start": 417,
    "year": 2026,
    "year_span": [
-    295,
-    301
+    417,
+    423
    ],
    "status": "verified",
    "reason": "",
@@ -165,19 +165,19 @@
    "value_text": "$422.1m",
    "kind": "money",
    "value": 422100000.0,
-   "start": 379,
-   "end": 386,
+   "start": 501,
+   "end": 508,
    "ref": "S8",
    "ref_span": [
-    386,
-    391
+    508,
+    513
    ],
    "sentence": "FY2026 EBITDA was $422.1m [S8].",
-   "sentence_start": 361,
+   "sentence_start": 483,
    "year": 2026,
    "year_span": [
-    361,
-    367
+    483,
+    489
    ],
    "status": "verified",
    "reason": "",
@@ -192,19 +192,19 @@
    "value_text": "23.0%",
    "kind": "pct",
    "value": 0.23,
-   "start": 441,
-   "end": 446,
+   "start": 563,
+   "end": 568,
    "ref": "S3",
    "ref_span": [
-    446,
-    451
+    568,
+    573
    ],
    "sentence": "FY2026 gross margin was 23.0% [S3], down from 24.9% [S17] in FY2025.",
-   "sentence_start": 417,
+   "sentence_start": 539,
    "year": 2026,
    "year_span": [
-    417,
-    423
+    539,
+    545
    ],
    "status": "verified",
    "reason": "",
@@ -219,19 +219,19 @@
    "value_text": "24.9%",
    "kind": "pct",
    "value": 0.249,
-   "start": 463,
-   "end": 468,
+   "start": 585,
+   "end": 590,
    "ref": "S17",
    "ref_span": [
-    468,
-    474
+    590,
+    596
    ],
    "sentence": "FY2026 gross margin was 23.0% [S3], down from 24.9% [S17] in FY2025.",
-   "sentence_start": 417,
+   "sentence_start": 539,
    "year": 2025,
    "year_span": [
-    478,
-    484
+    600,
+    606
    ],
    "status": "verified",
    "reason": "",
@@ -246,19 +246,19 @@
    "value_text": "10.8%",
    "kind": "pct",
    "value": 0.10800000000000001,
-   "start": 509,
-   "end": 514,
+   "start": 631,
+   "end": 636,
    "ref": "S5",
    "ref_span": [
-    514,
-    519
+    636,
+    641
    ],
    "sentence": "FY2026 EBIT margin was 10.8% [S5], down from 11.0% [S18] in FY2025.",
-   "sentence_start": 486,
+   "sentence_start": 608,
    "year": 2026,
    "year_span": [
-    486,
-    492
+    608,
+    614
    ],
    "status": "verified",
    "reason": "",
@@ -273,19 +273,19 @@
    "value_text": "11.0%",
    "kind": "pct",
    "value": 0.11,
-   "start": 531,
-   "end": 536,
+   "start": 653,
+   "end": 658,
    "ref": "S18",
    "ref_span": [
-    536,
-    542
+    658,
+    664
    ],
    "sentence": "FY2026 EBIT margin was 10.8% [S5], down from 11.0% [S18] in FY2025.",
-   "sentence_start": 486,
+   "sentence_start": 608,
    "year": 2025,
    "year_span": [
-    546,
-    552
+    668,
+    674
    ],
    "status": "verified",
    "reason": "",
@@ -300,19 +300,19 @@
    "value_text": "16.5%",
    "kind": "pct",
    "value": 0.165,
-   "start": 570,
-   "end": 575,
+   "start": 692,
+   "end": 697,
    "ref": "S9",
    "ref_span": [
-    575,
-    580
+    697,
+    702
    ],
    "sentence": "FY2026 ROIC was 16.5% [S9].",
-   "sentence_start": 554,
+   "sentence_start": 676,
    "year": 2026,
    "year_span": [
-    554,
-    560
+    676,
+    682
    ],
    "status": "verified",
    "reason": "",
@@ -327,19 +327,19 @@
    "value_text": "$73.5m",
    "kind": "money",
    "value": 73500000.0,
-   "start": 660,
-   "end": 666,
+   "start": 782,
+   "end": 788,
    "ref": "S11",
    "ref_span": [
-    666,
-    672
+    788,
+    794
    ],
    "sentence": "At the end of FY2026 the company held cash of $73.5m [S11] against total debt of $436.3m [S12], giving net debt of $362.8m [S13].",
-   "sentence_start": 614,
+   "sentence_start": 736,
    "year": 2026,
    "year_span": [
-    628,
-    634
+    750,
+    756
    ],
    "status": "verified",
    "reason": "",
@@ -354,19 +354,19 @@
    "value_text": "$436.3m",
    "kind": "money",
    "value": 436300000.0,
-   "start": 695,
-   "end": 702,
+   "start": 817,
+   "end": 824,
    "ref": "S12",
    "ref_span": [
-    702,
-    708
+    824,
+    830
    ],
    "sentence": "At the end of FY2026 the company held cash of $73.5m [S11] against total debt of $436.3m [S12], giving net debt of $362.8m [S13].",
-   "sentence_start": 614,
+   "sentence_start": 736,
    "year": 2026,
    "year_span": [
-    628,
-    634
+    750,
+    756
    ],
    "status": "verified",
    "reason": "",
@@ -381,19 +381,19 @@
    "value_text": "$362.8m",
    "kind": "money",
    "value": 362800000.0,
-   "start": 729,
-   "end": 736,
+   "start": 851,
+   "end": 858,
    "ref": "S13",
    "ref_span": [
-    736,
-    742
+    858,
+    864
    ],
    "sentence": "At the end of FY2026 the company held cash of $73.5m [S11] against total debt of $436.3m [S12], giving net debt of $362.8m [S13].",
-   "sentence_start": 614,
+   "sentence_start": 736,
    "year": 2026,
    "year_span": [
-    628,
-    634
+    750,
+    756
    ],
    "status": "verified",
    "reason": "",
@@ -408,19 +408,19 @@
    "value_text": "$248.7m",
    "kind": "money",
    "value": 248700000.0,
-   "start": 775,
-   "end": 782,
+   "start": 897,
+   "end": 904,
    "ref": "S14",
    "ref_span": [
-    782,
-    788
+    904,
+    910
    ],
    "sentence": "FY2026 operating cash flow was $248.7m [S14] and capex was $143.3m [S15].",
-   "sentence_start": 744,
+   "sentence_start": 866,
    "year": 2026,
    "year_span": [
-    744,
-    750
+    866,
+    872
    ],
    "status": "verified",
    "reason": "",
@@ -435,19 +435,19 @@
    "value_text": "$143.3m",
    "kind": "money",
    "value": 143300000.0,
-   "start": 803,
-   "end": 810,
+   "start": 925,
+   "end": 932,
    "ref": "S15",
    "ref_span": [
-    810,
-    816
+    932,
+    938
    ],
    "sentence": "FY2026 operating cash flow was $248.7m [S14] and capex was $143.3m [S15].",
-   "sentence_start": 744,
+   "sentence_start": 866,
    "year": 2026,
    "year_span": [
-    744,
-    750
+    866,
+    872
    ],
    "status": "verified",
    "reason": "",
@@ -462,15 +462,15 @@
    "value_text": "$148.86",
    "kind": "per_share",
    "value": 148.86,
-   "start": 866,
-   "end": 873,
+   "start": 988,
+   "end": 995,
    "ref": "S19",
    "ref_span": [
-    873,
-    879
+    995,
+    1001
    ],
    "sentence": "The shares closed at $148.86 [S19] on 2026-10-16.",
-   "sentence_start": 845,
+   "sentence_start": 967,
    "year": null,
    "year_span": null,
    "status": "verified",
@@ -486,19 +486,19 @@
    "value_text": "19.6x",
    "kind": "multiple",
    "value": 19.6,
-   "start": 957,
-   "end": 962,
+   "start": 1079,
+   "end": 1084,
    "ref": "S58",
    "ref_span": [
-    962,
-    968
+    1084,
+    1090
    ],
    "sentence": "On 2026-10-16 prices, Modine trades at an FY2026 EV/EBITDA of 19.6x [S58], a discount to the peer median of 26.1x [S126].",
-   "sentence_start": 895,
+   "sentence_start": 1017,
    "year": 2026,
    "year_span": [
-    937,
-    943
+    1059,
+    1065
    ],
    "status": "verified",
    "reason": "",
@@ -513,19 +513,19 @@
    "value_text": "26.1x",
    "kind": "multiple",
    "value": 26.1,
-   "start": 1003,
-   "end": 1008,
+   "start": 1125,
+   "end": 1130,
    "ref": "S126",
    "ref_span": [
-    1008,
-    1015
+    1130,
+    1137
    ],
    "sentence": "On 2026-10-16 prices, Modine trades at an FY2026 EV/EBITDA of 19.6x [S58], a discount to the peer median of 26.1x [S126].",
-   "sentence_start": 895,
+   "sentence_start": 1017,
    "year": 2026,
    "year_span": [
-    937,
-    943
+    1059,
+    1065
    ],
    "status": "verified",
    "reason": "",
@@ -540,19 +540,19 @@
    "value_text": "2.6x",
    "kind": "multiple",
    "value": 2.6,
-   "start": 1040,
-   "end": 1044,
+   "start": 1162,
+   "end": 1166,
    "ref": "S57",
    "ref_span": [
-    1044,
-    1050
+    1166,
+    1172
    ],
    "sentence": "Its FY2026 EV/Sales is 2.6x [S57] against a peer median of 5.0x [S127].",
-   "sentence_start": 1017,
+   "sentence_start": 1139,
    "year": 2026,
    "year_span": [
-    1021,
-    1027
+    1143,
+    1149
    ],
    "status": "verified",
    "reason": "",
@@ -567,19 +567,19 @@
    "value_text": "5.0x",
    "kind": "multiple",
    "value": 5.0,
-   "start": 1076,
-   "end": 1080,
+   "start": 1198,
+   "end": 1202,
    "ref": "S127",
    "ref_span": [
-    1080,
-    1087
+    1202,
+    1209
    ],
    "sentence": "Its FY2026 EV/Sales is 2.6x [S57] against a peer median of 5.0x [S127].",
-   "sentence_start": 1017,
+   "sentence_start": 1139,
    "year": 2026,
    "year_span": [
-    1021,
-    1027
+    1143,
+    1149
    ],
    "status": "verified",
    "reason": "",
@@ -594,19 +594,19 @@
    "value_text": "65.9x",
    "kind": "multiple",
    "value": 65.9,
-   "start": 1107,
-   "end": 1112,
+   "start": 1229,
+   "end": 1234,
    "ref": "S59",
    "ref_span": [
-    1112,
-    1118
+    1234,
+    1240
    ],
    "sentence": "Its FY2026 P/E is 65.9x [S59] against a peer median of 33.3x [S128].",
-   "sentence_start": 1089,
+   "sentence_start": 1211,
    "year": 2026,
    "year_span": [
-    1093,
-    1099
+    1215,
+    1221
    ],
    "status": "verified",
    "reason": "",
@@ -621,19 +621,19 @@
    "value_text": "33.3x",
    "kind": "multiple",
    "value": 33.3,
-   "start": 1144,
-   "end": 1149,
+   "start": 1266,
+   "end": 1271,
    "ref": "S128",
    "ref_span": [
-    1149,
-    1156
+    1271,
+    1278
    ],
    "sentence": "Its FY2026 P/E is 65.9x [S59] against a peer median of 33.3x [S128].",
-   "sentence_start": 1089,
+   "sentence_start": 1211,
    "year": 2026,
    "year_span": [
-    1093,
-    1099
+    1215,
+    1221
    ],
    "status": "verified",
    "reason": "",
@@ -648,19 +648,19 @@
    "value_text": "10.8%",
    "kind": "pct",
    "value": 0.10800000000000001,
-   "start": 1197,
-   "end": 1202,
+   "start": 1319,
+   "end": 1324,
    "ref": "S5",
    "ref_span": [
-    1202,
-    1207
+    1324,
+    1329
    ],
    "sentence": "For context, its FY2026 EBIT margin of 10.8% [S5] is below the peer median of 17.9% [S129].",
-   "sentence_start": 1158,
+   "sentence_start": 1280,
    "year": 2026,
    "year_span": [
-    1175,
-    1181
+    1297,
+    1303
    ],
    "status": "verified",
    "reason": "",
@@ -675,19 +675,19 @@
    "value_text": "17.9%",
    "kind": "pct",
    "value": 0.179,
-   "start": 1236,
-   "end": 1241,
+   "start": 1358,
+   "end": 1363,
    "ref": "S129",
    "ref_span": [
-    1241,
-    1248
+    1363,
+    1370
    ],
    "sentence": "For context, its FY2026 EBIT margin of 10.8% [S5] is below the peer median of 17.9% [S129].",
-   "sentence_start": 1158,
+   "sentence_start": 1280,
    "year": 2026,
    "year_span": [
-    1175,
-    1181
+    1297,
+    1303
    ],
    "status": "verified",
    "reason": "",
@@ -700,7 +700,7 @@
  ],
  "quotes": [
   {
-   "quote": "At Modine Manufacturing Company, we are Engineering a Cleaner, Healthier World \u2122 .",
+   "quote": "We partner with our customers to provide solutions including systems, services, and components to solve complex heat transfer challenges and are committed to helping them reach their sustainability goals.",
    "ref": "S20",
    "status": "verified",
    "reason": "",
@@ -733,5 +733,6 @@
   "wrong": 0,
   "details": []
  },
- "qualitative_flags": []
+ "qualitative_flags": [],
+ "injected": []
 }

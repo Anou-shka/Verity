@@ -4,7 +4,7 @@
 |---|---:|---:|---:|---:|
 | 0 | 25 | 25 | 0 | 0 |
 
-Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 1.79s.
+Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 1.98s.
 
 | Claim | Status | Source | Note |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool cal
 
 | Quote | Status | Filing |
 |---|---|---|
-| Overview Powell Industries, Inc. is a Delaware corporation founded by William E.… | verified | 0000080420-25-000152 |
+| We develop, design, manufacture and service custom-engineered equipment and systems that d… | verified | 0000080420-25-000152 |
 | Our backlog is subject to unexpected adjustments, cancellations and scope reductions and, … | verified | 0000080420-25-000152 |
 | Failure to place competitive bids and adequately project future costs may result in losses… | verified | 0000080420-25-000152 |
 | Supplier concentration and limited supplier capacity may adversely impact our business and… | verified | 0000080420-25-000152 |

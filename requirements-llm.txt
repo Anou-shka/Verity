@@ -1,0 +1,3 @@
+# Only needed to run with a model (VERITY_PROVIDER=anthropic | openai)
+anthropic>=0.70
+openai>=1.50

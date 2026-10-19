@@ -4,7 +4,7 @@
 |---|---:|---:|---:|---:|
 | 0 | 25 | 25 | 0 | 0 |
 
-Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 2.12s.
+Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 2.36s.
 
 | Claim | Status | Source | Note |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool cal
 
 | Quote | Status | Filing |
 |---|---|---|
-| At Modine Manufacturing Company, we are Engineering a Cleaner, Healthier World ™ .… | verified | 0001104659-26-066795 |
+| We partner with our customers to provide solutions including systems, services, and compon… | verified | 0001104659-26-066795 |
 | Economic, political, and general market conditions could adversely affect our business, fi… | verified | 0001104659-26-066795 |
 | Additional risks and uncertainties related to international trade policies and related mat… | verified | 0001104659-26-066795 |
 | A future widespread outbreak of an illness or other public health threat could adversely a… | verified | 0001104659-26-066795 |

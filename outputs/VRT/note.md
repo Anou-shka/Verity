@@ -1,7 +1,7 @@
 # Vertiv (VRT): FY2025 research note
 
 ## Business
-In its 10-K, Vertiv describes itself as follows: “Overview Vertiv is a global leader in critical digital infrastructure for applications in data centers, communication networks, and commercial and industrial environments.” [S20]
+In its 10-K, Vertiv describes itself as follows: “Vertiv is a global leader in critical digital infrastructure for applications in data centers, communication networks, and commercial and industrial environments.” [S20]
 
 ## Recent performance
 FY2025 revenue grew 27.7% [S2] to $10,229.9m [S1], from $8,011.8m [S16] in FY2024. FY2025 net income was $1,332.8m [S6], or diluted EPS of $3.41 [S7]. FY2025 EBITDA was $2,138.3m [S8].

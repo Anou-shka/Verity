@@ -4,7 +4,7 @@
 |---|---:|---:|---:|---:|
 | 0 | 25 | 25 | 0 | 0 |
 
-Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 1.9s.
+Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool calls, 1.75s.
 
 | Claim | Status | Source | Note |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Run: 0 LLM calls (0 from cache), 0 input + 0 output tokens, $0.0000, 23 tool cal
 
 | Quote | Status | Filing |
 |---|---|---|
-| COMPANY OVERVIEW nVent is a leading global provider of electrical connection and protectio… | verified | 0001628280-26-008608 |
+| nVent is a leading global provider of electrical connection and protection solutions.… | verified | 0001628280-26-008608 |
 | General global economic and business conditions affect demand for our products.… | verified | 0001628280-26-008608 |
 | We compete in attractive markets with a high level of competition, which may result in pre… | verified | 0001628280-26-008608 |
 | We may not be able to identify, finance and complete suitable acquisitions and investments… | verified | 0001628280-26-008608 |
